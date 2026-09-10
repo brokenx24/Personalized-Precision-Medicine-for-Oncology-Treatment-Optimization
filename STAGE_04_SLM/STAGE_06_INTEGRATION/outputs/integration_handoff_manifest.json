@@ -1,0 +1,28 @@
+{
+  "subsystem": "HOSPITAL/STAGE_06_INTEGRATION",
+  "role": "SENIOR_INTEGRATION_ENGINEER",
+  "status": "INTEGRATION_COMPLETED_AND_VERIFIED",
+  "timestamp": "2026-09-09T19:21:05.015509+00:00",
+  "quality_gate": "PASS (50/50 Checks Passed)",
+  "upstream_stages_integrated": [
+    "STAGE_01_ML (Clinical Feature Engineer + XGBoost 96-dim Risk Model)",
+    "STAGE_02_DL (PathologyCNN EfficientNet-B0 + 128-dim Embedding)",
+    "STAGE_03_NLP (Multi-task Clinical NER & Urgency Classifier)",
+    "STAGE_04_SLM (Qwen2.5-1.5B LoRA Oncology Summarizer)",
+    "STAGE_05_EVALUATION (Evaluation Benchmark Reference & Safety Policies)"
+  ],
+  "key_artifacts": {
+    "pipeline_orchestrator": "STAGE_06_INTEGRATION/orchestration/pipeline_orchestrator.py",
+    "integrated_pipeline": "STAGE_06_INTEGRATION/pipeline/integrated_pipeline.py",
+    "api_server": "STAGE_06_INTEGRATION/api/api_server.py",
+    "quality_gate": "STAGE_06_INTEGRATION/outputs/integration_quality_gate.json",
+    "execution_summary": "STAGE_06_INTEGRATION/outputs/integration_execution_summary.json",
+    "audit_log": "STAGE_06_INTEGRATION/outputs/integration_audit.jsonl"
+  },
+  "governance_policy": {
+    "autonomous_clinical_decision": "FORBIDDEN",
+    "prescriptions_allowed": false,
+    "regulatory_status": "RESEARCH_PROTOTYPE_NOT_FOR_CLINICAL_USE",
+    "human_in_the_loop_required": true
+  }
+}

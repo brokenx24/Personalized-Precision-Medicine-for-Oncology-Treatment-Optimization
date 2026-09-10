@@ -1,0 +1,88 @@
+{
+  "version": "1.0.0",
+  "models": {
+    "stage_01_ml": {
+      "name": "Oncology Risk Classifier (XGBoost)",
+      "model_type": "xgboost_gradient_boosting",
+      "model_path": "STAGE_01_ML/MODELS/best_ml_model.joblib",
+      "feature_engineer_path": "STAGE_01_ML/FEATURES/clinical_feature_engineer.joblib",
+      "classes": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "version": "1.0.0",
+      "is_frozen": true
+    },
+    "stage_02_dl": {
+      "name": "Pathology Deep Visual Classifier (CNN)",
+      "model_type": "torchvision_efficientnet_b0",
+      "weights_path": "STAGE_02_DL/MODELS/cnn_model/best_cnn.pt",
+      "image_size": [
+        224,
+        224,
+        3
+      ],
+      "classes": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "normalization": {
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "version": "1.0.0",
+      "is_frozen": true
+    },
+    "stage_03_nlp": {
+      "name": "Biomedical Clinical NER & Urgency Pipeline",
+      "module_path": "STAGE_03_NLP.nlp_engineer.inference",
+      "supported_entities": [
+        "GENE_MUTATION",
+        "DRUG",
+        "DOSAGE",
+        "STAGE",
+        "RESPONSE",
+        "ADVERSE_EVENT",
+        "BIOMARKER"
+      ],
+      "urgency_classes": [
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ],
+      "version": "1.0.0",
+      "is_frozen": true
+    },
+    "stage_04_slm": {
+      "name": "Fine-Tuned Oncology Small Language Model",
+      "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "adapter_type": "PEFT LoRA (r=16, alpha=32)",
+      "adapter_weights_path": "STAGE_04_SLM/slm_engineer/models/qwen2.5_1.5b_lora/adapter_model.safetensors",
+      "adapter_config_path": "STAGE_04_SLM/slm_engineer/models/qwen2.5_1.5b_lora/adapter_config.json",
+      "tokenizer_path": "STAGE_04_SLM/slm_engineer/models/qwen2.5_1.5b_lora/tokenizer",
+      "target_length": 2,
+      "max_new_tokens": 96,
+      "version": "1.0.0",
+      "is_frozen": true
+    },
+    "stage_05_evaluation": {
+      "name": "Frozen Evaluation Evidence & Benchmark Manifest",
+      "role": "FROZEN_BENCHMARK_REFERENCE_AND_METADATA",
+      "is_runtime_model": false,
+      "ranking_path": "STAGE_05_EVALUATION/outputs/model_ranking.json",
+      "quality_gate_path": "STAGE_05_EVALUATION/outputs/evaluation_quality_gate.json",
+      "version": "1.0.0",
+      "is_frozen": true
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "stage": "STAGE_06_INTEGRATION",
+  "preflight_status": "PASS",
+  "dependencies": {
+    "status": "PASS",
+    "packages": {
+      "python": "3.11.9",
+      "torch": "2.13.0+cpu",
+      "transformers": "5.14.1",
+      "peft": "0.20.0",
+      "sklearn": "1.5.0",
+      "xgboost": "3.2.0",
+      "psutil": "7.2.2"
+    }
+  },
+  "artifacts": {
+    "status": "PASS",
+    "artifacts": {
+      "stage_01_ml_model": {
+        "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_01_ML\\MODELS\\best_ml_model.joblib",
+        "exists": true,
+        "size_bytes": 656593,
+        "sha256": "356518c5f33f5fc298cb218a8348003c67d6145ebe61600958d5f6dae76faf13"
+      },
+      "stage_01_feature_engineer": {
+        "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_01_ML\\FEATURES\\clinical_feature_engineer.joblib",
+        "exists": true,
+        "size_bytes": 8372,
+        "sha256": "87620eb8a5dabc2a23631e5129a59e8c11eb06fc0e1b12b81ad7fb711a3816b9"
+      },
+      "stage_02_dl_cnn": {
+        "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_02_DL\\MODELS\\cnn_model\\best_cnn.pt",
+        "exists": true,
+        "size_bytes": 16988315,
+        "sha256": "86f515a27852c8a30ef91894b8777525f9313f001ad3d106c204b79f3d20ef17"
+      },
+      "stage_03_nlp_inference": {
+        "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_03_NLP\\nlp_engineer\\inference.py",
+        "exists": true,
+        "size_bytes": 1317,
+        "sha256": "dc1d2e96ca583ee9cb25b56b3d338a0c0ff20fd3e8019aea3a03942e6844ca60"
+      },
+      "stage_04_slm_adapter": {
+        "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\slm_engineer\\models\\qwen2.5_1.5b_lora\\adapter_model.safetensors",
+        "exists": true,
+        "size_bytes": 11024912,
+        "sha256": "896d12024b324d9ebe5958be4eef974b0c9249f06a0eac200c9cffd60e8bbb3d"
+      },
+      "stage_05_eval_ranking": {
+        "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_05_EVALUATION\\outputs\\model_ranking.json",
+        "exists": true,
+        "size_bytes": 3854,
+        "sha256": "92c0292b1bc1e214bd0ac94c042ebc27f9a0ae0c4cc99b2e2d0fa0d17b603b20"
+      }
+    }
+  },
+  "compatibility": {
+    "status": "PASS",
+    "device": "cpu",
+    "array_interoperability": true,
+    "numpy_version": "2.4.6",
+    "torch_device_name": "CPU Execution Host"
+  },
+  "hardware": {
+    "cpu_logical_cores": 8,
+    "cpu_physical_cores": 4,
+    "ram_total_gb": 15.28,
+    "ram_available_gb": 3.6
+  }
+}

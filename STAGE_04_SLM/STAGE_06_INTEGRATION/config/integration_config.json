@@ -1,0 +1,14 @@
+{
+  "system_name": "Personalized Precision Oncology End-to-End Integration Pipeline",
+  "pipeline_version": "1.0.0",
+  "stage_identifier": "STAGE_06_INTEGRATION",
+  "environment": "CPU-Optimized Production Execution Host",
+  "execution_mode": "offline_local",
+  "clinical_governance": {
+    "autonomous_clinical_decision": "FORBIDDEN",
+    "prescriptions_allowed": false,
+    "treatment_recommendations_allowed": false,
+    "intended_use": "Investigational oncological clinical profile aggregation and concise summarization assistance for tumor boards."
+  },
+  "provenance_tracking": true
+}

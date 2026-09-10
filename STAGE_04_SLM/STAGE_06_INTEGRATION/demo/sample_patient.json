@@ -1,0 +1,27 @@
+{
+  "patient_id": "TCGA-LUAD-9042",
+  "clinical_features": {
+    "age": 64.0,
+    "gender": 1,
+    "tumor_size_cm": 4.2,
+    "histological_grade": 3,
+    "ecog_performance_status": 1,
+    "smoking_pack_years": 30.0,
+    "ast_u_l": 32.0,
+    "alt_u_l": 28.0,
+    "serum_creatinine_mg_dl": 0.85,
+    "albumin_g_dl": 4.2,
+    "white_blood_cell_k_ul": 7.1,
+    "platelet_count_k_ul": 245.0,
+    "hemoglobin_g_dl": 13.8,
+    "cancer_type": "Lung Adenocarcinoma",
+    "stage_numeric": 4
+  },
+  "pathology_image": null,
+  "clinical_notes": "Patient is a 64-year-old male with Stage IV non-small cell lung adenocarcinoma harboring EGFR L858R mutation. Prescribed Osimertinib 80mg daily orally. Restaging evaluation showed partial response by RECIST criteria with 35% lesion reduction. Experienced Grade 2 rash managed conservatively.",
+  "metadata": {
+    "encounter_id": "ENC-DEMO-001",
+    "institution": "Precision Oncology Institute",
+    "physician_id": "MD-8812"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "log_level": "INFO",
+  "write_ahead_audit_logging": true,
+  "audit_log_path": "STAGE_06_INTEGRATION/outputs/pipeline_audit_trail.jsonl",
+  "error_log_path": "STAGE_06_INTEGRATION/outputs/pipeline_errors.log",
+  "include_provenance_in_every_entry": true
+}

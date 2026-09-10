@@ -1,0 +1,6 @@
+{
+  "max_ram_mb": 6000.0,
+  "max_cpu_percent": 98.0,
+  "device_policy": "CPU_with_CUDA_fallback",
+  "allow_quantization": false
+}

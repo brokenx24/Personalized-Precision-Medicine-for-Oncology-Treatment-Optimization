@@ -1,0 +1,309 @@
+{
+  "timestamp": "2026-09-09T19:17:02Z",
+  "total_checks": 50,
+  "passed_checks": 50,
+  "failed_checks": 0,
+  "quality_gate_status": "PASS",
+  "checks": [
+    {
+      "check_id": 1,
+      "name": "Stage 01 ML Model File Exists",
+      "passed": true,
+      "detail": "C:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_01_ML\\MODELS\\best_ml_model.joblib"
+    },
+    {
+      "check_id": 2,
+      "name": "Stage 01 ML Model Hash Verified",
+      "passed": true,
+      "detail": "SHA: 356518c5f33f5fc2..."
+    },
+    {
+      "check_id": 3,
+      "name": "Stage 01 Feature Engineer Hash Verified",
+      "passed": true,
+      "detail": "SHA: 87620eb8a5dabc2a..."
+    },
+    {
+      "check_id": 4,
+      "name": "Stage 02 DL CNN Checkpoint Hash Verified",
+      "passed": true,
+      "detail": "SHA: 86f515a27852c8a3..."
+    },
+    {
+      "check_id": 5,
+      "name": "Stage 03 NLP Inference Hash Verified",
+      "passed": true,
+      "detail": "SHA: dc1d2e96ca583ee9..."
+    },
+    {
+      "check_id": 6,
+      "name": "Stage 04 SLM LoRA Checkpoint Hash Verified",
+      "passed": true,
+      "detail": "SHA: 896d12024b324d9e..."
+    },
+    {
+      "check_id": 7,
+      "name": "Stage 04 Test Split Hash Verified",
+      "passed": true,
+      "detail": "SHA: 668f4b6dfd997272..."
+    },
+    {
+      "check_id": 8,
+      "name": "Stage 05 Ranking Artifact Hash Verified",
+      "passed": true,
+      "detail": "SHA: 92c0292b1bc1e214..."
+    },
+    {
+      "check_id": 9,
+      "name": "Stage 05 Quality Gate Artifact Verified",
+      "passed": true,
+      "detail": "SHA: 1b2f0fb2a0c14fbe..."
+    },
+    {
+      "check_id": 10,
+      "name": "All 5 Upstream Stages 100% Unmodified & Frozen",
+      "passed": true,
+      "detail": "Zero modifications detected"
+    },
+    {
+      "check_id": 11,
+      "name": "ML Registry Loads Model & 96-Feature Preprocessors",
+      "passed": true,
+      "detail": "96 features ready"
+    },
+    {
+      "check_id": 12,
+      "name": "DL Registry Loads PathologyCNN PyTorch Model",
+      "passed": true,
+      "detail": "EfficientNet-B0 backbone"
+    },
+    {
+      "check_id": 13,
+      "name": "NLP Registry Loads Isolated Inference Engine",
+      "passed": true,
+      "detail": "Ensemble NER ready"
+    },
+    {
+      "check_id": 14,
+      "name": "SLM Registry Loads Oncology Summarizer Engine",
+      "passed": true,
+      "detail": "Qwen2.5 LoRA offline engine"
+    },
+    {
+      "check_id": 15,
+      "name": "Unified Model Registry Manifest Intact",
+      "passed": true,
+      "detail": "5 stages registered"
+    },
+    {
+      "check_id": 16,
+      "name": "ML Adapter Produces Calibrated Probabilities",
+      "passed": true,
+      "detail": "Risk Class: HIGH"
+    },
+    {
+      "check_id": 17,
+      "name": "DL Adapter Emits 128-dim Embedding & Grade",
+      "passed": true,
+      "detail": "Grade: INTERMEDIATE_GRADE"
+    },
+    {
+      "check_id": 18,
+      "name": "NLP Adapter Emits Urgency & Structured Entities",
+      "passed": true,
+      "detail": "Found 9 entities"
+    },
+    {
+      "check_id": 19,
+      "name": "SLM Adapter Generates Concise 2-Sentence Summary",
+      "passed": true,
+      "detail": "Summary: Patient has EGFR mutated NSCLC treated with Osimer..."
+    },
+    {
+      "check_id": 20,
+      "name": "Adapter Validation Report Successfully Recorded",
+      "passed": true,
+      "detail": "C:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_06_INTEGRATION\\outputs\\adapter_validation_report.json"
+    },
+    {
+      "check_id": 21,
+      "name": "DAG Graph Validity & Zero Cycles",
+      "passed": true,
+      "detail": "8 execution stages defined"
+    },
+    {
+      "check_id": 22,
+      "name": "DAG Execution Sequence Conforms to Upstream Order",
+      "passed": true,
+      "detail": "Topological sort verified"
+    },
+    {
+      "check_id": 23,
+      "name": "Input Validator Passes Valid Payload",
+      "passed": true,
+      "detail": "Valid patient input"
+    },
+    {
+      "check_id": 24,
+      "name": "Input Validator Rejects Malformed Input",
+      "passed": true,
+      "detail": "Rejected invalid input"
+    },
+    {
+      "check_id": 25,
+      "name": "Preprocessing Prepares Tabular, Image, and Text Modalities",
+      "passed": true,
+      "detail": "Multi-modal dispatch verified"
+    },
+    {
+      "check_id": 26,
+      "name": "Preprocessing Formulates Grounded SLM Synthesis Prompt",
+      "passed": true,
+      "detail": "Prompt composed"
+    },
+    {
+      "check_id": 27,
+      "name": "Integrated Pipeline Lazy Warm-Up Completed",
+      "passed": true,
+      "detail": "All models hot in memory"
+    },
+    {
+      "check_id": 28,
+      "name": "End-to-End Pipeline Execution Succeeds",
+      "passed": true,
+      "detail": "Status: SUCCESS"
+    },
+    {
+      "check_id": 29,
+      "name": "Total Pipeline Latency Measured & Recorded",
+      "passed": true,
+      "detail": "Latency: 2009.99 ms"
+    },
+    {
+      "check_id": 30,
+      "name": "Subsystem Execution Latency Within Target Envelope (< 10000 ms)",
+      "passed": true,
+      "detail": "Measured: 2010.18 ms"
+    },
+    {
+      "check_id": 31,
+      "name": "Clinical Boundary Checker Passes Objective Observational Statements",
+      "passed": true,
+      "detail": "No violations"
+    },
+    {
+      "check_id": 32,
+      "name": "Clinical Boundary Checker Blocks Prescriptive Language",
+      "passed": true,
+      "detail": "Blocked: Forbidden prescriptive token/phrase detected: 'Prescribe'"
+    },
+    {
+      "check_id": 33,
+      "name": "Hallucination Guard Measures Grounded Claim Consistency",
+      "passed": true,
+      "detail": "Hallucination rate: 0.00%"
+    },
+    {
+      "check_id": 34,
+      "name": "Hallucination Guard Adheres to Strict FAIL-CLOSED Rule (UNKNOWN/Empty -> FAIL)",
+      "passed": true,
+      "detail": "Fail-closed enforced"
+    },
+    {
+      "check_id": 35,
+      "name": "Master Safety Validator Emits Comprehensive Status Report",
+      "passed": true,
+      "detail": "Safety Status: PASS"
+    },
+    {
+      "check_id": 36,
+      "name": "Governance Policy Strictly Forbids Autonomous Clinical Decisions",
+      "passed": true,
+      "detail": "autonomous_clinical_decision: FORBIDDEN"
+    },
+    {
+      "check_id": 37,
+      "name": "Governance Policy Strictly Disallows Drug Prescriptions",
+      "passed": true,
+      "detail": "prescriptions_allowed: False"
+    },
+    {
+      "check_id": 38,
+      "name": "Governance Policy Designates Prototype Status",
+      "passed": true,
+      "detail": "Regulatory status explicit"
+    },
+    {
+      "check_id": 39,
+      "name": "Governance Policy Mandates Human-in-the-Loop Physician Review",
+      "passed": true,
+      "detail": "Human-in-the-loop: True"
+    },
+    {
+      "check_id": 40,
+      "name": "Mandatory Non-Prescriptive Clinical Disclaimer Present",
+      "passed": true,
+      "detail": "Disclaimer attached"
+    },
+    {
+      "check_id": 41,
+      "name": "Output Conforms Strictly to Master Integration JSON Schema",
+      "passed": true,
+      "detail": "Errors: 0"
+    },
+    {
+      "check_id": 42,
+      "name": "Output Numerical Values & Confidence Ranges Validated",
+      "passed": true,
+      "detail": "Errors: 0"
+    },
+    {
+      "check_id": 43,
+      "name": "Cross-Model Agreement & Multi-Modal Alignment Assessed",
+      "passed": true,
+      "detail": "Score: 1.0"
+    },
+    {
+      "check_id": 44,
+      "name": "Cryptographic Provenance Block Emitted With Every Request",
+      "passed": true,
+      "detail": "Version: 1.0.0-PROD-INTEGRATION"
+    },
+    {
+      "check_id": 45,
+      "name": "Unique Request ID Emitted For Auditing",
+      "passed": true,
+      "detail": "Request ID: REQ-DFC5E725E27C"
+    },
+    {
+      "check_id": 46,
+      "name": "Tamper-Evident Audit Logging Subsystem Active",
+      "passed": true,
+      "detail": "C:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_06_INTEGRATION\\outputs\\integration_audit.jsonl"
+    },
+    {
+      "check_id": 47,
+      "name": "Pre- vs Post-Execution Upstream Hash Invariance Verified",
+      "passed": true,
+      "detail": "Identical bit-for-bit"
+    },
+    {
+      "check_id": 48,
+      "name": "All 6 Configuration Specifications Present & Valid",
+      "passed": true,
+      "detail": "6 config files verified"
+    },
+    {
+      "check_id": 49,
+      "name": "Interactive Demo Suite & Sample Patient Data Verified",
+      "passed": true,
+      "detail": "Demo suite operational"
+    },
+    {
+      "check_id": 50,
+      "name": "Master Quality Gate Threshold Reached (50/50 Checks Passed)",
+      "passed": true,
+      "detail": "Total Passed: 50/50"
+    }
+  ]
+}

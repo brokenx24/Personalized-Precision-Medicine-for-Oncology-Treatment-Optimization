@@ -1,0 +1,1751 @@
+[
+  {
+    "patient_id": "PT-LUAD-001",
+    "request_id": "REQ-D0B1BAD70897",
+    "pipeline_version": "1.0.0-PROD-INTEGRATION",
+    "timestamp": "2026-09-09T19:20:58.507638+00:00",
+    "status": "SUCCESS",
+    "provenance": {
+      "request_id": "REQ-D0B1BAD70897",
+      "timestamp": "2026-09-09T19:20:58.507638+00:00",
+      "pipeline_version": "1.0.0-PROD-INTEGRATION",
+      "upstream_integrity_verified": true,
+      "stage_versions": {
+        "STAGE_01_ML": "1.0.0-FROZEN",
+        "STAGE_02_DL": "1.0.0-FROZEN",
+        "STAGE_03_NLP": "1.0.0-FROZEN",
+        "STAGE_04_SLM": "1.0.0-FROZEN",
+        "STAGE_05_EVALUATION": "1.0.0-BENCHMARK_EVIDENCE"
+      },
+      "models_executed": {
+        "ml": "best_ml_model.joblib (XGBoost)",
+        "dl": "best_cnn.pt (PathologyCNN)",
+        "nlp": "nlp_engineer/inference.py (Ensemble NLP)",
+        "slm": "qwen2.5_1.5b_lora (PEFT LoRA)"
+      }
+    },
+    "clinical_assessments": {
+      "ml_risk_assessment": {
+        "risk_class": "HIGH",
+        "risk_score": 0.972,
+        "class_probabilities": {
+          "LOW": 0.003,
+          "MODERATE": 0.0501,
+          "HIGH": 0.9469
+        },
+        "latency_ms": 21.95
+      },
+      "dl_pathology_assessment": {
+        "predicted_class": 1,
+        "class_label": "INTERMEDIATE_GRADE",
+        "confidence": 0.3785,
+        "embedding_dim": 128,
+        "latency_ms": 192.39
+      },
+      "nlp_note_analysis": {
+        "urgency": "MODERATE",
+        "entities_count": 36,
+        "entity_counts": {
+          "DOSAGE": 24,
+          "ADVERSE_EVENT": 3,
+          "GENE_MUTATION": 5,
+          "DRUG": 4
+        },
+        "entities": [
+          {
+            "text": "Patient",
+            "label": "DOSAGE",
+            "start": 0,
+            "end": 7,
+            "confidence": 0.95
+          },
+          {
+            "text": "a",
+            "label": "DOSAGE",
+            "start": 11,
+            "end": 12,
+            "confidence": 0.95
+          },
+          {
+            "text": "64",
+            "label": "ADVERSE_EVENT",
+            "start": 13,
+            "end": 15,
+            "confidence": 0.95
+          },
+          {
+            "text": "-",
+            "label": "DOSAGE",
+            "start": 15,
+            "end": 16,
+            "confidence": 0.95
+          },
+          {
+            "text": "year",
+            "label": "DOSAGE",
+            "start": 16,
+            "end": 20,
+            "confidence": 0.95
+          },
+          {
+            "text": "-",
+            "label": "DOSAGE",
+            "start": 15,
+            "end": 16,
+            "confidence": 0.95
+          },
+          {
+            "text": "old",
+            "label": "DOSAGE",
+            "start": 21,
+            "end": 24,
+            "confidence": 0.95
+          },
+          {
+            "text": "male with",
+            "label": "DOSAGE",
+            "start": 25,
+            "end": 34,
+            "confidence": 0.95
+          },
+          {
+            "text": "Stage",
+            "label": "GENE_MUTATION",
+            "start": 35,
+            "end": 40,
+            "confidence": 0.95
+          },
+          {
+            "text": "IV",
+            "label": "DRUG",
+            "start": 41,
+            "end": 43,
+            "confidence": 0.95
+          },
+          {
+            "text": "non",
+            "label": "GENE_MUTATION",
+            "start": 44,
+            "end": 47,
+            "confidence": 0.95
+          },
+          {
+            "text": "-",
+            "label": "DOSAGE",
+            "start": 15,
+            "end": 16,
+            "confidence": 0.95
+          },
+          {
+            "text": "small",
+            "label": "DOSAGE",
+            "start": 48,
+            "end": 53,
+            "confidence": 0.95
+          },
+          {
+            "text": "cell",
+            "label": "DRUG",
+            "start": 54,
+            "end": 58,
+            "confidence": 0.95
+          },
+          {
+            "text": "lung",
+            "label": "ADVERSE_EVENT",
+            "start": 59,
+            "end": 63,
+            "confidence": 0.95
+          },
+          {
+            "text": "adenocarcinoma",
+            "label": "GENE_MUTATION",
+            "start": 64,
+            "end": 78,
+            "confidence": 0.95
+          },
+          {
+            "text": "mutation",
+            "label": "DOSAGE",
+            "start": 100,
+            "end": 108,
+            "confidence": 0.95
+          },
+          {
+            "text": ".",
+            "label": "DOSAGE",
+            "start": 108,
+            "end": 109,
+            "confidence": 0.95
+          },
+          {
+            "text": "Initiated",
+            "label": "DOSAGE",
+            "start": 110,
+            "end": 119,
+            "confidence": 0.95
+          },
+          {
+            "text": "on",
+            "label": "DOSAGE",
+            "start": 120,
+            "end": 122,
+            "confidence": 0.95
+          },
+          {
+            "text": "Osimertinib",
+            "label": "DRUG",
+            "start": 123,
+            "end": 134,
+            "confidence": 0.95
+          },
+          {
+            "text": "80mg",
+            "label": "ADVERSE_EVENT",
+            "start": 135,
+            "end": 139,
+            "confidence": 0.95
+          },
+          {
+            "text": "daily",
+            "label": "DOSAGE",
+            "start": 140,
+            "end": 145,
+            "confidence": 0.95
+          },
+          {
+            "text": "orally .",
+            "label": "DOSAGE",
+            "start": 146,
+            "end": 154,
+            "confidence": 0.95
+          },
+          {
+            "text": "evaluation",
+            "label": "GENE_MUTATION",
+            "start": 164,
+            "end": 174,
+            "confidence": 0.95
+          },
+          {
+            "text": "showed",
+            "label": "DOSAGE",
+            "start": 175,
+            "end": 181,
+            "confidence": 0.95
+          },
+          {
+            "text": "partial",
+            "label": "GENE_MUTATION",
+            "start": 182,
+            "end": 189,
+            "confidence": 0.95
+          },
+          {
+            "text": "response",
+            "label": "DOSAGE",
+            "start": 190,
+            "end": 198,
+            "confidence": 0.95
+          },
+          {
+            "text": "by",
+            "label": "DOSAGE",
+            "start": 199,
+            "end": 201,
+            "confidence": 0.95
+          },
+          {
+            "text": "RECIST",
+            "label": "DOSAGE",
+            "start": 202,
+            "end": 208,
+            "confidence": 0.95
+          },
+          {
+            "text": "35",
+            "label": "DRUG",
+            "start": 223,
+            "end": 225,
+            "confidence": 0.95
+          },
+          {
+            "text": "%",
+            "label": "DOSAGE",
+            "start": 225,
+            "end": 226,
+            "confidence": 0.95
+          },
+          {
+            "text": "reduction .",
+            "label": "DOSAGE",
+            "start": 234,
+            "end": 245,
+            "confidence": 0.95
+          },
+          {
+            "text": "2",
+            "label": "DOSAGE",
+            "start": 263,
+            "end": 264,
+            "confidence": 0.95
+          },
+          {
+            "text": "rash managed",
+            "label": "DOSAGE",
+            "start": 265,
+            "end": 277,
+            "confidence": 0.95
+          },
+          {
+            "text": "conservatively .",
+            "label": "DOSAGE",
+            "start": 278,
+            "end": 294,
+            "confidence": 0.95
+          }
+        ],
+        "latency_ms": 3377.79
+      },
+      "slm_executive_summary": {
+        "summary": "Patient PT-LUAD-001 presents with Unspecified stage disease and assessed risk class HIGH. Treatment regimen includes cell, Osimertinib, IV, 35 with observed response: Evaluating, accompanied by Treatment regimen includes cell, Osimertinib, IV, 35 with observed response: Evaluating.",
+        "generated_tokens": 36,
+        "generation_time_sec": 0.015,
+        "model_used": "qwen2.5_1.5b_lora",
+        "latency_ms": 0.13
+      }
+    },
+    "safety_and_governance": {
+      "safety_status": "PASS",
+      "hallucination_rate": 0.0,
+      "unsupported_claim_count": 0,
+      "clinical_boundary_violations": [],
+      "passed_clinical_boundary": true,
+      "checks_run": [
+        "clinical_boundary_check",
+        "hallucination_guard",
+        "data_grounding_audit"
+      ],
+      "approved_for_presentation": true
+    },
+    "governance_policy": {
+      "autonomous_clinical_decision": "FORBIDDEN",
+      "prescriptions_allowed": false,
+      "regulatory_status": "RESEARCH_PROTOTYPE_NOT_FOR_CLINICAL_USE",
+      "human_in_the_loop_required": true,
+      "disclaimer": "This system is an AI research prototype. It does not provide medical advice or prescribe treatments. All outputs must be reviewed by a board-certified oncologist."
+    },
+    "execution_metrics": {
+      "total_latency_ms": 3592.7,
+      "stages_executed": [
+        "ML",
+        "DL",
+        "NLP",
+        "SLM",
+        "SAFETY"
+      ],
+      "stage_latencies_ms": {
+        "ml": 21.95,
+        "dl": 192.39,
+        "nlp": 3377.79,
+        "slm": 0.13
+      }
+    },
+    "validation_audit": {
+      "validation_status": "PASS",
+      "schema_passed": true,
+      "output_passed": true,
+      "cross_model_alignment": {
+        "cross_modal_consistent": true,
+        "divergence_flags": [],
+        "multimodal_agreement_score": 1.0
+      },
+      "errors": []
+    }
+  },
+  {
+    "patient_id": "PT-LUSC-002",
+    "request_id": "REQ-A7C5E9A5EA62",
+    "pipeline_version": "1.0.0-PROD-INTEGRATION",
+    "timestamp": "2026-09-09T19:21:00.040835+00:00",
+    "status": "SUCCESS",
+    "provenance": {
+      "request_id": "REQ-A7C5E9A5EA62",
+      "timestamp": "2026-09-09T19:21:00.040835+00:00",
+      "pipeline_version": "1.0.0-PROD-INTEGRATION",
+      "upstream_integrity_verified": true,
+      "stage_versions": {
+        "STAGE_01_ML": "1.0.0-FROZEN",
+        "STAGE_02_DL": "1.0.0-FROZEN",
+        "STAGE_03_NLP": "1.0.0-FROZEN",
+        "STAGE_04_SLM": "1.0.0-FROZEN",
+        "STAGE_05_EVALUATION": "1.0.0-BENCHMARK_EVIDENCE"
+      },
+      "models_executed": {
+        "ml": "best_ml_model.joblib (XGBoost)",
+        "dl": "best_cnn.pt (PathologyCNN)",
+        "nlp": "nlp_engineer/inference.py (Ensemble NLP)",
+        "slm": "qwen2.5_1.5b_lora (PEFT LoRA)"
+      }
+    },
+    "clinical_assessments": {
+      "ml_risk_assessment": {
+        "risk_class": "HIGH",
+        "risk_score": 0.9848,
+        "class_probabilities": {
+          "LOW": 0.0019,
+          "MODERATE": 0.0266,
+          "HIGH": 0.9715
+        },
+        "latency_ms": 22.0
+      },
+      "dl_pathology_assessment": {
+        "predicted_class": 1,
+        "class_label": "INTERMEDIATE_GRADE",
+        "confidence": 0.3785,
+        "embedding_dim": 128,
+        "latency_ms": 135.95
+      },
+      "nlp_note_analysis": {
+        "urgency": "MODERATE",
+        "entities_count": 30,
+        "entity_counts": {
+          "DOSAGE": 16,
+          "GENE_MUTATION": 5,
+          "ADVERSE_EVENT": 3,
+          "DRUG": 6
+        },
+        "entities": [
+          {
+            "text": "Patient",
+            "label": "DOSAGE",
+            "start": 0,
+            "end": 7,
+            "confidence": 0.95
+          },
+          {
+            "text": "a",
+            "label": "DOSAGE",
+            "start": 11,
+            "end": 12,
+            "confidence": 0.95
+          },
+          {
+            "text": "70",
+            "label": "GENE_MUTATION",
+            "start": 13,
+            "end": 15,
+            "confidence": 0.95
+          },
+          {
+            "text": "-",
+            "label": "DOSAGE",
+            "start": 15,
+            "end": 16,
+            "confidence": 0.95
+          },
+          {
+            "text": "year",
+            "label": "DOSAGE",
+            "start": 16,
+            "end": 20,
+            "confidence": 0.95
+          },
+          {
+            "text": "-",
+            "label": "DOSAGE",
+            "start": 15,
+            "end": 16,
+            "confidence": 0.95
+          },
+          {
+            "text": "old male with locally",
+            "label": "DOSAGE",
+            "start": 21,
+            "end": 42,
+            "confidence": 0.95
+          },
+          {
+            "text": "advanced",
+            "label": "ADVERSE_EVENT",
+            "start": 43,
+            "end": 51,
+            "confidence": 0.95
+          },
+          {
+            "text": "Stage",
+            "label": "DRUG",
+            "start": 52,
+            "end": 57,
+            "confidence": 0.95
+          },
+          {
+            "text": "III",
+            "label": "DRUG",
+            "start": 58,
+            "end": 61,
+            "confidence": 0.95
+          },
+          {
+            "text": "lung",
+            "label": "ADVERSE_EVENT",
+            "start": 62,
+            "end": 66,
+            "confidence": 0.95
+          },
+          {
+            "text": "squamous",
+            "label": "GENE_MUTATION",
+            "start": 67,
+            "end": 75,
+            "confidence": 0.95
+          },
+          {
+            "text": "cell carcinoma",
+            "label": "GENE_MUTATION",
+            "start": 76,
+            "end": 90,
+            "confidence": 0.95
+          },
+          {
+            "text": "with",
+            "label": "DOSAGE",
+            "start": 30,
+            "end": 34,
+            "confidence": 0.95
+          },
+          {
+            "text": ".",
+            "label": "DRUG",
+            "start": 115,
+            "end": 116,
+            "confidence": 0.95
+          },
+          {
+            "text": "Administered",
+            "label": "DOSAGE",
+            "start": 117,
+            "end": 129,
+            "confidence": 0.95
+          },
+          {
+            "text": "chemotherapy",
+            "label": "DRUG",
+            "start": 130,
+            "end": 142,
+            "confidence": 0.95
+          },
+          {
+            "text": "with",
+            "label": "DOSAGE",
+            "start": 30,
+            "end": 34,
+            "confidence": 0.95
+          },
+          {
+            "text": "and",
+            "label": "DRUG",
+            "start": 160,
+            "end": 163,
+            "confidence": 0.95
+          },
+          {
+            "text": "Paclitaxel",
+            "label": "DOSAGE",
+            "start": 164,
+            "end": 174,
+            "confidence": 0.95
+          },
+          {
+            "text": "doublet",
+            "label": "DOSAGE",
+            "start": 175,
+            "end": 182,
+            "confidence": 0.95
+          },
+          {
+            "text": "regimen",
+            "label": "GENE_MUTATION",
+            "start": 183,
+            "end": 190,
+            "confidence": 0.95
+          },
+          {
+            "text": ".",
+            "label": "DRUG",
+            "start": 115,
+            "end": 116,
+            "confidence": 0.95
+          },
+          {
+            "text": "CT",
+            "label": "DOSAGE",
+            "start": 202,
+            "end": 204,
+            "confidence": 0.95
+          },
+          {
+            "text": "stable",
+            "label": "DOSAGE",
+            "start": 215,
+            "end": 221,
+            "confidence": 0.95
+          },
+          {
+            "text": "disease",
+            "label": "GENE_MUTATION",
+            "start": 222,
+            "end": 229,
+            "confidence": 0.95
+          },
+          {
+            "text": ".",
+            "label": "DOSAGE",
+            "start": 115,
+            "end": 116,
+            "confidence": 0.95
+          },
+          {
+            "text": "Grade 2",
+            "label": "DOSAGE",
+            "start": 243,
+            "end": 250,
+            "confidence": 0.95
+          },
+          {
+            "text": "neutropenia",
+            "label": "ADVERSE_EVENT",
+            "start": 251,
+            "end": 262,
+            "confidence": 0.95
+          },
+          {
+            "text": ".",
+            "label": "DOSAGE",
+            "start": 115,
+            "end": 116,
+            "confidence": 0.95
+          }
+        ],
+        "latency_ms": 1371.05
+      },
+      "slm_executive_summary": {
+        "summary": "Patient PT-LUSC-002 presents with Unspecified stage disease and assessed risk class HIGH. , Stage, chemotherapy with observed response: Evaluating, accompanied by Reported adverse events: lung, advanced, neutropenia.",
+        "generated_tokens": 27,
+        "generation_time_sec": 0.015,
+        "model_used": "qwen2.5_1.5b_lora",
+        "latency_ms": 0.14
+      }
+    },
+    "safety_and_governance": {
+      "safety_status": "PASS",
+      "hallucination_rate": 0.0,
+      "unsupported_claim_count": 0,
+      "clinical_boundary_violations": [],
+      "passed_clinical_boundary": true,
+      "checks_run": [
+        "clinical_boundary_check",
+        "hallucination_guard",
+        "data_grounding_audit"
+      ],
+      "approved_for_presentation": true
+    },
+    "governance_policy": {
+      "autonomous_clinical_decision": "FORBIDDEN",
+      "prescriptions_allowed": false,
+      "regulatory_status": "RESEARCH_PROTOTYPE_NOT_FOR_CLINICAL_USE",
+      "human_in_the_loop_required": true,
+      "disclaimer": "This system is an AI research prototype. It does not provide medical advice or prescribe treatments. All outputs must be reviewed by a board-certified oncologist."
+    },
+    "execution_metrics": {
+      "total_latency_ms": 1529.89,
+      "stages_executed": [
+        "ML",
+        "DL",
+        "NLP",
+        "SLM",
+        "SAFETY"
+      ],
+      "stage_latencies_ms": {
+        "ml": 22.0,
+        "dl": 135.95,
+        "nlp": 1371.05,
+        "slm": 0.14
+      }
+    },
+    "validation_audit": {
+      "validation_status": "PASS",
+      "schema_passed": true,
+      "output_passed": true,
+      "cross_model_alignment": {
+        "cross_modal_consistent": true,
+        "divergence_flags": [],
+        "multimodal_agreement_score": 1.0
+      },
+      "errors": []
+    }
+  },
+  {
+    "patient_id": "PT-OV-003",
+    "request_id": "REQ-71AFFFF62F21",
+    "pipeline_version": "1.0.0-PROD-INTEGRATION",
+    "timestamp": "2026-09-09T19:21:01.555120+00:00",
+    "status": "SUCCESS",
+    "provenance": {
+      "request_id": "REQ-71AFFFF62F21",
+      "timestamp": "2026-09-09T19:21:01.555120+00:00",
+      "pipeline_version": "1.0.0-PROD-INTEGRATION",
+      "upstream_integrity_verified": true,
+      "stage_versions": {
+        "STAGE_01_ML": "1.0.0-FROZEN",
+        "STAGE_02_DL": "1.0.0-FROZEN",
+        "STAGE_03_NLP": "1.0.0-FROZEN",
+        "STAGE_04_SLM": "1.0.0-FROZEN",
+        "STAGE_05_EVALUATION": "1.0.0-BENCHMARK_EVIDENCE"
+      },
+      "models_executed": {
+        "ml": "best_ml_model.joblib (XGBoost)",
+        "dl": "best_cnn.pt (PathologyCNN)",
+        "nlp": "nlp_engineer/inference.py (Ensemble NLP)",
+        "slm": "qwen2.5_1.5b_lora (PEFT LoRA)"
+      }
+    },
+    "clinical_assessments": {
+      "ml_risk_assessment": {
+        "risk_class": "HIGH",
+        "risk_score": 0.9749,
+        "class_probabilities": {
+          "LOW": 0.003,
+          "MODERATE": 0.0443,
+          "HIGH": 0.9527
+        },
+        "latency_ms": 20.75
+      },
+      "dl_pathology_assessment": {
+        "predicted_class": 1,
+        "class_label": "INTERMEDIATE_GRADE",
+        "confidence": 0.3785,
+        "embedding_dim": 128,
+        "latency_ms": 141.86
+      },
+      "nlp_note_analysis": {
+        "urgency": "MODERATE",
+        "entities_count": 36,
+        "entity_counts": {
+          "DOSAGE": 21,
+          "GENE_MUTATION": 8,
+          "ADVERSE_EVENT": 4,
+          "DRUG": 3
+        },
+        "entities": [
+          {
+            "text": "a",
+            "label": "DOSAGE",
+            "start": 11,
+            "end": 12,
+            "confidence": 0.95
+          },
+          {
+            "text": "58",
+            "label": "GENE_MUTATION",
+            "start": 13,
+            "end": 15,
+            "confidence": 0.95
+          },
+          {
+            "text": "-",
+            "label": "DOSAGE",
+            "start": 15,
+            "end": 16,
+            "confidence": 0.95
+          },
+          {
+            "text": "year",
+            "label": "DOSAGE",
+            "start": 16,
+            "end": 20,
+            "confidence": 0.95
+          },
+          {
+            "text": "-",
+            "label": "DOSAGE",
+            "start": 15,
+            "end": 16,
+            "confidence": 0.95
+          },
+          {
+            "text": "old",
+            "label": "DOSAGE",
+            "start": 21,
+            "end": 24,
+            "confidence": 0.95
+          },
+          {
+            "text": "with",
+            "label": "DOSAGE",
+            "start": 43,
+            "end": 47,
+            "confidence": 0.95
+          },
+          {
+            "text": "Stage",
+            "label": "GENE_MUTATION",
+            "start": 48,
+            "end": 53,
+            "confidence": 0.95
+          },
+          {
+            "text": "IV",
+            "label": "ADVERSE_EVENT",
+            "start": 54,
+            "end": 56,
+            "confidence": 0.95
+          },
+          {
+            "text": "high",
+            "label": "DOSAGE",
+            "start": 57,
+            "end": 61,
+            "confidence": 0.95
+          },
+          {
+            "text": "-",
+            "label": "DOSAGE",
+            "start": 15,
+            "end": 16,
+            "confidence": 0.95
+          },
+          {
+            "text": "grade",
+            "label": "DRUG",
+            "start": 62,
+            "end": 67,
+            "confidence": 0.95
+          },
+          {
+            "text": "serous",
+            "label": "ADVERSE_EVENT",
+            "start": 68,
+            "end": 74,
+            "confidence": 0.95
+          },
+          {
+            "text": "ovarian",
+            "label": "DOSAGE",
+            "start": 75,
+            "end": 82,
+            "confidence": 0.95
+          },
+          {
+            "text": "carcinoma",
+            "label": "GENE_MUTATION",
+            "start": 83,
+            "end": 92,
+            "confidence": 0.95
+          },
+          {
+            "text": "with",
+            "label": "DOSAGE",
+            "start": 43,
+            "end": 47,
+            "confidence": 0.95
+          },
+          {
+            "text": "germline",
+            "label": "DOSAGE",
+            "start": 98,
+            "end": 106,
+            "confidence": 0.95
+          },
+          {
+            "text": "mutation",
+            "label": "DOSAGE",
+            "start": 113,
+            "end": 121,
+            "confidence": 0.95
+          },
+          {
+            "text": ".",
+            "label": "DOSAGE",
+            "start": 121,
+            "end": 122,
+            "confidence": 0.95
+          },
+          {
+            "text": "Treated",
+            "label": "DRUG",
+            "start": 123,
+            "end": 130,
+            "confidence": 0.95
+          },
+          {
+            "text": "with",
+            "label": "DOSAGE",
+            "start": 43,
+            "end": 47,
+            "confidence": 0.95
+          },
+          {
+            "text": "Olaparib",
+            "label": "GENE_MUTATION",
+            "start": 136,
+            "end": 144,
+            "confidence": 0.95
+          },
+          {
+            "text": "therapy",
+            "label": "DOSAGE",
+            "start": 157,
+            "end": 164,
+            "confidence": 0.95
+          },
+          {
+            "text": "following",
+            "label": "DOSAGE",
+            "start": 165,
+            "end": 174,
+            "confidence": 0.95
+          },
+          {
+            "text": "platinum",
+            "label": "GENE_MUTATION",
+            "start": 175,
+            "end": 183,
+            "confidence": 0.95
+          },
+          {
+            "text": "chemotherapy",
+            "label": "DOSAGE",
+            "start": 184,
+            "end": 196,
+            "confidence": 0.95
+          },
+          {
+            "text": ".",
+            "label": "DRUG",
+            "start": 121,
+            "end": 122,
+            "confidence": 0.95
+          },
+          {
+            "text": "complete",
+            "label": "GENE_MUTATION",
+            "start": 211,
+            "end": 219,
+            "confidence": 0.95
+          },
+          {
+            "text": "clinical",
+            "label": "GENE_MUTATION",
+            "start": 220,
+            "end": 228,
+            "confidence": 0.95
+          },
+          {
+            "text": "response",
+            "label": "GENE_MUTATION",
+            "start": 229,
+            "end": 237,
+            "confidence": 0.95
+          },
+          {
+            "text": "-",
+            "label": "ADVERSE_EVENT",
+            "start": 15,
+            "end": 16,
+            "confidence": 0.95
+          },
+          {
+            "text": "125",
+            "label": "ADVERSE_EVENT",
+            "start": 257,
+            "end": 260,
+            "confidence": 0.95
+          },
+          {
+            "text": "levels",
+            "label": "DOSAGE",
+            "start": 261,
+            "end": 267,
+            "confidence": 0.95
+          },
+          {
+            "text": "treatment well",
+            "label": "DOSAGE",
+            "start": 280,
+            "end": 294,
+            "confidence": 0.95
+          },
+          {
+            "text": "mild",
+            "label": "DOSAGE",
+            "start": 300,
+            "end": 304,
+            "confidence": 0.95
+          },
+          {
+            "text": ".",
+            "label": "DOSAGE",
+            "start": 121,
+            "end": 122,
+            "confidence": 0.95
+          }
+        ],
+        "latency_ms": 1347.35
+      },
+      "slm_executive_summary": {
+        "summary": "Patient PT-OV-003 presents with Unspecified stage disease and assessed risk class HIGH. Genomic profiling identified mutations: platinum, 58, Olaparib, response, complete, clinical, Stage, carcinoma, accompanied by , Treated, grade with observed response: Evaluating.",
+        "generated_tokens": 33,
+        "generation_time_sec": 0.015,
+        "model_used": "qwen2.5_1.5b_lora",
+        "latency_ms": 0.18
+      }
+    },
+    "safety_and_governance": {
+      "safety_status": "PASS",
+      "hallucination_rate": 0.0,
+      "unsupported_claim_count": 0,
+      "clinical_boundary_violations": [],
+      "passed_clinical_boundary": true,
+      "checks_run": [
+        "clinical_boundary_check",
+        "hallucination_guard",
+        "data_grounding_audit"
+      ],
+      "approved_for_presentation": true
+    },
+    "governance_policy": {
+      "autonomous_clinical_decision": "FORBIDDEN",
+      "prescriptions_allowed": false,
+      "regulatory_status": "RESEARCH_PROTOTYPE_NOT_FOR_CLINICAL_USE",
+      "human_in_the_loop_required": true,
+      "disclaimer": "This system is an AI research prototype. It does not provide medical advice or prescribe treatments. All outputs must be reviewed by a board-certified oncologist."
+    },
+    "execution_metrics": {
+      "total_latency_ms": 1510.69,
+      "stages_executed": [
+        "ML",
+        "DL",
+        "NLP",
+        "SLM",
+        "SAFETY"
+      ],
+      "stage_latencies_ms": {
+        "ml": 20.75,
+        "dl": 141.86,
+        "nlp": 1347.35,
+        "slm": 0.18
+      }
+    },
+    "validation_audit": {
+      "validation_status": "PASS",
+      "schema_passed": true,
+      "output_passed": true,
+      "cross_model_alignment": {
+        "cross_modal_consistent": true,
+        "divergence_flags": [],
+        "multimodal_agreement_score": 1.0
+      },
+      "errors": []
+    }
+  },
+  {
+    "patient_id": "PT-BRCA-004",
+    "request_id": "REQ-62718B85E076",
+    "pipeline_version": "1.0.0-PROD-INTEGRATION",
+    "timestamp": "2026-09-09T19:21:03.276120+00:00",
+    "status": "SUCCESS",
+    "provenance": {
+      "request_id": "REQ-62718B85E076",
+      "timestamp": "2026-09-09T19:21:03.276120+00:00",
+      "pipeline_version": "1.0.0-PROD-INTEGRATION",
+      "upstream_integrity_verified": true,
+      "stage_versions": {
+        "STAGE_01_ML": "1.0.0-FROZEN",
+        "STAGE_02_DL": "1.0.0-FROZEN",
+        "STAGE_03_NLP": "1.0.0-FROZEN",
+        "STAGE_04_SLM": "1.0.0-FROZEN",
+        "STAGE_05_EVALUATION": "1.0.0-BENCHMARK_EVIDENCE"
+      },
+      "models_executed": {
+        "ml": "best_ml_model.joblib (XGBoost)",
+        "dl": "best_cnn.pt (PathologyCNN)",
+        "nlp": "nlp_engineer/inference.py (Ensemble NLP)",
+        "slm": "qwen2.5_1.5b_lora (PEFT LoRA)"
+      }
+    },
+    "clinical_assessments": {
+      "ml_risk_assessment": {
+        "risk_class": "HIGH",
+        "risk_score": 0.9264,
+        "class_probabilities": {
+          "LOW": 0.0325,
+          "MODERATE": 0.0822,
+          "HIGH": 0.8852
+        },
+        "latency_ms": 25.66
+      },
+      "dl_pathology_assessment": {
+        "predicted_class": 1,
+        "class_label": "INTERMEDIATE_GRADE",
+        "confidence": 0.3785,
+        "embedding_dim": 128,
+        "latency_ms": 279.49
+      },
+      "nlp_note_analysis": {
+        "urgency": "MODERATE",
+        "entities_count": 27,
+        "entity_counts": {
+          "DOSAGE": 18,
+          "GENE_MUTATION": 3,
+          "DRUG": 3,
+          "ADVERSE_EVENT": 3
+        },
+        "entities": [
+          {
+            "text": "Patient",
+            "label": "DOSAGE",
+            "start": 0,
+            "end": 7,
+            "confidence": 0.95
+          },
+          {
+            "text": "a",
+            "label": "DOSAGE",
+            "start": 11,
+            "end": 12,
+            "confidence": 0.95
+          },
+          {
+            "text": "-",
+            "label": "DOSAGE",
+            "start": 15,
+            "end": 16,
+            "confidence": 0.95
+          },
+          {
+            "text": "year",
+            "label": "DOSAGE",
+            "start": 16,
+            "end": 20,
+            "confidence": 0.95
+          },
+          {
+            "text": "-",
+            "label": "DOSAGE",
+            "start": 15,
+            "end": 16,
+            "confidence": 0.95
+          },
+          {
+            "text": "old",
+            "label": "DOSAGE",
+            "start": 21,
+            "end": 24,
+            "confidence": 0.95
+          },
+          {
+            "text": "female",
+            "label": "DOSAGE",
+            "start": 25,
+            "end": 31,
+            "confidence": 0.95
+          },
+          {
+            "text": "diagnosed",
+            "label": "GENE_MUTATION",
+            "start": 32,
+            "end": 41,
+            "confidence": 0.95
+          },
+          {
+            "text": "with Stage",
+            "label": "DRUG",
+            "start": 42,
+            "end": 52,
+            "confidence": 0.95
+          },
+          {
+            "text": "II",
+            "label": "DOSAGE",
+            "start": 53,
+            "end": 55,
+            "confidence": 0.95
+          },
+          {
+            "text": "HER2",
+            "label": "ADVERSE_EVENT",
+            "start": 56,
+            "end": 60,
+            "confidence": 0.95
+          },
+          {
+            "text": "-",
+            "label": "DOSAGE",
+            "start": 15,
+            "end": 16,
+            "confidence": 0.95
+          },
+          {
+            "text": "positive",
+            "label": "DOSAGE",
+            "start": 61,
+            "end": 69,
+            "confidence": 0.95
+          },
+          {
+            "text": "invasive",
+            "label": "DOSAGE",
+            "start": 70,
+            "end": 78,
+            "confidence": 0.95
+          },
+          {
+            "text": "carcinoma",
+            "label": "GENE_MUTATION",
+            "start": 86,
+            "end": 95,
+            "confidence": 0.95
+          },
+          {
+            "text": ".",
+            "label": "DRUG",
+            "start": 95,
+            "end": 96,
+            "confidence": 0.95
+          },
+          {
+            "text": "Completed",
+            "label": "DOSAGE",
+            "start": 97,
+            "end": 106,
+            "confidence": 0.95
+          },
+          {
+            "text": "Trastuzumab",
+            "label": "ADVERSE_EVENT",
+            "start": 119,
+            "end": 130,
+            "confidence": 0.95
+          },
+          {
+            "text": "and",
+            "label": "DRUG",
+            "start": 131,
+            "end": 134,
+            "confidence": 0.95
+          },
+          {
+            "text": "combined",
+            "label": "DOSAGE",
+            "start": 146,
+            "end": 154,
+            "confidence": 0.95
+          },
+          {
+            "text": "with",
+            "label": "ADVERSE_EVENT",
+            "start": 42,
+            "end": 46,
+            "confidence": 0.95
+          },
+          {
+            "text": "chemotherapy .",
+            "label": "DOSAGE",
+            "start": 160,
+            "end": 174,
+            "confidence": 0.95
+          },
+          {
+            "text": "pathology demonstrated",
+            "label": "DOSAGE",
+            "start": 183,
+            "end": 205,
+            "confidence": 0.95
+          },
+          {
+            "text": "complete",
+            "label": "GENE_MUTATION",
+            "start": 217,
+            "end": 225,
+            "confidence": 0.95
+          },
+          {
+            "text": "response",
+            "label": "DOSAGE",
+            "start": 226,
+            "end": 234,
+            "confidence": 0.95
+          },
+          {
+            "text": "pCR ) .",
+            "label": "DOSAGE",
+            "start": 236,
+            "end": 243,
+            "confidence": 0.95
+          },
+          {
+            "text": "Mild alopecia noted .",
+            "label": "DOSAGE",
+            "start": 242,
+            "end": 263,
+            "confidence": 0.95
+          }
+        ],
+        "latency_ms": 1407.29
+      },
+      "slm_executive_summary": {
+        "summary": "Patient PT-BRCA-004 presents with Unspecified stage disease and assessed risk class HIGH. , with Stage, and with observed response: Evaluating, accompanied by Reported adverse events: with, HER2, Trastuzumab.",
+        "generated_tokens": 28,
+        "generation_time_sec": 0.015,
+        "model_used": "qwen2.5_1.5b_lora",
+        "latency_ms": 4.38
+      }
+    },
+    "safety_and_governance": {
+      "safety_status": "PASS",
+      "hallucination_rate": 0.0,
+      "unsupported_claim_count": 0,
+      "clinical_boundary_violations": [],
+      "passed_clinical_boundary": true,
+      "checks_run": [
+        "clinical_boundary_check",
+        "hallucination_guard",
+        "data_grounding_audit"
+      ],
+      "approved_for_presentation": true
+    },
+    "governance_policy": {
+      "autonomous_clinical_decision": "FORBIDDEN",
+      "prescriptions_allowed": false,
+      "regulatory_status": "RESEARCH_PROTOTYPE_NOT_FOR_CLINICAL_USE",
+      "human_in_the_loop_required": true,
+      "disclaimer": "This system is an AI research prototype. It does not provide medical advice or prescribe treatments. All outputs must be reviewed by a board-certified oncologist."
+    },
+    "execution_metrics": {
+      "total_latency_ms": 1717.29,
+      "stages_executed": [
+        "ML",
+        "DL",
+        "NLP",
+        "SLM",
+        "SAFETY"
+      ],
+      "stage_latencies_ms": {
+        "ml": 25.66,
+        "dl": 279.49,
+        "nlp": 1407.29,
+        "slm": 4.38
+      }
+    },
+    "validation_audit": {
+      "validation_status": "PASS",
+      "schema_passed": true,
+      "output_passed": true,
+      "cross_model_alignment": {
+        "cross_modal_consistent": true,
+        "divergence_flags": [],
+        "multimodal_agreement_score": 1.0
+      },
+      "errors": []
+    }
+  },
+  {
+    "patient_id": "PT-COAD-005",
+    "request_id": "REQ-4E92538D7EB6",
+    "pipeline_version": "1.0.0-PROD-INTEGRATION",
+    "timestamp": "2026-09-09T19:21:04.909735+00:00",
+    "status": "FLAGGED_OR_REJECTED",
+    "provenance": {
+      "request_id": "REQ-4E92538D7EB6",
+      "timestamp": "2026-09-09T19:21:04.909735+00:00",
+      "pipeline_version": "1.0.0-PROD-INTEGRATION",
+      "upstream_integrity_verified": true,
+      "stage_versions": {
+        "STAGE_01_ML": "1.0.0-FROZEN",
+        "STAGE_02_DL": "1.0.0-FROZEN",
+        "STAGE_03_NLP": "1.0.0-FROZEN",
+        "STAGE_04_SLM": "1.0.0-FROZEN",
+        "STAGE_05_EVALUATION": "1.0.0-BENCHMARK_EVIDENCE"
+      },
+      "models_executed": {
+        "ml": "best_ml_model.joblib (XGBoost)",
+        "dl": "best_cnn.pt (PathologyCNN)",
+        "nlp": "nlp_engineer/inference.py (Ensemble NLP)",
+        "slm": "qwen2.5_1.5b_lora (PEFT LoRA)"
+      }
+    },
+    "clinical_assessments": {
+      "ml_risk_assessment": {
+        "risk_class": "HIGH",
+        "risk_score": 0.9727,
+        "class_probabilities": {
+          "LOW": 0.0033,
+          "MODERATE": 0.0479,
+          "HIGH": 0.9487
+        },
+        "latency_ms": 22.11
+      },
+      "dl_pathology_assessment": {
+        "predicted_class": 1,
+        "class_label": "INTERMEDIATE_GRADE",
+        "confidence": 0.3785,
+        "embedding_dim": 128,
+        "latency_ms": 138.84
+      },
+      "nlp_note_analysis": {
+        "urgency": "MODERATE",
+        "entities_count": 41,
+        "entity_counts": {
+          "DOSAGE": 25,
+          "GENE_MUTATION": 8,
+          "DRUG": 8
+        },
+        "entities": [
+          {
+            "text": "Patient",
+            "label": "DOSAGE",
+            "start": 0,
+            "end": 7,
+            "confidence": 0.95
+          },
+          {
+            "text": "a",
+            "label": "DOSAGE",
+            "start": 11,
+            "end": 12,
+            "confidence": 0.95
+          },
+          {
+            "text": "67",
+            "label": "GENE_MUTATION",
+            "start": 13,
+            "end": 15,
+            "confidence": 0.95
+          },
+          {
+            "text": "-",
+            "label": "DOSAGE",
+            "start": 15,
+            "end": 16,
+            "confidence": 0.95
+          },
+          {
+            "text": "year",
+            "label": "DOSAGE",
+            "start": 16,
+            "end": 20,
+            "confidence": 0.95
+          },
+          {
+            "text": "-",
+            "label": "DOSAGE",
+            "start": 15,
+            "end": 16,
+            "confidence": 0.95
+          },
+          {
+            "text": "old male with",
+            "label": "DOSAGE",
+            "start": 21,
+            "end": 34,
+            "confidence": 0.95
+          },
+          {
+            "text": "Stage",
+            "label": "DRUG",
+            "start": 35,
+            "end": 40,
+            "confidence": 0.95
+          },
+          {
+            "text": "III",
+            "label": "DRUG",
+            "start": 41,
+            "end": 44,
+            "confidence": 0.95
+          },
+          {
+            "text": "colon",
+            "label": "DOSAGE",
+            "start": 45,
+            "end": 50,
+            "confidence": 0.95
+          },
+          {
+            "text": "adenocarcinoma ,",
+            "label": "GENE_MUTATION",
+            "start": 51,
+            "end": 67,
+            "confidence": 0.95
+          },
+          {
+            "text": "KRAS",
+            "label": "DOSAGE",
+            "start": 67,
+            "end": 71,
+            "confidence": 0.95
+          },
+          {
+            "text": "wild",
+            "label": "DOSAGE",
+            "start": 72,
+            "end": 76,
+            "confidence": 0.95
+          },
+          {
+            "text": "-",
+            "label": "DOSAGE",
+            "start": 15,
+            "end": 16,
+            "confidence": 0.95
+          },
+          {
+            "text": "type",
+            "label": "GENE_MUTATION",
+            "start": 77,
+            "end": 81,
+            "confidence": 0.95
+          },
+          {
+            "text": "and",
+            "label": "GENE_MUTATION",
+            "start": 82,
+            "end": 85,
+            "confidence": 0.95
+          },
+          {
+            "text": "microsatellite",
+            "label": "DOSAGE",
+            "start": 86,
+            "end": 100,
+            "confidence": 0.95
+          },
+          {
+            "text": "stable",
+            "label": "GENE_MUTATION",
+            "start": 101,
+            "end": 107,
+            "confidence": 0.95
+          },
+          {
+            "text": "(",
+            "label": "DOSAGE",
+            "start": 108,
+            "end": 109,
+            "confidence": 0.95
+          },
+          {
+            "text": "MSS",
+            "label": "DOSAGE",
+            "start": 109,
+            "end": 112,
+            "confidence": 0.95
+          },
+          {
+            "text": ")",
+            "label": "DOSAGE",
+            "start": 112,
+            "end": 113,
+            "confidence": 0.95
+          },
+          {
+            "text": ".",
+            "label": "DRUG",
+            "start": 113,
+            "end": 114,
+            "confidence": 0.95
+          },
+          {
+            "text": "Initiated",
+            "label": "DOSAGE",
+            "start": 115,
+            "end": 124,
+            "confidence": 0.95
+          },
+          {
+            "text": "adjuvant",
+            "label": "DRUG",
+            "start": 125,
+            "end": 133,
+            "confidence": 0.95
+          },
+          {
+            "text": "FOLFOX",
+            "label": "DOSAGE",
+            "start": 134,
+            "end": 140,
+            "confidence": 0.95
+          },
+          {
+            "text": "oxaliplatin ,",
+            "label": "DRUG",
+            "start": 150,
+            "end": 163,
+            "confidence": 0.95
+          },
+          {
+            "text": "leucovorin",
+            "label": "DOSAGE",
+            "start": 163,
+            "end": 173,
+            "confidence": 0.95
+          },
+          {
+            "text": ",",
+            "label": "DOSAGE",
+            "start": 65,
+            "end": 66,
+            "confidence": 0.95
+          },
+          {
+            "text": "5",
+            "label": "DRUG",
+            "start": 175,
+            "end": 176,
+            "confidence": 0.95
+          },
+          {
+            "text": "-",
+            "label": "DOSAGE",
+            "start": 15,
+            "end": 16,
+            "confidence": 0.95
+          },
+          {
+            "text": "fluorouracil )",
+            "label": "DOSAGE",
+            "start": 177,
+            "end": 191,
+            "confidence": 0.95
+          },
+          {
+            "text": ".",
+            "label": "DRUG",
+            "start": 113,
+            "end": 114,
+            "confidence": 0.95
+          },
+          {
+            "text": "no",
+            "label": "DOSAGE",
+            "start": 211,
+            "end": 213,
+            "confidence": 0.95
+          },
+          {
+            "text": "evidence",
+            "label": "DOSAGE",
+            "start": 214,
+            "end": 222,
+            "confidence": 0.95
+          },
+          {
+            "text": "of",
+            "label": "DRUG",
+            "start": 223,
+            "end": 225,
+            "confidence": 0.95
+          },
+          {
+            "text": "distant",
+            "label": "GENE_MUTATION",
+            "start": 226,
+            "end": 233,
+            "confidence": 0.95
+          },
+          {
+            "text": "metastatic",
+            "label": "GENE_MUTATION",
+            "start": 234,
+            "end": 244,
+            "confidence": 0.95
+          },
+          {
+            "text": "progression",
+            "label": "GENE_MUTATION",
+            "start": 245,
+            "end": 256,
+            "confidence": 0.95
+          },
+          {
+            "text": ". Grade",
+            "label": "DOSAGE",
+            "start": 256,
+            "end": 263,
+            "confidence": 0.95
+          },
+          {
+            "text": "1",
+            "label": "DOSAGE",
+            "start": 264,
+            "end": 265,
+            "confidence": 0.95
+          },
+          {
+            "text": ".",
+            "label": "DOSAGE",
+            "start": 113,
+            "end": 114,
+            "confidence": 0.95
+          }
+        ],
+        "latency_ms": 1471.63
+      },
+      "slm_executive_summary": {
+        "summary": "Patient PT-COAD-005 presents with Unspecified stage disease and assessed risk class HIGH. Genomic profiling identified mutations: and, progression, adenocarcinoma ,, stable, 67, type, metastatic, distant, accompanied by , Stage, 5 with observed response: Evaluating.",
+        "generated_tokens": 34,
+        "generation_time_sec": 0.015,
+        "model_used": "qwen2.5_1.5b_lora",
+        "latency_ms": 0.13
+      }
+    },
+    "safety_and_governance": {
+      "safety_status": "FAIL",
+      "hallucination_rate": 0.0357,
+      "unsupported_claim_count": 1,
+      "clinical_boundary_violations": [],
+      "passed_clinical_boundary": true,
+      "checks_run": [
+        "clinical_boundary_check",
+        "hallucination_guard",
+        "data_grounding_audit"
+      ],
+      "approved_for_presentation": false
+    },
+    "governance_policy": {
+      "autonomous_clinical_decision": "FORBIDDEN",
+      "prescriptions_allowed": false,
+      "regulatory_status": "RESEARCH_PROTOTYPE_NOT_FOR_CLINICAL_USE",
+      "human_in_the_loop_required": true,
+      "disclaimer": "This system is an AI research prototype. It does not provide medical advice or prescribe treatments. All outputs must be reviewed by a board-certified oncologist."
+    },
+    "execution_metrics": {
+      "total_latency_ms": 1633.08,
+      "stages_executed": [
+        "ML",
+        "DL",
+        "NLP",
+        "SLM",
+        "SAFETY"
+      ],
+      "stage_latencies_ms": {
+        "ml": 22.11,
+        "dl": 138.84,
+        "nlp": 1471.63,
+        "slm": 0.13
+      }
+    },
+    "validation_audit": {
+      "validation_status": "PASS",
+      "schema_passed": true,
+      "output_passed": true,
+      "cross_model_alignment": {
+        "cross_modal_consistent": true,
+        "divergence_flags": [],
+        "multimodal_agreement_score": 1.0
+      },
+      "errors": []
+    }
+  }
+]

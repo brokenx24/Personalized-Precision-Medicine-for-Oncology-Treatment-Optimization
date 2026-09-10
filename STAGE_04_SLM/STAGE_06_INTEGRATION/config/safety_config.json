@@ -1,0 +1,22 @@
+{
+  "safety_policy_version": "1.0.0",
+  "fail_closed_mode": true,
+  "hallucination_threshold_pct": 5.0,
+  "threshold_scope": "runtime_policy_gate_not_future_guarantee",
+  "max_decision_boundary_violations": 0,
+  "prohibited_action_tokens": [
+    "prescribe",
+    "administer immediately",
+    "start chemotherapy",
+    "change dose to",
+    "recommended surgical excision",
+    "terminal prognosis",
+    "curative intent guaranteed"
+  ],
+  "unsupported_claim_detection": {
+    "check_drug_hallucinations": true,
+    "check_mutation_hallucinations": true,
+    "check_stage_hallucinations": true
+  },
+  "unknown_evaluation_action": "FAIL"
+}

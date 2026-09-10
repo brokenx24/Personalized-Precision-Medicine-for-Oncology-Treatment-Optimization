@@ -72,9 +72,9 @@ STAGE_03_NLP/nlp_engineer/models/ner/best_model/model.safetensors
 STAGE_03_NLP/nlp_engineer/models/urgency/best_model/model.safetensors
 
 # ------------------------------------------------------------------------------
-# Future Release Stages (Safely Preserved Locally on Machine)
-# Quarantined from this Stage 01 - Stage 04 release
+# Root-level Preserved Stages (Safely Preserved Locally on Machine)
+# NOTE: STAGE_04_SLM/STAGE_06_INTEGRATION is tracked as the SLM Integration Engineer!
 # ------------------------------------------------------------------------------
-STAGE_05_EVALUATION/
-STAGE_06_INTEGRATION/
-SLM_ENGINEERING_COMPLETION_AUDIT/
+/STAGE_05_EVALUATION/
+/STAGE_06_INTEGRATION/
+/SLM_ENGINEERING_COMPLETION_AUDIT/

@@ -1,0 +1,37 @@
+{
+  "stage_01_ml_model": {
+    "path": "C:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_01_ML\\MODELS\\best_ml_model.joblib",
+    "sha256": "356518c5f33f5fc298cb218a8348003c67d6145ebe61600958d5f6dae76faf13",
+    "size_bytes": 656593
+  },
+  "stage_01_feature_engineer": {
+    "path": "C:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_01_ML\\FEATURES\\clinical_feature_engineer.joblib",
+    "sha256": "87620eb8a5dabc2a23631e5129a59e8c11eb06fc0e1b12b81ad7fb711a3816b9",
+    "size_bytes": 8372
+  },
+  "stage_02_dl_cnn": {
+    "path": "C:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_02_DL\\MODELS\\cnn_model\\best_cnn.pt",
+    "sha256": "86f515a27852c8a30ef91894b8777525f9313f001ad3d106c204b79f3d20ef17",
+    "size_bytes": 16988315
+  },
+  "stage_03_nlp_inference": {
+    "path": "C:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_03_NLP\\nlp_engineer\\inference.py",
+    "sha256": "dc1d2e96ca583ee9cb25b56b3d338a0c0ff20fd3e8019aea3a03942e6844ca60",
+    "size_bytes": 1317
+  },
+  "stage_04_slm_adapter": {
+    "path": "C:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\slm_engineer\\models\\qwen2.5_1.5b_lora\\adapter_model.safetensors",
+    "sha256": "896d12024b324d9ebe5958be4eef974b0c9249f06a0eac200c9cffd60e8bbb3d",
+    "size_bytes": 11024912
+  },
+  "stage_04_test_split": {
+    "path": "C:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\data_engineer\\splits\\test.jsonl",
+    "sha256": "668f4b6dfd997272dd73b338b91a93a5014d0c8e56069b295b56401dc04e4d38",
+    "size_bytes": 3834476
+  },
+  "stage_05_eval_ranking": {
+    "path": "C:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_05_EVALUATION\\outputs\\model_ranking.json",
+    "sha256": "92c0292b1bc1e214bd0ac94c042ebc27f9a0ae0c4cc99b2e2d0fa0d17b603b20",
+    "size_bytes": 3854
+  }
+}

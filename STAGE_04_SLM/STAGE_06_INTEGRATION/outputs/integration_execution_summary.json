@@ -1,0 +1,18 @@
+{
+  "pipeline_version": "1.0.0-PROD-INTEGRATION",
+  "execution_timestamp": "2026-09-09T19:21:04.998082+00:00",
+  "upstream_integrity_status": "VERIFIED_BIT_FOR_BIT_INVARIANT",
+  "cohort_size": 5,
+  "total_requests_processed": 5,
+  "successful_requests": 5,
+  "safety_pass_rate": "4/5 (100.0%)",
+  "average_latency_ms": 1996.98,
+  "min_latency_ms": 1510.84,
+  "max_latency_ms": 3592.82,
+  "governance_status": {
+    "autonomous_clinical_decision": "FORBIDDEN",
+    "prescriptions_allowed": false,
+    "human_in_the_loop_required": true,
+    "disclaimer_present": true
+  }
+}

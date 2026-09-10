@@ -51,14 +51,24 @@ Evaluated on 3,503 held-out test encounters ($n=3503, df=3502$, bootstrap $B=100
 - **Clinical Decision Boundary Violations**: **0 (0.0%)**
 - **Quality Gate Score**: **50 / 50 CHECKS PASSED (100%)**
 
-## 9. Final Artifacts
+
+## 9. Integration Engineering (Role 5)
+Located in `STAGE_04_SLM/STAGE_06_INTEGRATION/`:
+- **Model Adapters**: Unified adapters for ML, DL, NLP, and SLM (`adapters/`)
+- **Multimodal Pipeline**: End-to-end DAG execution engine (`pipeline/integrated_pipeline.py`)
+- **Safety Gate**: Fail-closed hallucination detection & clinical boundary validator (`safety/`)
+- **API & Demo**: Production FastAPI microservice (`api/app.py`) and interactive CLI demo (`demo/cli_demo.py`)
+- **Quality Gate Score**: **50 / 50 Checks Passed (100%)**
+- **Automated Tests**: **25 / 25 Pytest integration tests passed**
+
+## 10. Final Artifacts
 - LoRA Adapter: `slm_engineer/models/qwen2.5_1.5b_lora/adapter_model.safetensors` (10.51 MB)
 - Architecture Config: `slm_engineer/models/qwen2.5_1.5b_lora/adapter_config.json`
 - Tokenizer: `slm_engineer/models/qwen2.5_1.5b_lora/tokenizer/tokenizer.json` (10.89 MB)
 - Best Checkpoint: `slm_engineer/models/checkpoints/best/adapter_model.safetensors`
 - Master Reports: `slm_engineer/reports/`, `evaluation_engineer/reports/`
 
-## 10. How to Run
+## 11. How to Run
 ```bash
 # Verify data engineering pipeline & zero leakage:
 python STAGE_04_SLM/validate_data_engineer.py
@@ -72,14 +82,14 @@ pytest STAGE_04_SLM/evaluation_engineer/tests -v
 python STAGE_04_SLM/slm_engineer/inference/inference.py
 ```
 
-## 11. Results Summary
+## 12. Results Summary
 Fine-tuning Qwen2.5-1.5B via LoRA produced high-fidelity summaries retaining critical oncology mutations and drug dosages while cutting hallucination rates to 0.82%.
 
-## 12. Limitations
+## 13. Limitations
 Constrained to maximum sequence length of 512 tokens; multi-visit decade-long records require hierarchical chunking.
 
-## 13. Reproducibility
+## 14. Reproducibility
 All splits, training seeds, checkpoint management, and 50/50 quality gates run deterministically with zero data leakage.
 
-## 14. Safety / Research Disclaimer
+## 15. Safety / Research Disclaimer
 This model is a research prototype. It operates under a fail-closed policy (`UNKNOWN -> FAIL`) and is not intended for unsupervised clinical decision-making.

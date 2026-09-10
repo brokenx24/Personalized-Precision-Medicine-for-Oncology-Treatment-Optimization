@@ -1,0 +1,62 @@
+{
+  "pipeline_stages": [
+    {
+      "id": "input_validation",
+      "order": 1,
+      "timeout_ms": 500,
+      "critical": true
+    },
+    {
+      "id": "preprocessing",
+      "order": 2,
+      "timeout_ms": 500,
+      "critical": true
+    },
+    {
+      "id": "ml_inference",
+      "order": 3,
+      "timeout_ms": 2000,
+      "critical": true
+    },
+    {
+      "id": "dl_inference",
+      "order": 4,
+      "timeout_ms": 5000,
+      "critical": true
+    },
+    {
+      "id": "nlp_inference",
+      "order": 5,
+      "timeout_ms": 3000,
+      "critical": true
+    },
+    {
+      "id": "clinical_profile_fusion",
+      "order": 6,
+      "timeout_ms": 500,
+      "critical": true
+    },
+    {
+      "id": "slm_summarization",
+      "order": 7,
+      "timeout_ms": 10000,
+      "critical": true
+    },
+    {
+      "id": "safety_validation",
+      "order": 8,
+      "timeout_ms": 1000,
+      "critical": true,
+      "fail_closed": true
+    },
+    {
+      "id": "output_formatting",
+      "order": 9,
+      "timeout_ms": 500,
+      "critical": true
+    }
+  ],
+  "concurrency_policy": "sequential_or_dag",
+  "max_retries_per_stage": 1,
+  "global_timeout_seconds": 30.0
+}

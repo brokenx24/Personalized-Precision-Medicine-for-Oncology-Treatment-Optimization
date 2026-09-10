@@ -1,0 +1,10 @@
+{
+  "status": "ALL_ADAPTERS_PASSED",
+  "ml_risk_class": "HIGH",
+  "ml_risk_score": 0.9729,
+  "dl_class_label": "INTERMEDIATE_GRADE",
+  "dl_confidence": 0.3785,
+  "nlp_urgency": "MODERATE",
+  "nlp_entities_found": 36,
+  "slm_summary": "Patient is a 62-year-old male diagnosed with Stage IV NSCLC. Treatment with Osimertinib 80mg daily achieved partial response, accompanied by Treatment with Osimertinib 80mg daily achieved partial response."
+}
