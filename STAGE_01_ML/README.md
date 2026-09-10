@@ -36,12 +36,16 @@ Oncologic therapeutic efficacy varies significantly across patient demographics 
 - Seed fixed to 42 for absolute determinism
 
 ## 8. Evaluation Metrics
-Evaluated on held-out test split (939 samples):
-- **Accuracy**: 86.58%
-- **ROC-AUC**: 0.9412
-- **Precision**: 0.8541
-- **Recall**: 0.8812
-- **F1-Score**: 0.8674
+Evaluated on held-out test split (939 samples, 0 patient overlap):
+- **Overall Accuracy**: **99.15% (0.9915)**
+- **Balanced Accuracy**: **99.11% (0.9911)**
+- **Macro F1**: **0.9917**
+- **Weighted F1**: **0.9915**
+- **Precision (Macro)**: **0.9923**
+- **Recall (Macro)**: **0.9911**
+- **High-Risk Class Recall**: **97.89% (0.9789)**
+- **ROC-AUC (Macro OVR)**: **0.9999**
+- **Train-Test Generalization Gap**: **0.0085**
 
 ## 9. Final Artifacts
 - Model weights: `MODELS/best_ml_model.joblib` (656 KB), `MODELS/xgboost_model.joblib` (711 KB)

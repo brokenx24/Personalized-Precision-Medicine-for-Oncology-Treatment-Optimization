@@ -36,9 +36,21 @@ Due to GitHub's 100 MB individual file limit:
   - Urgency Checkpoint SHA256: `58e70ae4953748966e1c9401e56d41efda2b0ee52eda86b92118b4e56a44e7d5`
 
 ## 8. Evaluation Metrics
-- Strict NER Macro F1: **0.892**
-- Urgency Classification Accuracy: **91.4%**
-- Expected Calibration Error (ECE): **0.038** (well-calibrated probabilities)
+### Medical NER Evaluation (BioBERT, Held-Out Test)
+- **Strict Micro F1**: **94.50% (0.9450)**
+- **Strict Macro F1**: **94.42% (0.9442)**
+- **Token Accuracy**: **98.25%**
+- `GENE_MUTATION` F1: **0.9514**
+- `DRUG` F1: **0.9535**
+- `DOSAGE` F1: **0.9419**
+- `ADVERSE_EVENT` F1: **0.9329**
+
+### Clinical Urgency Triage Evaluation (Bio_ClinicalBERT)
+- **Accuracy**: **89.17% (0.8917)**
+- **Balanced Accuracy**: **89.18%**
+- **Macro F1 Score**: **0.8924**
+- **Weighted F1 Score**: **0.8922**
+- **Expected Calibration Error (ECE)**: **0.038** (well-calibrated probabilities)
 
 ## 9. Final Artifacts
 - Tokenizers & configs: `nlp_engineer/models/ner/best_model/`, `nlp_engineer/models/urgency/best_model/`

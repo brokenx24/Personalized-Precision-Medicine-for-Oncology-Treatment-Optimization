@@ -30,12 +30,18 @@ Single-modality models fail to capture the complex spatial, temporal, and morpho
 - Mixed-precision acceleration with gradient clipping
 
 ## 7. Evaluation & Scientific Integrity
-Automated 20-point scientific integrity quality audit:
+### Model Performance on Held-Out Test Set
+- **Multimodal Fusion Network (`best_fusion.pt`)**: Test Acc: **84.62% (0.8462)**, Balanced Acc: **62.75%**, Macro ROC-AUC: **0.8689**
+- **Pathology Vision CNN (EfficientNet-B0)**: Test Acc: **57.69%**, Macro ROC-AUC: **0.4984**
+- **Longitudinal Sequence LSTM**: Test Acc: **65.38%**, Macro ROC-AUC: **0.2981**
+- **Clinical Tabular MLP**: Test Acc: **84.62%**, Macro ROC-AUC: **0.9101**
+
+### Automated 20-Point Scientific Integrity Quality Audit
 - Zero duplicate records or duplicate patients: **PASS**
 - Zero NaN / infinite values in sequence arrays: **PASS**
 - Zero multimodal patient leakage across Train/Val/Test: **PASS**
 - Temporal trajectory chronology invariant: **PASS**
-- Overall Audit Result: **20/20 CHECKS PASSED**
+- Overall Scientific Integrity Result: **20/20 CHECKS PASSED (100%)**
 
 ## 8. Final Artifacts
 - Model weights: `MODELS/multimodal_fusion_model/best_fusion.pt` (16.55 MB)

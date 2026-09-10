@@ -59,3 +59,10 @@ TOTAL TEST SUITE RUN:                                        --> 74 / 74 PASSED 
 - `STAGE_03_NLP/nlp_engineer/models/ner/best_model/model.safetensors`: 430.93 MB — Excluded via `.gitignore`, preserved on local workstation, SHA256: `a52dfa2602f3f74d1162a99f64d963ad4944c4a0a66665f614b3015ab6824382`.
 - `STAGE_03_NLP/nlp_engineer/models/urgency/best_model/model.safetensors`: 433.27 MB — Excluded via `.gitignore`, preserved on local workstation, SHA256: `58e70ae4953748966e1c9401e56d41efda2b0ee52eda86b92118b4e56a44e7d5`.
 - All other models—including `adapter_model.safetensors` (10.51 MB), `best_fusion.pt` (16.55 MB), `best_cnn.pt` (16.20 MB), and `best_ml_model.joblib` (656 KB)—are directly committed and tracked.
+
+## 4. Documentation Metric Consistency Verification
+All README and methodology files have been independently audited and verified against the raw JSON evaluation outputs:
+- **Stage 01 ML**: XGBoost Test Accuracy: **99.15% (0.9915)**, Macro ROC-AUC: **0.9999**, Macro F1: **0.9917** (`final_ml_evaluation.txt`).
+- **Stage 02 DL**: Multimodal Fusion Test Accuracy: **84.62% (0.8462)**, ROC-AUC: **0.8689** (`dl_metrics_summary.json`).
+- **Stage 03 NLP**: BioBERT Strict Micro F1: **94.50% (0.9450)**, Triage Accuracy: **89.17%** (`ner_evaluation_report.md`, `classification_evaluation_report.md`).
+- **Stage 04 SLM**: Qwen2.5-1.5B LoRA Test Perplexity: **3.85**, ROUGE-L: **0.681**, Hallucination Rate: **0.82%** (`perplexity_results.json`, `rouge_results.json`, `hallucination_results.json`).

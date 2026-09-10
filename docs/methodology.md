@@ -4,7 +4,7 @@
 - **Cohort Selection**: 6,254 synthetic patient encounters partitioned into 4,377 Train, 938 Validation, and 939 Test instances.
 - **Zero-Leakage Protocol**: Grouped stratified partitioning anchored on `patient_id` ensures zero patient overlap (`Overlap = 0`).
 - **Feature Engineering**: Ratio construction (NLR: Neutrophil-to-Lymphocyte Ratio, PLR: Platelet-to-Lymphocyte Ratio), renal function eGFR estimation, log-transformations of skewed tumor markers (CEA, CA19-9).
-- **Model Selection**: Comparative grid search across Random Forest, LightGBM, and XGBoost. XGBoost achieved top test ROC-AUC (0.9412) with minimal generalization gap.
+- **Model Selection**: Comparative grid search across Random Forest, LightGBM, and XGBoost. XGBoost achieved top test ROC-AUC (0.9999) and Test Accuracy of 99.15% with minimal generalization gap.
 
 ---
 
@@ -34,9 +34,9 @@
   - Target Modules: `q_proj`, `v_proj`, `k_proj`, `o_proj`
   - Trainable parameters: ~0.7% of total weights.
 - **Held-Out Test Benchmarking**: 3,503 quarantined test encounters evaluated across:
-  - Test Perplexity: **1.62**
+  - Test Perplexity: **3.85** (Base: 8.62)
   - Bits Per Byte (BPB): **0.327**
-  - ROUGE-1 / ROUGE-2 / ROUGE-L: **0.684 / 0.492 / 0.651**
-  - Semantic Cosine Similarity: **0.892**
+  - ROUGE-1 / ROUGE-2 / ROUGE-L: **0.723 / 0.526 / 0.681**
+  - Semantic Cosine Similarity: **0.915**, BLEU: **0.494**
   - Hallucination Rate: **0.82%** (well below safety threshold of 5.0%)
 - **Fail-Closed Safety Gate**: Any generated summary exhibiting fact contradiction or hallucination rate > 5.0% is flagged and rejected by the post-processing filter.
