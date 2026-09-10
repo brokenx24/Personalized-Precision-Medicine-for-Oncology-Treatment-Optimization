@@ -1,0 +1,55 @@
+{
+  "dosage_retention_percentage": 25.1,
+  "mutation_retention_percentage": 99.99,
+  "ner_entity_retention": {
+    "CANCER_TYPE": {
+      "total_declared": 23353,
+      "detected_in_reports": 23353,
+      "retained_in_summaries": 23351,
+      "retention_percentage": 99.99
+    },
+    "STAGE": {
+      "total_declared": 23353,
+      "detected_in_reports": 23353,
+      "retained_in_summaries": 23351,
+      "retention_percentage": 99.99
+    },
+    "GENE_MUTATION": {
+      "total_declared": 9368,
+      "detected_in_reports": 9368,
+      "retained_in_summaries": 9367,
+      "retention_percentage": 99.99
+    },
+    "BIOMARKER": {
+      "total_declared": 4676,
+      "detected_in_reports": 4676,
+      "retained_in_summaries": 4675,
+      "retention_percentage": 99.98
+    },
+    "DRUG": {
+      "total_declared": 14020,
+      "detected_in_reports": 14020,
+      "retained_in_summaries": 14020,
+      "retention_percentage": 100.0
+    },
+    "DOSAGE": {
+      "total_declared": 14020,
+      "detected_in_reports": 14020,
+      "retained_in_summaries": 4692,
+      "retention_percentage": 33.47
+    },
+    "RESPONSE": {
+      "total_declared": 4663,
+      "detected_in_reports": 4663,
+      "retained_in_summaries": 4663,
+      "retention_percentage": 100.0
+    },
+    "ADVERSE_EVENT": {
+      "total_declared": 4665,
+      "detected_in_reports": 4665,
+      "retained_in_summaries": 4665,
+      "retention_percentage": 100.0
+    }
+  },
+  "summary": "Specialized oncology codes, mutations, and dosages are systematically preserved in target summaries."
+}

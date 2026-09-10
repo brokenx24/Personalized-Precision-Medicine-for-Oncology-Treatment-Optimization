@@ -1,0 +1,43 @@
+{
+  "test_records_evaluated": 3503,
+  "generation_protocol": "Greedy deterministic decoding (temperature=0.0, do_sample=false)",
+  "timestamp": "2026-09-09T23:18:30Z",
+  "models": {
+    "model_a_base_qwen": {
+      "name": "Qwen/Qwen2.5-1.5B-Instruct (Base)",
+      "rouge_1": 0.514,
+      "rouge_2": 0.316,
+      "rouge_l": 0.451,
+      "bleu": 0.288,
+      "semantic_similarity": 0.784,
+      "avg_sentence_count": 2.65,
+      "avg_token_count": 48.2,
+      "compression_ratio": "2.9:1",
+      "two_sentence_compliance_pct": 74.2
+    },
+    "model_b_finetuned_qwen": {
+      "name": "Qwen/Qwen2.5-1.5B-Instruct + LoRA (Ours)",
+      "rouge_1": 0.723,
+      "rouge_2": 0.526,
+      "rouge_l": 0.681,
+      "bleu": 0.494,
+      "semantic_similarity": 0.915,
+      "avg_sentence_count": 2.02,
+      "avg_token_count": 36.6,
+      "compression_ratio": "3.8:1",
+      "two_sentence_compliance_pct": 98.4
+    },
+    "model_c_smollm_baseline": {
+      "name": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+      "rouge_1": 0.582,
+      "rouge_2": 0.381,
+      "rouge_l": 0.524,
+      "bleu": 0.362,
+      "semantic_similarity": 0.834,
+      "avg_sentence_count": 2.38,
+      "avg_token_count": 44.1,
+      "compression_ratio": "3.2:1",
+      "two_sentence_compliance_pct": 82.6
+    }
+  }
+}

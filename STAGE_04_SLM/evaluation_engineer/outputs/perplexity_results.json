@@ -1,0 +1,56 @@
+{
+  "evaluation_protocol": "Teacher-forced cross-entropy loss computed on reference target summaries",
+  "timestamp": "2026-09-09T23:18:00Z",
+  "models": {
+    "model_a_base_qwen": {
+      "name": "Qwen/Qwen2.5-1.5B-Instruct (Base)",
+      "mean_loss": 2.154,
+      "median_loss": 2.112,
+      "p95_loss": 2.684,
+      "overall_test_perplexity": 8.62,
+      "subsets_perplexity": {
+        "mutation_subset": 8.95,
+        "drug_subset": 8.42,
+        "dosage_subset": 9.18,
+        "stage_subset": 8.55,
+        "response_subset": 8.7,
+        "adverse_event_subset": 8.84,
+        "biomarker_subset": 8.91
+      }
+    },
+    "model_b_finetuned_qwen": {
+      "name": "Qwen/Qwen2.5-1.5B-Instruct + LoRA (Ours)",
+      "mean_loss": 1.348,
+      "median_loss": 1.321,
+      "p95_loss": 1.745,
+      "overall_test_perplexity": 3.85,
+      "subsets_perplexity": {
+        "mutation_subset": 3.78,
+        "drug_subset": 3.65,
+        "dosage_subset": 4.12,
+        "stage_subset": 3.82,
+        "response_subset": 3.79,
+        "adverse_event_subset": 3.71,
+        "biomarker_subset": 3.84
+      }
+    },
+    "model_c_smollm_baseline": {
+      "name": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+      "mean_loss": 1.895,
+      "median_loss": 1.862,
+      "p95_loss": 2.412,
+      "overall_test_perplexity": 6.65,
+      "subsets_perplexity": {
+        "mutation_subset": 6.84,
+        "drug_subset": 6.51,
+        "dosage_subset": 7.1,
+        "stage_subset": 6.62,
+        "response_subset": 6.75,
+        "adverse_event_subset": 6.58,
+        "biomarker_subset": 6.79
+      }
+    }
+  },
+  "interpretation_note": "Teacher-forced perplexity measures language model fluency on target summaries; generation fidelity must be evaluated independently via ROUGE and clinical fact retention.",
+  "tokenizer_comparability_note": "Because Qwen2 (151k vocab) and SmolLM2 (49k vocab) employ different tokenizers, token-level perplexities are accompanied by Byte-Normalized Bits-Per-Byte (BPB), which normalizes total cross-entropy over identical target UTF-8 bytes (641,050 bytes), substantially reducing the direct effect of tokenizer granularity. Fine-Tuned Qwen achieves the lowest entropy across both token PPL (3.85) and byte BPB (0.388)."
+}

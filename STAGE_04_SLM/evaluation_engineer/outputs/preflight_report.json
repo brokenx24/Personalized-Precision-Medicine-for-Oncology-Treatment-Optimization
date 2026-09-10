@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-09-09T23:15:30Z",
+  "system": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python_version": "3.11.9",
+    "torch_version": "2.13.0+cpu",
+    "transformers_version": "5.14.1",
+    "peft_version": "0.20.0",
+    "cpu_cores_physical": 4,
+    "cpu_cores_logical": 8,
+    "ram_total_gb": 15.28,
+    "ram_available_gb": 4.31,
+    "disk_free_gb": 70.65,
+    "cuda_available": false,
+    "vram_gb": 0.0
+  },
+  "artifact_verification": {
+    "test_split_exists": true,
+    "test_split_size_bytes": 3834476,
+    "test_split_sha256": "668f4b6dfd997272dd73b338b91a93a5014d0c8e56069b295b56401dc04e4d38",
+    "lora_adapter_exists": true,
+    "lora_adapter_size_bytes": 11024912,
+    "lora_config_exists": true,
+    "tokenizer_dir_exists": true
+  },
+  "message": "All required evaluation artifacts verified."
+}

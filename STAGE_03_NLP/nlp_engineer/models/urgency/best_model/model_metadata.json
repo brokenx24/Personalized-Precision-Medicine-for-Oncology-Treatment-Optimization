@@ -1,0 +1,13 @@
+{
+  "model_name": "emilyalsentzer/Bio_ClinicalBERT",
+  "dataset_version": "NLP_SYNTHETIC_V1",
+  "random_seed": 42,
+  "classes": [
+    "LOW",
+    "MODERATE",
+    "HIGH"
+  ],
+  "max_seq_length": 128,
+  "best_val_macro_f1": 0.8955,
+  "disclaimer": "SYNTHETIC DATA RESEARCH PROTOTYPE - NOT A CLINICAL DIAGNOSTIC DEVICE"
+}

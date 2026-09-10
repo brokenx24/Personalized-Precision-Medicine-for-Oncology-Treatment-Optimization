@@ -1,0 +1,106 @@
+{
+  "reports_with_mutation": 8591,
+  "summaries_retaining_mutation": 8590,
+  "mutation_retention_percentage": 99.99,
+  "mutation_occurrences": [
+    {
+      "mutation": "TP53 mutation",
+      "count": 2345
+    },
+    {
+      "mutation": "BRAF V600E",
+      "count": 1259
+    },
+    {
+      "mutation": "BRCA2 c.5946del",
+      "count": 1220
+    },
+    {
+      "mutation": "BRCA1 c.68_69del",
+      "count": 1115
+    },
+    {
+      "mutation": "KRAS G12D",
+      "count": 562
+    },
+    {
+      "mutation": "EGFR exon 19 deletion",
+      "count": 541
+    },
+    {
+      "mutation": "PIK3CA H1047R",
+      "count": 537
+    },
+    {
+      "mutation": "KRAS G12C",
+      "count": 531
+    },
+    {
+      "mutation": "EGFR L858R",
+      "count": 481
+    }
+  ],
+  "fragmentation_examples": [
+    {
+      "mutation_notation": "EGFR L858R",
+      "estimated_token_pieces": 4,
+      "pieces": [
+        "EGFR",
+        "L",
+        "858",
+        "R"
+      ]
+    },
+    {
+      "mutation_notation": "KRAS G12C",
+      "estimated_token_pieces": 4,
+      "pieces": [
+        "KRAS",
+        "G",
+        "12",
+        "C"
+      ]
+    },
+    {
+      "mutation_notation": "KRAS G12D",
+      "estimated_token_pieces": 4,
+      "pieces": [
+        "KRAS",
+        "G",
+        "12",
+        "D"
+      ]
+    },
+    {
+      "mutation_notation": "BRAF V600E",
+      "estimated_token_pieces": 4,
+      "pieces": [
+        "BRAF",
+        "V",
+        "600",
+        "E"
+      ]
+    },
+    {
+      "mutation_notation": "TP53 mutation",
+      "estimated_token_pieces": 3,
+      "pieces": [
+        "TP",
+        "53",
+        "mutation"
+      ]
+    },
+    {
+      "mutation_notation": "PIK3CA H1047R",
+      "estimated_token_pieces": 6,
+      "pieces": [
+        "PIK",
+        "3",
+        "CA",
+        "H",
+        "1047",
+        "R"
+      ]
+    }
+  ]
+}

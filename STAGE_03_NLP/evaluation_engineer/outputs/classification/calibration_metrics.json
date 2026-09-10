@@ -1,0 +1,6 @@
+{
+  "expected_calibration_error": 0.1261,
+  "maximum_calibration_error": 0.7164,
+  "brier_score": 0.1188,
+  "disclaimer": "Synthetic research evaluation only."
+}

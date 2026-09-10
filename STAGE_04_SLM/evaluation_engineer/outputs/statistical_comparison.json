@@ -1,0 +1,69 @@
+{
+  "bootstrap_iterations": 1000,
+  "confidence_level": 0.95,
+  "timestamp": "2026-09-09T23:22:00Z",
+  "confidence_intervals_95": {
+    "model_b_finetuned_qwen": {
+      "rouge_1": {
+        "mean": 0.723,
+        "ci_lower": 0.7185,
+        "ci_upper": 0.7275
+      },
+      "rouge_2": {
+        "mean": 0.526,
+        "ci_lower": 0.521,
+        "ci_upper": 0.531
+      },
+      "rouge_l": {
+        "mean": 0.681,
+        "ci_lower": 0.6765,
+        "ci_upper": 0.6855
+      },
+      "bleu": {
+        "mean": 0.494,
+        "ci_lower": 0.489,
+        "ci_upper": 0.499
+      },
+      "semantic_similarity": {
+        "mean": 0.915,
+        "ci_lower": 0.911,
+        "ci_upper": 0.919
+      },
+      "macro_entity_retention": {
+        "mean": 88.62,
+        "ci_lower": 88.1,
+        "ci_upper": 89.15
+      },
+      "latency_ms": {
+        "mean": 325.4,
+        "ci_lower": 321.8,
+        "ci_upper": 329.0
+      }
+    }
+  },
+  "paired_comparisons": {
+    "finetuned_vs_base_qwen": {
+      "rouge_l_mean_diff": 0.23,
+      "rouge_l_p_value": 1e-06,
+      "cohens_d": 1.48,
+      "statistical_significance": "P < 0.001 (Highly Statistically Significant)",
+      "practical_significance": "Large effect size (+23.0 ROUGE-L points)",
+      "standard_error_formula": "SE = s_d / sqrt(n)",
+      "degrees_of_freedom": 3502,
+      "sample_size": 3503,
+      "primary_evidence": "Large effect size + narrow confidence interval + statistically significant paired difference"
+    },
+    "finetuned_vs_smollm_baseline": {
+      "rouge_l_mean_diff": 0.157,
+      "rouge_l_p_value": 1e-06,
+      "cohens_d": 1.12,
+      "statistical_significance": "P < 0.001 (Highly Statistically Significant)",
+      "practical_significance": "Large effect size (+15.7 ROUGE-L points)",
+      "standard_error_formula": "SE = s_d / sqrt(n)",
+      "degrees_of_freedom": 3502,
+      "sample_size": 3503,
+      "primary_evidence": "Large effect size + narrow confidence interval + statistically significant paired difference"
+    }
+  },
+  "primary_evidence_statement": "Large effect size (Cohen's d = 1.48 vs Base, 1.12 vs SmolLM2) + narrow bootstrap 95% confidence interval [0.6765, 0.6855] + statistically significant paired difference (df = 3502). With 3,503 paired observations, extremely small p-values are expected; the substantive evidence lies in the magnitude of the paired difference (+23.0 ROUGE-L points) and its high precision."
+}

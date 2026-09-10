@@ -1,0 +1,17 @@
+{
+  "execution_timestamp": "2026-09-09T22:05:00",
+  "random_seed": 42,
+  "python_version": "3.11.9",
+  "operating_system": "Windows-10-10.0.26200-SP0",
+  "dependencies": {
+    "pandas": "2.2.2",
+    "numpy": "2.4.6"
+  },
+  "artifact_hashes": {
+    "raw_oncology_summarization.csv": "56904d5f6ebdcc0c1a0e7b7f66986d6214a5982a8dc0d25c1c1f60d8f42c0d8a",
+    "cleaned_oncology_summarization.csv": "c6bae526d9e08c02ea85a2ade606644d01723c1f14536a48939be187836310e1",
+    "train.jsonl": "afcff5cda9a8142e566b9705bb0e9c5eadbac946bbbf73d65043b17c01ad5ee7",
+    "validation.jsonl": "c66311143d8ff0059f69e1147f9f4185a8e703cbdd28c34afdfc58fee91200a4",
+    "test.jsonl": "668f4b6dfd997272dd73b338b91a93a5014d0c8e56069b295b56401dc04e4d38"
+  }
+}

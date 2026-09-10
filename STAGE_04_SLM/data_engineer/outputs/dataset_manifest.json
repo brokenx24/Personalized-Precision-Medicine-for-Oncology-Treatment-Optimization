@@ -1,0 +1,28 @@
+{
+  "dataset_name": "Stage 04 SLM Oncology Summarization Corpus",
+  "version": "1.0.0",
+  "created_timestamp": "2026-09-09T22:00:00",
+  "random_seed": 42,
+  "raw_candidate_records": 25000,
+  "raw_unique_patients": 5081,
+  "cleaned_records": 23353,
+  "rejected_records": 1647,
+  "splits": {
+    "train": {
+      "patients": 3435,
+      "records": 16360,
+      "file": "train.jsonl"
+    },
+    "validation": {
+      "patients": 733,
+      "records": 3490,
+      "file": "validation.jsonl"
+    },
+    "test": {
+      "patients": 738,
+      "records": 3503,
+      "file": "test.jsonl"
+    }
+  },
+  "quality_status": "VERIFIED_CLEAN"
+}

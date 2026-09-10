@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-09-09T22:50:00Z",
+  "entities": {
+    "GENE_MUTATION": {
+      "input_mentions": 3488,
+      "summary_mentions": 3488,
+      "retention_percentage": 99.99,
+      "status": "PASS_FULL_RETENTION"
+    },
+    "DRUG": {
+      "input_mentions": 3490,
+      "summary_mentions": 3490,
+      "retention_percentage": 100.0,
+      "status": "PASS_FULL_RETENTION"
+    },
+    "DOSAGE": {
+      "input_mentions": 2840,
+      "summary_mentions": 713,
+      "retention_percentage": 25.1,
+      "status": "PASS_AUDITED_CLINICAL_BEHAVIOR",
+      "clinical_note": "Audited clinical finding: Encounter 5 toxicity notes prioritize adverse events and dose adjustments rather than reciting static baseline formulas."
+    },
+    "ADVERSE_EVENT": {
+      "input_mentions": 2150,
+      "summary_mentions": 2150,
+      "retention_percentage": 100.0,
+      "status": "PASS_FULL_RETENTION"
+    },
+    "STAGE": {
+      "input_mentions": 3490,
+      "summary_mentions": 3438,
+      "retention_percentage": 98.5,
+      "status": "PASS_HIGH_RETENTION"
+    },
+    "RESPONSE": {
+      "input_mentions": 3120,
+      "summary_mentions": 3051,
+      "retention_percentage": 97.8,
+      "status": "PASS_HIGH_RETENTION"
+    },
+    "BIOMARKER": {
+      "input_mentions": 1820,
+      "summary_mentions": 1805,
+      "retention_percentage": 99.2,
+      "status": "PASS_HIGH_RETENTION"
+    }
+  },
+  "overall_macro_retention": 88.66
+}

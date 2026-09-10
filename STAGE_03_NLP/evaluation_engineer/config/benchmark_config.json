@@ -1,0 +1,14 @@
+{
+  "classification_models": [
+    "TF-IDF + Logistic Regression",
+    "TF-IDF + Linear SVM",
+    "BioClinicalBERT"
+  ],
+  "ner_models": [
+    "Dictionary / Rule-Based Matcher",
+    "BiLSTM Sequence Tagger",
+    "BioBERT Token Classifier"
+  ],
+  "evaluation_split": "test",
+  "disclaimer": "Synthetic research evaluation only."
+}

@@ -1,0 +1,158 @@
+{
+  "passed_checks": 25,
+  "total_checks": 25,
+  "status": "PASS",
+  "checks": [
+    {
+      "id": 1,
+      "title": "Stage 01 Outputs Exist",
+      "status": "PASS",
+      "detail": "test_eval_results.npz and test.csv verified"
+    },
+    {
+      "id": 2,
+      "title": "Stage 02 Outputs Exist",
+      "status": "PASS",
+      "detail": "patient_master.csv and test_manifest.csv verified"
+    },
+    {
+      "id": 3,
+      "title": "Stage 03 Outputs Exist",
+      "status": "PASS",
+      "detail": "urgency_test_predictions.csv and test.csv verified"
+    },
+    {
+      "id": 4,
+      "title": "All Required Artifacts Load",
+      "status": "PASS",
+      "detail": "Successfully loaded upstream artifacts"
+    },
+    {
+      "id": 5,
+      "title": "Patient IDs Valid",
+      "status": "PASS",
+      "detail": "All integrated patient IDs non-null and formatted"
+    },
+    {
+      "id": 6,
+      "title": "Duplicate Patient IDs Checked",
+      "status": "PASS",
+      "detail": "Unique IDs: 1291 / 1291"
+    },
+    {
+      "id": 7,
+      "title": "Patient Alignment Completed",
+      "status": "PASS",
+      "detail": "patient_alignment_report.json verified"
+    },
+    {
+      "id": 8,
+      "title": "Unmatched Records Reported",
+      "status": "PASS",
+      "detail": "Catalog of single & partial modalities verified"
+    },
+    {
+      "id": 9,
+      "title": "ML Probabilities Valid",
+      "status": "PASS",
+      "detail": "Stage 01 test predictions verified"
+    },
+    {
+      "id": 10,
+      "title": "DL Probabilities Valid",
+      "status": "PASS",
+      "detail": "Stage 02 test predictions verified"
+    },
+    {
+      "id": 11,
+      "title": "NLP Probabilities Valid",
+      "status": "PASS",
+      "detail": "Stage 03 predictions and probabilities verified"
+    },
+    {
+      "id": 12,
+      "title": "NLP Probability Sums ~= 1.0",
+      "status": "PASS",
+      "detail": "Probability distributions validated on simplex"
+    },
+    {
+      "id": 13,
+      "title": "No NaN Integrated Scores",
+      "status": "PASS",
+      "detail": "All integrated scores are valid floats"
+    },
+    {
+      "id": 14,
+      "title": "No Infinite Integrated Scores",
+      "status": "PASS",
+      "detail": "All integrated scores are finite"
+    },
+    {
+      "id": 15,
+      "title": "Fusion Weights Valid (Sum = 1.0)",
+      "status": "PASS",
+      "detail": "Weights sum = 1.0000"
+    },
+    {
+      "id": 16,
+      "title": "Missing Modality Handling Validated",
+      "status": "PASS",
+      "detail": "Observed statuses: {'FULL_MULTIMODAL', 'SINGLE_MODALITY'}"
+    },
+    {
+      "id": 17,
+      "title": "Safety Rules Executed",
+      "status": "PASS",
+      "detail": "safety_flags.csv verified"
+    },
+    {
+      "id": 18,
+      "title": "Model Agreement Calculated",
+      "status": "PASS",
+      "detail": "model_agreement.csv verified"
+    },
+    {
+      "id": 19,
+      "title": "Patient Aggregation Validated",
+      "status": "PASS",
+      "detail": "Exactly 1 record per patient confirmed"
+    },
+    {
+      "id": 20,
+      "title": "Integrated Predictions Generated",
+      "status": "PASS",
+      "detail": "JSON prediction manifest verified"
+    },
+    {
+      "id": 21,
+      "title": "Explainability Outputs Generated",
+      "status": "PASS",
+      "detail": "Clinical rationale narrative generated for all patients"
+    },
+    {
+      "id": 22,
+      "title": "Audit Log Generated",
+      "status": "PASS",
+      "detail": "audit_log.json verified"
+    },
+    {
+      "id": 23,
+      "title": "Unit Tests Pass (11/11 Modules)",
+      "status": "PASS",
+      "detail": "All 11 unit test suites executed"
+    },
+    {
+      "id": 24,
+      "title": "Reproducibility Verified",
+      "status": "PASS",
+      "detail": "artifact_manifest.json verified"
+    },
+    {
+      "id": 25,
+      "title": "Master Integration Report Generated",
+      "status": "PASS",
+      "detail": "integration_engineering_master_report.md verified"
+    }
+  ],
+  "disclaimer": "Synthetic research integration only. This system is not clinically validated."
+}

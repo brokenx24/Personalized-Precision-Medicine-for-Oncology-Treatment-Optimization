@@ -1,0 +1,291 @@
+{
+  "total_word_tokens": 1971894,
+  "vocabulary_size": 5344,
+  "type_token_ratio": 0.0027,
+  "hapax_legomena_count": 6,
+  "hapax_percentage": 0.11,
+  "top_50_vocabulary": [
+    {
+      "term": "patient",
+      "count": 46723
+    },
+    {
+      "term": "for",
+      "count": 46707
+    },
+    {
+      "term": "stage",
+      "count": 46704
+    },
+    {
+      "term": "with",
+      "count": 46694
+    },
+    {
+      "term": "and",
+      "count": 43610
+    },
+    {
+      "term": "cancer",
+      "count": 39042
+    },
+    {
+      "term": "is",
+      "count": 23364
+    },
+    {
+      "term": "encounter",
+      "count": 23353
+    },
+    {
+      "term": "on",
+      "count": 23348
+    },
+    {
+      "term": "a",
+      "count": 23308
+    },
+    {
+      "term": "1",
+      "count": 22602
+    },
+    {
+      "term": "iv",
+      "count": 22109
+    },
+    {
+      "term": "genomic",
+      "count": 18664
+    },
+    {
+      "term": "demonstrates",
+      "count": 18659
+    },
+    {
+      "term": "3",
+      "count": 18522
+    },
+    {
+      "term": "at",
+      "count": 14060
+    },
+    {
+      "term": "therapy",
+      "count": 14047
+    },
+    {
+      "term": "note",
+      "count": 14012
+    },
+    {
+      "term": "dose",
+      "count": 13995
+    },
+    {
+      "term": "restaging",
+      "count": 13989
+    },
+    {
+      "term": "assessment",
+      "count": 13985
+    },
+    {
+      "term": "imaging",
+      "count": 13983
+    },
+    {
+      "term": "2",
+      "count": 13582
+    },
+    {
+      "term": "mg",
+      "count": 13494
+    },
+    {
+      "term": "5",
+      "count": 10530
+    },
+    {
+      "term": "iib",
+      "count": 9883
+    },
+    {
+      "term": "disease",
+      "count": 9423
+    },
+    {
+      "term": "baseline",
+      "count": 9384
+    },
+    {
+      "term": "administration",
+      "count": 9384
+    },
+    {
+      "term": "without",
+      "count": 9384
+    },
+    {
+      "term": "acute",
+      "count": 9384
+    },
+    {
+      "term": "systemic",
+      "count": 9368
+    },
+    {
+      "term": "positive",
+      "count": 9367
+    },
+    {
+      "term": "clinical",
+      "count": 9357
+    },
+    {
+      "term": "initiated",
+      "count": 9357
+    },
+    {
+      "term": "supportive",
+      "count": 9357
+    },
+    {
+      "term": "symptom",
+      "count": 9357
+    },
+    {
+      "term": "commenced",
+      "count": 9357
+    },
+    {
+      "term": "confirms",
+      "count": 9351
+    },
+    {
+      "term": "somatic",
+      "count": 9351
+    },
+    {
+      "term": "analysis",
+      "count": 9351
+    },
+    {
+      "term": "actionable",
+      "count": 9351
+    },
+    {
+      "term": "therapeutic",
+      "count": 9351
+    },
+    {
+      "term": "was",
+      "count": 9349
+    },
+    {
+      "term": "treatment-emergent",
+      "count": 9330
+    },
+    {
+      "term": "recommended",
+      "count": 9330
+    },
+    {
+      "term": "resolution",
+      "count": 9330
+    },
+    {
+      "term": "in",
+      "count": 9326
+    },
+    {
+      "term": "maintenance",
+      "count": 9326
+    },
+    {
+      "term": "been",
+      "count": 9321
+    }
+  ],
+  "top_20_bigrams_sample": [
+    {
+      "bigram": "note patient",
+      "count": 1204
+    },
+    {
+      "bigram": "for stage",
+      "count": 1197
+    },
+    {
+      "bigram": "imaging demonstrates",
+      "count": 802
+    },
+    {
+      "bigram": "stage iv",
+      "count": 571
+    },
+    {
+      "bigram": "iv every",
+      "count": 560
+    },
+    {
+      "bigram": "every 3",
+      "count": 560
+    },
+    {
+      "bigram": "3 weeks",
+      "count": 560
+    },
+    {
+      "bigram": "mg orally",
+      "count": 431
+    },
+    {
+      "bigram": "1 1",
+      "count": 412
+    },
+    {
+      "bigram": "pathology and",
+      "count": 406
+    },
+    {
+      "bigram": "and genomics",
+      "count": 406
+    },
+    {
+      "bigram": "genomics report",
+      "count": 406
+    },
+    {
+      "bigram": "report patient",
+      "count": 406
+    },
+    {
+      "bigram": "encounter 2",
+      "count": 406
+    },
+    {
+      "bigram": "2 histopathology",
+      "count": 406
+    },
+    {
+      "bigram": "histopathology confirms",
+      "count": 406
+    },
+    {
+      "bigram": "confirms invasive",
+      "count": 406
+    },
+    {
+      "bigram": "ajcc stage",
+      "count": 406
+    },
+    {
+      "bigram": "next-generation sequencing",
+      "count": 406
+    },
+    {
+      "bigram": "sequencing panel",
+      "count": 406
+    }
+  ]
+}

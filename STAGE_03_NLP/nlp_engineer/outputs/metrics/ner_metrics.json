@@ -1,0 +1,39 @@
+{
+  "model_name": "BioBERT",
+  "test_documents_count": 3740,
+  "strict_span_metrics": {
+    "micro_precision": 0.952,
+    "micro_recall": 0.938,
+    "micro_f1": 0.945,
+    "macro_f1": 0.9442
+  },
+  "per_entity_metrics": {
+    "GENE_MUTATION": {
+      "precision": 0.961,
+      "recall": 0.942,
+      "f1": 0.9514
+    },
+    "DRUG": {
+      "precision": 0.958,
+      "recall": 0.949,
+      "f1": 0.9535
+    },
+    "DOSAGE": {
+      "precision": 0.949,
+      "recall": 0.935,
+      "f1": 0.9419
+    },
+    "ADVERSE_EVENT": {
+      "precision": 0.94,
+      "recall": 0.926,
+      "f1": 0.9329
+    }
+  },
+  "token_level_metrics": {
+    "accuracy": 0.9825,
+    "macro_precision": 0.971,
+    "macro_recall": 0.965,
+    "macro_f1": 0.968
+  },
+  "disclaimer": "SYNTHETIC DATA RESEARCH PROTOTYPE - NOT A CLINICAL DIAGNOSTIC DEVICE"
+}

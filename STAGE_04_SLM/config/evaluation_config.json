@@ -1,0 +1,43 @@
+{
+  "evaluation_version": "1.0.0",
+  "status": "FROZEN_BEFORE_EVALUATION",
+  "test_dataset_path": "STAGE_04_SLM/data_engineer/splits/test.jsonl",
+  "training_reference_path": "STAGE_04_SLM/data_engineer/splits/train.jsonl",
+  "models": [
+    {
+      "model_id": "model_a_base_qwen",
+      "name": "Qwen/Qwen2.5-1.5B-Instruct",
+      "role": "Base Zero-Shot SLM",
+      "is_finetuned": false
+    },
+    {
+      "model_id": "model_b_finetuned_qwen",
+      "name": "Qwen/Qwen2.5-1.5B-Instruct + LoRA",
+      "role": "Primary Fine-Tuned SLM Candidate",
+      "is_finetuned": true,
+      "adapter_path": "STAGE_04_SLM/slm_engineer/models/qwen2.5_1.5b_lora"
+    },
+    {
+      "model_id": "model_c_smollm_baseline",
+      "name": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+      "role": "External Compact Baseline SLM",
+      "is_finetuned": false
+    }
+  ],
+  "generation_parameters": {
+    "temperature": 0.0,
+    "do_sample": false,
+    "max_new_tokens": 96,
+    "repetition_penalty": 1.1,
+    "no_repeat_ngram_size": 3
+  },
+  "ranking_weights": {
+    "w_loss": 0.2,
+    "w_rouge_l": 0.25,
+    "w_sem_sim": 0.2,
+    "w_fact_ret": 0.2,
+    "w_num_acc": 0.15,
+    "pen_hallucination": 2.0
+  },
+  "random_seed": 42
+}

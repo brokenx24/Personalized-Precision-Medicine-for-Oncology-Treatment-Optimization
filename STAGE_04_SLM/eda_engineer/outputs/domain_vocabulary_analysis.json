@@ -1,0 +1,483 @@
+{
+  "total_dictionary_terms": 68,
+  "terms_present_in_corpus": 51,
+  "domain_coverage_percentage": 75.0,
+  "term_frequencies": [
+    {
+      "category": "STAGE",
+      "term": "Stage I",
+      "report_occurrences": 23353,
+      "summary_occurrences": 23351,
+      "present_in_corpus": true
+    },
+    {
+      "category": "STAGE",
+      "term": "Stage II",
+      "report_occurrences": 16696,
+      "summary_occurrences": 16695,
+      "present_in_corpus": true
+    },
+    {
+      "category": "STAGE",
+      "term": "Stage III",
+      "report_occurrences": 7838,
+      "summary_occurrences": 7838,
+      "present_in_corpus": true
+    },
+    {
+      "category": "STAGE",
+      "term": "Stage IV",
+      "report_occurrences": 6657,
+      "summary_occurrences": 6656,
+      "present_in_corpus": true
+    },
+    {
+      "category": "CANCER_TYPE",
+      "term": "Prostate cancer",
+      "report_occurrences": 4066,
+      "summary_occurrences": 4066,
+      "present_in_corpus": true
+    },
+    {
+      "category": "CANCER_TYPE",
+      "term": "Breast cancer",
+      "report_occurrences": 3957,
+      "summary_occurrences": 3956,
+      "present_in_corpus": true
+    },
+    {
+      "category": "CANCER_TYPE",
+      "term": "Colorectal cancer",
+      "report_occurrences": 3891,
+      "summary_occurrences": 3891,
+      "present_in_corpus": true
+    },
+    {
+      "category": "CANCER_TYPE",
+      "term": "Lung cancer",
+      "report_occurrences": 3880,
+      "summary_occurrences": 3880,
+      "present_in_corpus": true
+    },
+    {
+      "category": "CANCER_TYPE",
+      "term": "Melanoma",
+      "report_occurrences": 3831,
+      "summary_occurrences": 3831,
+      "present_in_corpus": true
+    },
+    {
+      "category": "CANCER_TYPE",
+      "term": "Ovarian cancer",
+      "report_occurrences": 3728,
+      "summary_occurrences": 3727,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DRUG",
+      "term": "pembrolizumab",
+      "report_occurrences": 3045,
+      "summary_occurrences": 2287,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DOSAGE",
+      "term": "200 mg IV every 3 weeks",
+      "report_occurrences": 2684,
+      "summary_occurrences": 894,
+      "present_in_corpus": true
+    },
+    {
+      "category": "RESPONSE",
+      "term": "Stable Disease (SD)",
+      "report_occurrences": 2380,
+      "summary_occurrences": 2380,
+      "present_in_corpus": true
+    },
+    {
+      "category": "GENE_MUTATION",
+      "term": "TP53 mutation",
+      "report_occurrences": 2345,
+      "summary_occurrences": 2344,
+      "present_in_corpus": true
+    },
+    {
+      "category": "RESPONSE",
+      "term": "Partial Response (PR)",
+      "report_occurrences": 2283,
+      "summary_occurrences": 2283,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DRUG",
+      "term": "olaparib",
+      "report_occurrences": 2272,
+      "summary_occurrences": 1710,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DRUG",
+      "term": "paclitaxel",
+      "report_occurrences": 2033,
+      "summary_occurrences": 1525,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DRUG",
+      "term": "carboplatin",
+      "report_occurrences": 1967,
+      "summary_occurrences": 1472,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DOSAGE",
+      "term": "80 mg orally once daily",
+      "report_occurrences": 1951,
+      "summary_occurrences": 662,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DOSAGE",
+      "term": "500 mg twice daily",
+      "report_occurrences": 1580,
+      "summary_occurrences": 528,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DOSAGE",
+      "term": "300 mg orally twice daily",
+      "report_occurrences": 1580,
+      "summary_occurrences": 524,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DOSAGE",
+      "term": "AUC 5 IV every 3 weeks",
+      "report_occurrences": 1551,
+      "summary_occurrences": 520,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DOSAGE",
+      "term": "175 mg/m2 IV every 3 weeks",
+      "report_occurrences": 1545,
+      "summary_occurrences": 521,
+      "present_in_corpus": true
+    },
+    {
+      "category": "GENE_MUTATION",
+      "term": "BRAF V600E",
+      "report_occurrences": 1259,
+      "summary_occurrences": 1259,
+      "present_in_corpus": true
+    },
+    {
+      "category": "GENE_MUTATION",
+      "term": "BRCA2 c.5946del",
+      "report_occurrences": 1220,
+      "summary_occurrences": 1220,
+      "present_in_corpus": true
+    },
+    {
+      "category": "ADVERSE_EVENT",
+      "term": "mild fatigue",
+      "report_occurrences": 1128,
+      "summary_occurrences": 1128,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DRUG",
+      "term": "osimertinib",
+      "report_occurrences": 1119,
+      "summary_occurrences": 838,
+      "present_in_corpus": true
+    },
+    {
+      "category": "GENE_MUTATION",
+      "term": "BRCA1 c.68_69del",
+      "report_occurrences": 1115,
+      "summary_occurrences": 1115,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DRUG",
+      "term": "nivolumab",
+      "report_occurrences": 1100,
+      "summary_occurrences": 826,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DRUG",
+      "term": "tamoxifen",
+      "report_occurrences": 1081,
+      "summary_occurrences": 814,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DRUG",
+      "term": "trastuzumab",
+      "report_occurrences": 996,
+      "summary_occurrences": 751,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DRUG",
+      "term": "fluorouracil",
+      "report_occurrences": 932,
+      "summary_occurrences": 698,
+      "present_in_corpus": true
+    },
+    {
+      "category": "BIOMARKER",
+      "term": "MSS",
+      "report_occurrences": 814,
+      "summary_occurrences": 814,
+      "present_in_corpus": true
+    },
+    {
+      "category": "ADVERSE_EVENT",
+      "term": "moderate neutropenia",
+      "report_occurrences": 799,
+      "summary_occurrences": 799,
+      "present_in_corpus": true
+    },
+    {
+      "category": "BIOMARKER",
+      "term": "PD-L1 TPS >= 50%",
+      "report_occurrences": 789,
+      "summary_occurrences": 789,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DOSAGE",
+      "term": "20 mg orally once daily",
+      "report_occurrences": 783,
+      "summary_occurrences": 260,
+      "present_in_corpus": true
+    },
+    {
+      "category": "ADVERSE_EVENT",
+      "term": "rash and pruritus",
+      "report_occurrences": 765,
+      "summary_occurrences": 765,
+      "present_in_corpus": true
+    },
+    {
+      "category": "BIOMARKER",
+      "term": "TMB-High",
+      "report_occurrences": 761,
+      "summary_occurrences": 761,
+      "present_in_corpus": true
+    },
+    {
+      "category": "DOSAGE",
+      "term": "2 mg PRN",
+      "report_occurrences": 760,
+      "summary_occurrences": 251,
+      "present_in_corpus": true
+    },
+    {
+      "category": "GENE_MUTATION",
+      "term": "KRAS G12D",
+      "report_occurrences": 562,
+      "summary_occurrences": 562,
+      "present_in_corpus": true
+    },
+    {
+      "category": "GENE_MUTATION",
+      "term": "EGFR exon 19 deletion",
+      "report_occurrences": 541,
+      "summary_occurrences": 541,
+      "present_in_corpus": true
+    },
+    {
+      "category": "GENE_MUTATION",
+      "term": "PIK3CA H1047R",
+      "report_occurrences": 537,
+      "summary_occurrences": 537,
+      "present_in_corpus": true
+    },
+    {
+      "category": "GENE_MUTATION",
+      "term": "KRAS G12C",
+      "report_occurrences": 531,
+      "summary_occurrences": 531,
+      "present_in_corpus": true
+    },
+    {
+      "category": "ADVERSE_EVENT",
+      "term": "moderate diarrhea",
+      "report_occurrences": 513,
+      "summary_occurrences": 513,
+      "present_in_corpus": true
+    },
+    {
+      "category": "ADVERSE_EVENT",
+      "term": "peripheral neuropathy",
+      "report_occurrences": 510,
+      "summary_occurrences": 510,
+      "present_in_corpus": true
+    },
+    {
+      "category": "ADVERSE_EVENT",
+      "term": "immune-mediated colitis",
+      "report_occurrences": 488,
+      "summary_occurrences": 488,
+      "present_in_corpus": true
+    },
+    {
+      "category": "GENE_MUTATION",
+      "term": "EGFR L858R",
+      "report_occurrences": 481,
+      "summary_occurrences": 481,
+      "present_in_corpus": true
+    },
+    {
+      "category": "ADVERSE_EVENT",
+      "term": "severe neutropenia",
+      "report_occurrences": 462,
+      "summary_occurrences": 462,
+      "present_in_corpus": true
+    },
+    {
+      "category": "BIOMARKER",
+      "term": "HER2-positive",
+      "report_occurrences": 408,
+      "summary_occurrences": 407,
+      "present_in_corpus": true
+    },
+    {
+      "category": "BIOMARKER",
+      "term": "ER-positive",
+      "report_occurrences": 382,
+      "summary_occurrences": 382,
+      "present_in_corpus": true
+    },
+    {
+      "category": "BIOMARKER",
+      "term": "MSI-High",
+      "report_occurrences": 360,
+      "summary_occurrences": 360,
+      "present_in_corpus": true
+    },
+    {
+      "category": "CANCER_TYPE",
+      "term": "Pancreatic cancer",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    },
+    {
+      "category": "CANCER_TYPE",
+      "term": "Liver cancer",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    },
+    {
+      "category": "CANCER_TYPE",
+      "term": "Leukemia",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    },
+    {
+      "category": "CANCER_TYPE",
+      "term": "Lymphoma",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    },
+    {
+      "category": "GENE_MUTATION",
+      "term": "ERBB2 amplification",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    },
+    {
+      "category": "DRUG",
+      "term": "cisplatin",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    },
+    {
+      "category": "DRUG",
+      "term": "sotorasib",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    },
+    {
+      "category": "DRUG",
+      "term": "doxorubicin",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    },
+    {
+      "category": "DRUG",
+      "term": "loperamide",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    },
+    {
+      "category": "DRUG",
+      "term": "dexamethasone",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    },
+    {
+      "category": "DOSAGE",
+      "term": "960 mg orally once daily",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    },
+    {
+      "category": "ADVERSE_EVENT",
+      "term": "severe hepatotoxicity",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    },
+    {
+      "category": "RESPONSE",
+      "term": "Progressive Disease (PD)",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    },
+    {
+      "category": "RESPONSE",
+      "term": "Complete Response (CR)",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    },
+    {
+      "category": "GUIDELINE_REF",
+      "term": "REF-NCCN-NSCLC-V2024",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    },
+    {
+      "category": "GUIDELINE_REF",
+      "term": "REF-NCCN-BRCA-V2024",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    },
+    {
+      "category": "GUIDELINE_REF",
+      "term": "REF-NCCN-CRC-V2024",
+      "report_occurrences": 0,
+      "summary_occurrences": 0,
+      "present_in_corpus": false
+    }
+  ]
+}

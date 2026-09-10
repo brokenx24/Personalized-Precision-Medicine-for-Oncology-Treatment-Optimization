@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-09-09T23:20:30Z",
+  "models": {
+    "model_a_base_qwen": {
+      "name": "Qwen/Qwen2.5-1.5B-Instruct (Base)",
+      "cold_start_ms": 1120.5,
+      "warmup_ms": 318.4,
+      "mean_latency_ms": 314.2,
+      "median_latency_ms": 312.0,
+      "p50_latency_ms": 312.0,
+      "p90_latency_ms": 332.5,
+      "p95_latency_ms": 338.1,
+      "p99_latency_ms": 352.0,
+      "tokens_per_second": 117.1,
+      "reports_per_minute": 190.9
+    },
+    "model_b_finetuned_qwen": {
+      "name": "Qwen/Qwen2.5-1.5B-Instruct + LoRA (Ours)",
+      "cold_start_ms": 1145.2,
+      "warmup_ms": 329.1,
+      "mean_latency_ms": 325.4,
+      "median_latency_ms": 324.0,
+      "p50_latency_ms": 324.0,
+      "p90_latency_ms": 341.2,
+      "p95_latency_ms": 346.8,
+      "p99_latency_ms": 361.5,
+      "tokens_per_second": 112.5,
+      "reports_per_minute": 184.4
+    },
+    "model_c_smollm_baseline": {
+      "name": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+      "cold_start_ms": 1260.0,
+      "warmup_ms": 351.4,
+      "mean_latency_ms": 346.8,
+      "median_latency_ms": 345.0,
+      "p50_latency_ms": 345.0,
+      "p90_latency_ms": 368.2,
+      "p95_latency_ms": 374.5,
+      "p99_latency_ms": 392.0,
+      "tokens_per_second": 105.5,
+      "reports_per_minute": 173.0
+    }
+  }
+}

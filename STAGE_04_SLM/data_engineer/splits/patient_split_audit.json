@@ -1,0 +1,40 @@
+{
+  "split_level": "patient_id",
+  "random_seed": 42,
+  "configured_patient_targets": {
+    "total": 5000,
+    "train": 3500,
+    "validation": 750,
+    "test": 750
+  },
+  "allocated_patients": {
+    "train": 3500,
+    "validation": 750,
+    "test": 750
+  },
+  "retained_patients_with_valid_records": {
+    "train": 3435,
+    "validation": 733,
+    "test": 738,
+    "total_retained": 4906
+  },
+  "retained_record_counts": {
+    "train": 16360,
+    "validation": 3490,
+    "test": 3503,
+    "total": 23353
+  },
+  "patient_leakage_verification": {
+    "train_val_intersection": 0,
+    "train_test_intersection": 0,
+    "val_test_intersection": 0,
+    "leakage_detected": false,
+    "status": "PASS"
+  },
+  "instruction_format": {
+    "instruction": "Summarize the following oncology clinical report into two concise, voice-ready clinical sentences.",
+    "input_key": "input",
+    "output_key": "output",
+    "metadata_key": "metadata"
+  }
+}

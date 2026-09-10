@@ -1,0 +1,19 @@
+{
+  "max_new_tokens": 96,
+  "min_new_tokens": 20,
+  "do_sample": false,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "repetition_penalty": 1.1,
+  "no_repeat_ngram_size": 3,
+  "length_penalty": 1.0,
+  "early_stopping": true,
+  "pad_token_id": null,
+  "eos_token_id": null,
+  "stop_strings": [
+    "<|im_end|>",
+    "\n\n",
+    "User:",
+    "Assistant:"
+  ]
+}

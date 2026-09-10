@@ -1,0 +1,25 @@
+{
+  "benchmark_version": "1.0.0",
+  "workloads": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "repetitions_per_workload": 5,
+  "warmup_runs": 3,
+  "timeout_seconds_per_batch": 60,
+  "metrics_tracked": [
+    "latency_ms",
+    "p50_latency",
+    "p90_latency",
+    "p95_latency",
+    "p99_latency",
+    "tokens_per_second",
+    "reports_per_minute",
+    "ram_usage_mb",
+    "cpu_percent"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "subsystem": "STAGE_04_SLM/evaluation_engineer",
+  "alias": "STAGE_05_EVALUATION",
+  "timestamp": "2026-09-09T17:59:25Z",
+  "duration_seconds": 41.73,
+  "upstream_hashes": {
+    "test_split_sha256": "668f4b6dfd997272dd73b338b91a93a5014d0c8e56069b295b56401dc04e4d38",
+    "adapter_model_sha256": "896d12024b324d9ebe5958be4eef974b0c9249f06a0eac200c9cffd60e8bbb3d"
+  },
+  "winner_model": {
+    "name": "Qwen/Qwen2.5-1.5B-Instruct + LoRA",
+    "rank": 1,
+    "composite_score": 0.8864,
+    "safety_gate_passed": true,
+    "decision_boundary_violations": 0
+  },
+  "status": "EVALUATION_COMPLETE_PRODUCTION_READY"
+}

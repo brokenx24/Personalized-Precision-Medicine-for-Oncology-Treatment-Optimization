@@ -1,0 +1,21 @@
+{
+  "clinical_report_length": {
+    "outlier_count": 0,
+    "outlier_percentage": 0.0,
+    "iqr_lower_bound": 312.5,
+    "iqr_upper_bound": 540.5
+  },
+  "target_summary_length": {
+    "outlier_count": 2,
+    "outlier_percentage": 0.01,
+    "iqr_lower_bound": 173.5,
+    "iqr_upper_bound": 265.5
+  },
+  "compression_ratio": {
+    "outlier_count": 4475,
+    "outlier_percentage": 19.16,
+    "iqr_lower_bound": 1.67,
+    "iqr_upper_bound": 2.21
+  },
+  "handling_recommendation": "Outliers are clinically legitimate representations of complex encounters and should be preserved without truncation."
+}

@@ -1,0 +1,20 @@
+{
+  "patient_leakage": {
+    "train_validation_overlap": 0,
+    "train_test_overlap": 0,
+    "validation_test_overlap": 0,
+    "status": "PASS"
+  },
+  "exact_input_overlap": {
+    "train_validation_overlap": 0,
+    "train_test_overlap": 0,
+    "validation_test_overlap": 0
+  },
+  "exact_pair_overlap": {
+    "train_validation_overlap": 0,
+    "train_test_overlap": 0,
+    "validation_test_overlap": 0,
+    "status": "PASS"
+  },
+  "overall_leakage_status": "PASS"
+}

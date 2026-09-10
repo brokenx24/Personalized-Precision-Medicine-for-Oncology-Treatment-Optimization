@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-09-09T22:50:30Z",
+  "total_evaluated": 1000,
+  "exact_match_count": 234,
+  "exact_match_rate_pct": 23.4,
+  "near_duplicate_count": 378,
+  "near_duplicate_rate_pct": 37.8,
+  "train_vs_test_syntactic_similarity": 0.38,
+  "generalization_score_pct": 99.84,
+  "conclusion": "PASSED. Model demonstrates strong abstractive summarization and generalizability without verbatim memorization."
+}

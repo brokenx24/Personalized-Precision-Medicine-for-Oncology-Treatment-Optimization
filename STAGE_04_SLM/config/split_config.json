@@ -1,0 +1,15 @@
+{
+  "description": "Patient-Level Stratified Splitting Configuration for Oncology SLM",
+  "version": "1.0.0",
+  "random_seed": 42,
+  "train_patient_ratio": 0.7,
+  "val_patient_ratio": 0.15,
+  "test_patient_ratio": 0.15,
+  "expected_total_patients": 5000,
+  "expected_train_patients": 3500,
+  "expected_val_patients": 750,
+  "expected_test_patients": 750,
+  "split_level": "patient_id",
+  "enforce_zero_patient_leakage": true,
+  "longitudinal_order_preserved": true
+}

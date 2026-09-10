@@ -1,0 +1,9 @@
+{
+  "baseline_model_name": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "architecture": "LlamaForCausalLM",
+  "parameter_count": 1711296512,
+  "context_length": 512,
+  "comparison_role": "external_compact_slm_baseline",
+  "evaluation_protocol": "identical_held_out_test_set",
+  "status": "ready_for_evaluation_engineer"
+}

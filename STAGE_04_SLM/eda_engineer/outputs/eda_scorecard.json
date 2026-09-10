@@ -1,0 +1,17 @@
+{
+  "dataset_completeness": "PASS",
+  "text_consistency": "PASS",
+  "token_distribution": "PASS",
+  "vocabulary_coverage": "PASS",
+  "oncology_terminology_retention": "PASS",
+  "dosage_retention": "WARNING (25.1% retention: toxicity follow-up summaries prioritize adverse event management over reciting baseline dosage)",
+  "mutation_retention": "PASS",
+  "ner_coverage": "PASS",
+  "summary_quality_indicators": "PASS",
+  "compression_characteristics": "PASS",
+  "context_window_suitability": "PASS",
+  "train_val_test_consistency": "PASS",
+  "leakage_risk": "PASS (0 Patient Overlap)",
+  "longitudinal_representation": "PASS",
+  "overall_slm_readiness": "PASS"
+}

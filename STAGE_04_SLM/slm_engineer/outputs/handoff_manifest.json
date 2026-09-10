@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE",
+  "timestamp": "2026-09-09T22:52:00Z",
+  "current_role": "SLM_ENGINEER",
+  "next_role": "EVALUATION_ENGINEER",
+  "primary_candidate": {
+    "model_id": "Qwen/Qwen2.5-1.5B-Instruct + LoRA",
+    "adapter_path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\slm_engineer\\models\\qwen2.5_1.5b_lora",
+    "best_checkpoint": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\slm_engineer\\models\\checkpoints\\best",
+    "tokenizer_path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\slm_engineer\\models\\qwen2.5_1.5b_lora\\tokenizer",
+    "composite_score": 0.887,
+    "rouge_l": 0.682,
+    "hallucination_rate": 0.8
+  },
+  "baseline_candidate": {
+    "model_id": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "config_path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\config\\baseline_config.json",
+    "composite_score": 0.718,
+    "rouge_l": 0.526,
+    "hallucination_rate": 3.4
+  },
+  "held_out_test_set": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\data_engineer\\splits\\test.jsonl",
+  "test_set_quarantined": true,
+  "offline_execution_verified": true,
+  "quality_gate_passed": true
+}

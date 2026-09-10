@@ -1,0 +1,25 @@
+{
+  "character_compression_ratio": {
+    "mean": 1.91,
+    "median": 1.97,
+    "std": 0.16,
+    "min": 1.61,
+    "max": 7.58,
+    "p10": 1.63,
+    "p50": 1.97,
+    "p90": 2.07,
+    "p95": 2.09
+  },
+  "word_compression_ratio": {
+    "mean": 1.93,
+    "median": 2.0,
+    "std": 0.21,
+    "min": 1.56,
+    "max": 8.57,
+    "p10": 1.61,
+    "p50": 2.0,
+    "p90": 2.19,
+    "p95": 2.19
+  },
+  "compression_assessment": "Stable, voice-ready compression with ~1.9x ratio, avoiding over-compression or verbatim echo."
+}

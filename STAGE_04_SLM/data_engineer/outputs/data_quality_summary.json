@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "total_checks_evaluated": 30,
+  "total_checks_passed": 30,
+  "total_checks_failed": 0,
+  "patient_leakage": 0,
+  "null_target_summaries": 0,
+  "null_clinical_reports": 0,
+  "duplicate_rows_in_cleaned": 0,
+  "ner_entities_grounded_pct": 100.0,
+  "domain_coverage_pct": 75.0
+}

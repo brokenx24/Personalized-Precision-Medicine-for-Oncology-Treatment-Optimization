@@ -1,0 +1,170 @@
+{
+  "TCGA-04-1336": {
+    "benchmark_patient_id": "BENCH_PAT_001",
+    "tcga_patient_id": "TCGA-04-1336",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00037",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-04-1348": {
+    "benchmark_patient_id": "BENCH_PAT_002",
+    "tcga_patient_id": "TCGA-04-1348",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00040",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-04-1371": {
+    "benchmark_patient_id": "BENCH_PAT_003",
+    "tcga_patient_id": "TCGA-04-1371",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00042",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-04-1516": {
+    "benchmark_patient_id": "BENCH_PAT_004",
+    "tcga_patient_id": "TCGA-04-1516",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00053",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-04-1649": {
+    "benchmark_patient_id": "BENCH_PAT_005",
+    "tcga_patient_id": "TCGA-04-1649",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00060",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-04-1651": {
+    "benchmark_patient_id": "BENCH_PAT_006",
+    "tcga_patient_id": "TCGA-04-1651",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00067",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-05-4398": {
+    "benchmark_patient_id": "BENCH_PAT_007",
+    "tcga_patient_id": "TCGA-05-4398",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00070",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-05-4405": {
+    "benchmark_patient_id": "BENCH_PAT_008",
+    "tcga_patient_id": "TCGA-05-4405",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00072",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-05-4417": {
+    "benchmark_patient_id": "BENCH_PAT_009",
+    "tcga_patient_id": "TCGA-05-4417",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00075",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-09-0364": {
+    "benchmark_patient_id": "BENCH_PAT_010",
+    "tcga_patient_id": "TCGA-09-0364",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00082",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-09-1661": {
+    "benchmark_patient_id": "BENCH_PAT_011",
+    "tcga_patient_id": "TCGA-09-1661",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00104",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-09-1669": {
+    "benchmark_patient_id": "BENCH_PAT_012",
+    "tcga_patient_id": "TCGA-09-1669",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00113",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-09-2044": {
+    "benchmark_patient_id": "BENCH_PAT_013",
+    "tcga_patient_id": "TCGA-09-2044",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00117",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-09-2049": {
+    "benchmark_patient_id": "BENCH_PAT_014",
+    "tcga_patient_id": "TCGA-09-2049",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00119",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-09-2054": {
+    "benchmark_patient_id": "BENCH_PAT_015",
+    "tcga_patient_id": "TCGA-09-2054",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00122",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-10-0928": {
+    "benchmark_patient_id": "BENCH_PAT_016",
+    "tcga_patient_id": "TCGA-10-0928",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00123",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-10-0933": {
+    "benchmark_patient_id": "BENCH_PAT_017",
+    "tcga_patient_id": "TCGA-10-0933",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00125",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-13-0727": {
+    "benchmark_patient_id": "BENCH_PAT_018",
+    "tcga_patient_id": "TCGA-13-0727",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00127",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-13-0751": {
+    "benchmark_patient_id": "BENCH_PAT_019",
+    "tcga_patient_id": "TCGA-13-0751",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00136",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-13-0755": {
+    "benchmark_patient_id": "BENCH_PAT_020",
+    "tcga_patient_id": "TCGA-13-0755",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00145",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-13-0761": {
+    "benchmark_patient_id": "BENCH_PAT_021",
+    "tcga_patient_id": "TCGA-13-0761",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00148",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-13-0766": {
+    "benchmark_patient_id": "BENCH_PAT_022",
+    "tcga_patient_id": "TCGA-13-0766",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00158",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-13-0801": {
+    "benchmark_patient_id": "BENCH_PAT_023",
+    "tcga_patient_id": "TCGA-13-0801",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00161",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  },
+  "TCGA-17-Z054": {
+    "benchmark_patient_id": "BENCH_PAT_024",
+    "tcga_patient_id": "TCGA-17-Z054",
+    "synthetic_nlp_patient_id": "SYNTH_PAT_00186",
+    "alignment_type": "SYNTHETIC_BENCHMARK_LINK",
+    "notes": "Transparent cross-stage linkage for precision-medicine validation"
+  }
+}

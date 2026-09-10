@@ -1,0 +1,80 @@
+# ==============================================================================
+# Git Ignore Configuration: Oncology Treatment Optimization
+# ==============================================================================
+
+# Python Bytecode & Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Linters
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.tox/
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Secrets, Environment & Credentials
+.env
+.env.*
+*.pem
+*.key
+*.cer
+*.crt
+id_rsa
+id_ecdsa
+id_ed25519
+credentials.json
+secrets.json
+
+# Scratch & Temporary Logs
+scratch/
+powershell.cmd
+*.log
+
+# ------------------------------------------------------------------------------
+# Targeted Model Exclusion (> 100 MB GitHub Limit - Option C Metadata Tracking)
+# NOTE: Stage 04 LoRA adapter (10.51 MB) and Stage 01/02 models (< 20 MB) ARE TRACKED.
+# These two BERT safetensors checkpoints (>410 MB each) remain 100% intact locally.
+# Their SHA256 hashes, configs, tokenizers, and architecture specs are tracked in Git.
+# ------------------------------------------------------------------------------
+STAGE_03_NLP/nlp_engineer/models/ner/best_model/model.safetensors
+STAGE_03_NLP/nlp_engineer/models/urgency/best_model/model.safetensors
+
+# ------------------------------------------------------------------------------
+# Future Release Stages (Safely Preserved Locally on Machine)
+# Quarantined from this Stage 01 - Stage 04 release
+# ------------------------------------------------------------------------------
+STAGE_05_EVALUATION/
+STAGE_06_INTEGRATION/
+SLM_ENGINEERING_COMPLETION_AUDIT/

@@ -1,0 +1,7 @@
+note_id,text,gold_entity,predicted_entity,gold_type,predicted_type,error_category,clinical_impact
+SYNTH_NOTE_00042,Initiated osimertinib 80 mg daily for NSCLC.,80 mg daily,80 mg,DOSAGE,DOSAGE,Boundary Error,Omission of frequency modifier ('daily') in dosage expression.
+SYNTH_NOTE_00105,Patient developed grade 3 CTCAE diarrhea following cycle 2.,CTCAE diarrhea,diarrhea,ADVERSE_EVENT,ADVERSE_EVENT,Boundary Error,Severity grading acronym excluded from adverse event span.
+SYNTH_NOTE_00214,Confirmed BRAF V600E mutated metastatic melanoma.,BRAF V600E,BRAF,GENE_MUTATION,GENE_MUTATION,Partial Entity Match,Gene symbol identified but specific codon amino acid variant truncated.
+SYNTH_NOTE_00388,History of mild rash 2 years ago during prior regimen.,O,mild rash,O,ADVERSE_EVENT,Spurious Entity,Historical resolved condition mispredicted as active adverse event.
+SYNTH_NOTE_00512,Received 200mg pembro infusion.,pembro,O,DRUG,O,Missing Entity,Informal clinical drug abbreviation ('pembro') missed by subword tokenizer.
+SYNTH_NOTE_00674,Elevated ALT/AST suggestive of immune-mediated transaminitis.,immune-mediated transaminitis,transaminitis,ADVERSE_EVENT,ADVERSE_EVENT,Contextual Ambiguity,Etiological descriptor ('immune-mediated') separated from clinical manifestation.

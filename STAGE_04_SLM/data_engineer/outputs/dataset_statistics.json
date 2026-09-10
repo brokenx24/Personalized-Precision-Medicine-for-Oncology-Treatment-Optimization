@@ -1,0 +1,30 @@
+{
+  "raw_record_count": 25000,
+  "cleaned_record_count": 23353,
+  "rejected_record_count": 1647,
+  "yield_percentage": 93.41,
+  "unique_patients_allocated": 5000,
+  "unique_patients_retained": 4906,
+  "character_statistics": {
+    "report_characters": {
+      "mean": 424.05,
+      "median": 409.0,
+      "std": 30.62,
+      "min": 380,
+      "max": 515
+    },
+    "summary_characters": {
+      "mean": 222.5,
+      "median": 223.0,
+      "std": 16.23,
+      "min": 62,
+      "max": 258
+    },
+    "summary_sentences": {
+      "mean": 2.3,
+      "min": 1,
+      "max": 3
+    }
+  },
+  "compression_ratio": 1.91
+}

@@ -1,0 +1,32 @@
+{
+  "split_train": {
+    "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\data_engineer\\splits\\train.jsonl",
+    "sha256": "afcff5cda9a8142e566b9705bb0e9c5eadbac946bbbf73d65043b17c01ad5ee7",
+    "size": 17903890
+  },
+  "split_val": {
+    "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\data_engineer\\splits\\validation.jsonl",
+    "sha256": "c66311143d8ff0059f69e1147f9f4185a8e703cbdd28c34afdfc58fee91200a4",
+    "size": 3820424
+  },
+  "split_test": {
+    "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\data_engineer\\splits\\test.jsonl",
+    "sha256": "668f4b6dfd997272dd73b338b91a93a5014d0c8e56069b295b56401dc04e4d38",
+    "size": 3834476
+  },
+  "slm_adapter": {
+    "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\slm_engineer\\models\\qwen2.5_1.5b_lora\\adapter_model.safetensors",
+    "sha256": "896d12024b324d9ebe5958be4eef974b0c9249f06a0eac200c9cffd60e8bbb3d",
+    "size": 11024912
+  },
+  "slm_handoff": {
+    "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\slm_engineer\\outputs\\handoff_manifest.json",
+    "sha256": "ecf1d578d79081fa504a8fd6259c9b592b295fa6ba98455daa8592c6509c7a4f",
+    "size": 1227
+  },
+  "eda_manifest": {
+    "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\eda_engineer\\outputs\\eda_manifest.json",
+    "sha256": "fc0a4802dcbb57b8234599bcf792b07b0f833b4518a4b49cc7fcb2bc7b120c19",
+    "size": 503
+  }
+}

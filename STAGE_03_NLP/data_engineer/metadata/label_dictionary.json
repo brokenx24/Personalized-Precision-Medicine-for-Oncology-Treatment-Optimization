@@ -1,0 +1,18 @@
+{
+  "urgency_classes": {
+    "LOW": "Mild symptoms, stable disease, Grade 1 toxicity, or negative review of systems.",
+    "MODERATE": "Persistent symptoms, Grade 2 toxicity, dose modifications under evaluation.",
+    "HIGH": "Severe symptoms, Grade 3/4 toxicity, emergency triage, irAEs, or life-threatening events."
+  },
+  "ner_bio_tags": {
+    "B-GENE_MUTATION": "Beginning token of a genomic alteration, mutation, or molecular biomarker.",
+    "I-GENE_MUTATION": "Inside token of a genomic alteration, mutation, or molecular biomarker.",
+    "B-DRUG": "Beginning token of an oncology pharmacological agent.",
+    "I-DRUG": "Inside token of an oncology pharmacological agent.",
+    "B-DOSAGE": "Beginning token of a clinical dose, concentration, or administration schedule.",
+    "I-DOSAGE": "Inside token of a clinical dose, concentration, or administration schedule.",
+    "B-ADVERSE_EVENT": "Beginning token of a treatment-related adverse effect or toxicity.",
+    "I-ADVERSE_EVENT": "Inside token of a treatment-related adverse effect or toxicity.",
+    "O": "Outside of any defined clinical entity."
+  }
+}

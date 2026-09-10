@@ -1,0 +1,13 @@
+{
+  "train_patients": 1750,
+  "validation_patients": 376,
+  "test_patients": 374,
+  "patient_overlap_train_val": 0,
+  "patient_overlap_train_test": 0,
+  "patient_overlap_val_test": 0,
+  "exact_duplicate_texts": 0,
+  "mean_cross_split_similarity": 0.8054,
+  "high_similarity_pairs": 3,
+  "audit_status": "PASS",
+  "disclaimer": "Synthetic research evaluation only."
+}

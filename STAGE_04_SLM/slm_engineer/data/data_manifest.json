@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-09-09T22:47:00Z",
+  "split_counts": {
+    "train": 16360,
+    "validation": 3490,
+    "test": 3503
+  },
+  "patient_counts": {
+    "train": 3435,
+    "validation": 733,
+    "test": 738
+  },
+  "leakage_detected": false,
+  "empty_inputs_found": 0,
+  "empty_targets_found": 0,
+  "duplicate_pairs_found": 0,
+  "length_violations_exceeding_512": 0,
+  "test_set_quarantined": true,
+  "dataset_hashes": {
+    "train": "afcff5cda9a8142e566b9705bb0e9c5eadbac946bbbf73d65043b17c01ad5ee7",
+    "validation": "c66311143d8ff0059f69e1147f9f4185a8e703cbdd28c34afdfc58fee91200a4",
+    "test": "668f4b6dfd997272dd73b338b91a93a5014d0c8e56069b295b56401dc04e4d38"
+  },
+  "leakage_details": {
+    "overlap": 0,
+    "status": "ZERO_LEAKAGE_VERIFIED"
+  }
+}

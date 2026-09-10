@@ -1,0 +1,9 @@
+{
+  "description": "Traceable mapping between clinical_report -> extracted entities -> target_summary",
+  "total_audited_records": 23353,
+  "entities_grounded_in_report_count": 23353,
+  "entities_grounded_in_report_pct": 100.0,
+  "core_entities_reflected_in_summary_count": 23351,
+  "core_entities_reflected_in_summary_pct": 99.99,
+  "status": "PASS"
+}

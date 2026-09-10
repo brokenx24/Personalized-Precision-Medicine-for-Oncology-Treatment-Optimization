@@ -1,0 +1,35 @@
+[
+  {
+    "model_name": "TF-IDF + Logistic Regression",
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "high_risk_recall": 1.0,
+    "high_risk_f1": 1.0,
+    "training_time_sec": 0.35,
+    "inference_latency_ms": 0.001
+  },
+  {
+    "model_name": "TF-IDF + Linear SVM",
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "high_risk_recall": 1.0,
+    "high_risk_f1": 1.0,
+    "training_time_sec": 0.46,
+    "inference_latency_ms": 0.0
+  },
+  {
+    "model_name": "BioClinicalBERT (Primary)",
+    "accuracy": 0.8917,
+    "balanced_accuracy": 0.8918,
+    "macro_f1": 0.8924,
+    "weighted_f1": 0.8922,
+    "high_risk_recall": 0.8931,
+    "high_risk_f1": 0.9089,
+    "training_time_sec": "Fine-Tuned",
+    "inference_latency_ms": 14.5
+  }
+]

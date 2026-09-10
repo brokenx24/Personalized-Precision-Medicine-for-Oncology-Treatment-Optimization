@@ -1,0 +1,107 @@
+{
+  "reports_with_dosage": 18696,
+  "summaries_retaining_dosage": 4692,
+  "dosage_retention_percentage": 25.1,
+  "top_dosage_expressions": [
+    {
+      "dosage": "200 mg",
+      "count": 2684
+    },
+    {
+      "dosage": "80 mg",
+      "count": 1951
+    },
+    {
+      "dosage": "80 mg orally once daily",
+      "count": 1951
+    },
+    {
+      "dosage": "300 mg",
+      "count": 1580
+    },
+    {
+      "dosage": "500 mg",
+      "count": 1580
+    },
+    {
+      "dosage": "500 mg twice daily",
+      "count": 1580
+    },
+    {
+      "dosage": "AUC 5",
+      "count": 1551
+    },
+    {
+      "dosage": "175 mg/m2",
+      "count": 1545
+    },
+    {
+      "dosage": "75 mg/m2",
+      "count": 810
+    },
+    {
+      "dosage": "20 mg",
+      "count": 783
+    }
+  ],
+  "fragmentation_examples": [
+    {
+      "dosage_expression": "AUC 5 IV every 3 weeks",
+      "estimated_token_pieces": 6,
+      "pieces": [
+        "AUC",
+        "5",
+        "IV",
+        "every",
+        "3",
+        "weeks"
+      ]
+    },
+    {
+      "dosage_expression": "175 mg/m2 IV every 3 weeks",
+      "estimated_token_pieces": 9,
+      "pieces": [
+        "175",
+        "mg",
+        "/",
+        "m",
+        "2",
+        "IV",
+        "every",
+        "3",
+        "weeks"
+      ]
+    },
+    {
+      "dosage_expression": "80 mg orally once daily",
+      "estimated_token_pieces": 5,
+      "pieces": [
+        "80",
+        "mg",
+        "orally",
+        "once",
+        "daily"
+      ]
+    },
+    {
+      "dosage_expression": "20 mg orally once daily",
+      "estimated_token_pieces": 5,
+      "pieces": [
+        "20",
+        "mg",
+        "orally",
+        "once",
+        "daily"
+      ]
+    },
+    {
+      "dosage_expression": "2 mg PRN",
+      "estimated_token_pieces": 3,
+      "pieces": [
+        "2",
+        "mg",
+        "PRN"
+      ]
+    }
+  ]
+}

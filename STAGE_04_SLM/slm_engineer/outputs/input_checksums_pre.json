@@ -1,0 +1,32 @@
+{
+  "data_clean_csv": {
+    "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\data_engineer\\cleaned\\cleaned_oncology_summarization.csv",
+    "sha256": "c6bae526d9e08c02ea85a2ade606644d01723c1f14536a48939be187836310e1",
+    "size": 25808682
+  },
+  "split_train": {
+    "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\data_engineer\\splits\\train.jsonl",
+    "sha256": "afcff5cda9a8142e566b9705bb0e9c5eadbac946bbbf73d65043b17c01ad5ee7",
+    "size": 17903890
+  },
+  "split_val": {
+    "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\data_engineer\\splits\\validation.jsonl",
+    "sha256": "c66311143d8ff0059f69e1147f9f4185a8e703cbdd28c34afdfc58fee91200a4",
+    "size": 3820424
+  },
+  "split_test": {
+    "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\data_engineer\\splits\\test.jsonl",
+    "sha256": "668f4b6dfd997272dd73b338b91a93a5014d0c8e56069b295b56401dc04e4d38",
+    "size": 3834476
+  },
+  "eda_manifest": {
+    "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\eda_engineer\\outputs\\eda_manifest.json",
+    "sha256": "fc0a4802dcbb57b8234599bcf792b07b0f833b4518a4b49cc7fcb2bc7b120c19",
+    "size": 503
+  },
+  "stage3_label_dict": {
+    "path": "c:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_03_NLP\\data_engineer\\metadata\\label_dictionary.json",
+    "sha256": "09c63cfacd218d9d872ab520c30ebad18022b5a40914dc7acb4d44aa6c3129db",
+    "size": 1130
+  }
+}

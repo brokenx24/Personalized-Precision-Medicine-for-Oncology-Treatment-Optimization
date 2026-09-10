@@ -1,0 +1,4 @@
+timepoint,delta_days,ctDNA,protein_marker_cea,hemoglobin,WBC,platelets,creatinine,ALT,AST
+T0,0,0.1526,3.22,13.5,5.8,177.0,1.06,21.0,25.0
+T1,90,0.1595,2.84,13.9,5.2,182.0,1.02,18.0,24.0
+T2,132,0.0989,2.78,13.8,4.5,144.0,1.0,22.0,26.0

@@ -1,0 +1,69 @@
+category,term,code,clinical_definition,source_stage
+CANCER_TYPE,Lung cancer,C34,Malignant neoplasm of bronchus and lung,STAGE_03_NLP
+CANCER_TYPE,Breast cancer,C50,Malignant neoplasm of breast,STAGE_03_NLP
+CANCER_TYPE,Colorectal cancer,C18-C20,"Malignant neoplasm of colon, rectosigmoid, rectum",STAGE_03_NLP
+CANCER_TYPE,Melanoma,C43,Malignant melanoma of skin,STAGE_03_NLP
+CANCER_TYPE,Prostate cancer,C61,Malignant neoplasm of prostate,STAGE_03_NLP
+CANCER_TYPE,Ovarian cancer,C56,Malignant neoplasm of ovary,STAGE_03_NLP
+CANCER_TYPE,Pancreatic cancer,C25,Malignant neoplasm of pancreas,STAGE_03_NLP
+CANCER_TYPE,Liver cancer,C22,Malignant neoplasm of liver and intrahepatic bile ducts,STAGE_03_NLP
+CANCER_TYPE,Leukemia,C91-C95,Hematological malignancy of blood and bone marrow,STAGE_03_NLP
+CANCER_TYPE,Lymphoma,C81-C86,Malignant neoplasm of lymphoid tissue,STAGE_03_NLP
+STAGE,Stage I,AJCC-I,Localized primary tumor without nodal metastasis,DOMAIN_ONTOLOGY
+STAGE,Stage II,AJCC-II,Locally advanced primary tumor with limited invasion,DOMAIN_ONTOLOGY
+STAGE,Stage III,AJCC-III,Regional lymph node metastasis,DOMAIN_ONTOLOGY
+STAGE,Stage IV,AJCC-IV,Distant organ or tissue metastasis,DOMAIN_ONTOLOGY
+GENE_MUTATION,EGFR L858R,HGVS:p.L858R,Exon 21 activating mutation in EGFR tyrosine kinase,STAGE_03_NLP
+GENE_MUTATION,EGFR exon 19 deletion,HGVS:p.E746_A750del,In-frame deletion in EGFR exon 19,STAGE_03_NLP
+GENE_MUTATION,KRAS G12C,HGVS:p.G12C,Activating oncogenic mutation in KRAS codon 12,STAGE_03_NLP
+GENE_MUTATION,KRAS G12D,HGVS:p.G12D,Oncogenic missense mutation in KRAS codon 12,STAGE_03_NLP
+GENE_MUTATION,BRAF V600E,HGVS:p.V600E,Kinase activating mutation in BRAF valine 600,STAGE_03_NLP
+GENE_MUTATION,TP53 mutation,HGVS:p.R175H,Loss-of-function somatic alteration in p53,STAGE_03_NLP
+GENE_MUTATION,PIK3CA H1047R,HGVS:p.H1047R,Kinase domain activating mutation in PI3-kinase,DOMAIN_ONTOLOGY
+GENE_MUTATION,BRCA1 c.68_69del,HGVS:c.68_69delAG,Pathogenic frameshift truncating mutation in BRCA1,DOMAIN_ONTOLOGY
+GENE_MUTATION,BRCA2 c.5946del,HGVS:c.5946delT,Pathogenic truncating alteration in BRCA2,DOMAIN_ONTOLOGY
+GENE_MUTATION,ERBB2 amplification,CNV:HER2-AMP,Receptor tyrosine-protein kinase erbB-2 gene amplification,DOMAIN_ONTOLOGY
+BIOMARKER,PD-L1 TPS >= 50%,IHC:22C3,High programmed death-ligand 1 tumor proportion score,DOMAIN_ONTOLOGY
+BIOMARKER,MSI-High,MSI-H,High microsatellite instability indicating mismatch repair deficiency,STAGE_03_NLP
+BIOMARKER,MSS,MSS,Microsatellite stable phenotype,DOMAIN_ONTOLOGY
+BIOMARKER,ER-positive,IHC:ER-POS,Estrogen receptor positive expression,STAGE_03_NLP
+BIOMARKER,HER2-positive,IHC:3+,Human epidermal growth factor receptor 2 overexpression,DOMAIN_ONTOLOGY
+BIOMARKER,TMB-High,TMB>=10mut/Mb,High tumor mutational burden,DOMAIN_ONTOLOGY
+DRUG,carboplatin,RxNorm:2044,Platinum-based antineoplastic DNA alkylating agent,STAGE_03_NLP
+DRUG,cisplatin,RxNorm:2555,Platinum chemotherapy coordination complex,STAGE_03_NLP
+DRUG,paclitaxel,RxNorm:56946,Taxane antimicrotubule antineoplastic agent,DOMAIN_ONTOLOGY
+DRUG,pembrolizumab,RxNorm:1547545,Humanized anti-PD-1 monoclonal antibody,DOMAIN_ONTOLOGY
+DRUG,nivolumab,RxNorm:1599538,Fully human IgG4 anti-PD-1 monoclonal antibody,DOMAIN_ONTOLOGY
+DRUG,osimertinib,RxNorm:1722883,Third-generation irreversible EGFR tyrosine kinase inhibitor,DOMAIN_ONTOLOGY
+DRUG,sotorasib,RxNorm:2552885,Small molecule KRAS G12C covalent inhibitor,DOMAIN_ONTOLOGY
+DRUG,trastuzumab,RxNorm:224905,Recombinant humanized anti-HER2 monoclonal antibody,DOMAIN_ONTOLOGY
+DRUG,doxorubicin,RxNorm:3639,Anthracycline topoisomerase II inhibitor,DOMAIN_ONTOLOGY
+DRUG,fluorouracil,RxNorm:4492,Pyrimidine analog antimetabolite (5-FU),STAGE_03_NLP
+DRUG,tamoxifen,RxNorm:10324,Selective estrogen receptor modulator (SERM),DOMAIN_ONTOLOGY
+DRUG,olaparib,RxNorm:1597876,PARP-1/2 enzyme inhibitor,DOMAIN_ONTOLOGY
+DRUG,loperamide,RxNorm:6468,Supportive care antimotility agent,STAGE_03_NLP
+DRUG,dexamethasone,RxNorm:3264,Glucocorticoid anti-inflammatory and antiemetic,STAGE_03_NLP
+DOSAGE,AUC 5 IV every 3 weeks,DOSE-AUC5,Area under curve 5 intravenous administration,DOMAIN_ONTOLOGY
+DOSAGE,175 mg/m2 IV every 3 weeks,DOSE-PAC175,Body surface area weight-based taxane dosing,DOMAIN_ONTOLOGY
+DOSAGE,200 mg IV every 3 weeks,DOSE-PEM200,Fixed dose anti-PD-1 checkpoint inhibition,STAGE_03_NLP
+DOSAGE,80 mg orally once daily,DOSE-OSI80,Standard daily targeted oral TKI dosing,DOMAIN_ONTOLOGY
+DOSAGE,960 mg orally once daily,DOSE-SOT960,Daily oral KRAS inhibitor schedule,DOMAIN_ONTOLOGY
+DOSAGE,500 mg twice daily,DOSE-500BID,Standard oral adjuvant medication schedule,STAGE_03_NLP
+DOSAGE,20 mg orally once daily,DOSE-TAM20,Standard endocrine maintenance therapy dose,DOMAIN_ONTOLOGY
+DOSAGE,300 mg orally twice daily,DOSE-OLA300,Maintenance PARP inhibitor dosing schedule,DOMAIN_ONTOLOGY
+DOSAGE,2 mg PRN,DOSE-LOP2,As-needed symptomatic management dosing,STAGE_03_NLP
+ADVERSE_EVENT,mild fatigue,CTCAE:G1-FATIGUE,Grade 1 asthenia relieved by rest,STAGE_03_NLP
+ADVERSE_EVENT,moderate neutropenia,CTCAE:G2-NEUTRO,Grade 2 absolute neutrophil count reduction,STAGE_03_NLP
+ADVERSE_EVENT,severe neutropenia,CTCAE:G3-NEUTRO,Grade 3 absolute neutrophil count <1000/uL,DOMAIN_ONTOLOGY
+ADVERSE_EVENT,peripheral neuropathy,CTCAE:G2-NEURO,Sensory peripheral nerve toxicity from taxanes/platinums,DOMAIN_ONTOLOGY
+ADVERSE_EVENT,immune-mediated colitis,CTCAE:G3-COLITIS,Autoimmune gastrointestinal mucosal toxicity from checkpoint inhibitors,DOMAIN_ONTOLOGY
+ADVERSE_EVENT,moderate diarrhea,CTCAE:G2-DIARRHEA,Increase of 4-6 stools/day over baseline,STAGE_03_NLP
+ADVERSE_EVENT,severe hepatotoxicity,CTCAE:G3-HEPATIC,Serum AST/ALT elevation >5x upper limit of normal,STAGE_03_NLP
+ADVERSE_EVENT,rash and pruritus,CTCAE:G2-DERM,Maculopapular cutaneous eruption covering 10-30% BSA,DOMAIN_ONTOLOGY
+RESPONSE,Partial Response (PR),RECIST:PR,At least 30% decrease in sum of target lesion diameters,DOMAIN_ONTOLOGY
+RESPONSE,Stable Disease (SD),RECIST:SD,Insufficient shrinkage for PR and insufficient growth for PD,DOMAIN_ONTOLOGY
+RESPONSE,Progressive Disease (PD),RECIST:PD,At least 20% increase in sum of target lesion diameters or new lesions,DOMAIN_ONTOLOGY
+RESPONSE,Complete Response (CR),RECIST:CR,Disappearance of all target and non-target lesions,DOMAIN_ONTOLOGY
+GUIDELINE_REF,REF-NCCN-NSCLC-V2024,NCCN-NSCLC,Synthetic guideline terminology reference for NSCLC,SYNTHETIC_REF
+GUIDELINE_REF,REF-NCCN-BRCA-V2024,NCCN-BRCA,Synthetic guideline terminology reference for Breast Cancer,SYNTHETIC_REF
+GUIDELINE_REF,REF-NCCN-CRC-V2024,NCCN-CRC,Synthetic guideline terminology reference for Colorectal Cancer,SYNTHETIC_REF

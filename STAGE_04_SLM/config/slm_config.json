@@ -1,0 +1,13 @@
+{
+  "model_name_or_path": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_family": "Qwen2",
+  "architecture": "Qwen2ForCausalLM",
+  "task": "causal_language_modeling_summarization",
+  "max_sequence_length": 512,
+  "truncation_policy": "reject_and_log",
+  "trust_remote_code": true,
+  "use_cache": false,
+  "target_output_sentences": 2,
+  "clinical_domain": "oncology_precision_medicine",
+  "clinical_boundary": "document_summarization_only_no_clinical_decisions"
+}

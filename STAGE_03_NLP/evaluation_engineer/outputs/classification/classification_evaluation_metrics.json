@@ -1,0 +1,49 @@
+{
+  "accuracy": 0.8917,
+  "balanced_accuracy": 0.8918,
+  "macro_precision": 0.8936,
+  "macro_recall": 0.8918,
+  "macro_f1": 0.8924,
+  "weighted_f1": 0.8922,
+  "matthews_corrcoef": 0.8378,
+  "cohen_kappa": 0.8375,
+  "roc_auc_ovr": 0.994,
+  "per_class_metrics": {
+    "LOW": {
+      "precision": 0.9184,
+      "recall": 0.9002,
+      "f1": 0.9092,
+      "support": 1213
+    },
+    "MODERATE": {
+      "precision": 0.8371,
+      "recall": 0.8821,
+      "f1": 0.859,
+      "support": 1264
+    },
+    "HIGH": {
+      "precision": 0.9253,
+      "recall": 0.8931,
+      "f1": 0.9089,
+      "support": 1263
+    }
+  },
+  "confusion_matrix": [
+    [
+      1092,
+      100,
+      21
+    ],
+    [
+      79,
+      1115,
+      70
+    ],
+    [
+      18,
+      117,
+      1128
+    ]
+  ],
+  "disclaimer": "Synthetic research evaluation only. These results do not constitute clinical validation and must not be interpreted as evidence of clinical efficacy or diagnostic performance."
+}

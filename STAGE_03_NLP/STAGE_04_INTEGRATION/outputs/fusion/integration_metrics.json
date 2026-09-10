@@ -1,0 +1,22 @@
+{
+  "total_integrated_patients": 1291,
+  "evidence_breakdown": {
+    "SINGLE_MODALITY": 1267,
+    "FULL_MULTIMODAL": 24
+  },
+  "risk_class_distribution": {
+    "LOW": 795,
+    "HIGH": 279,
+    "MODERATE": 217
+  },
+  "model_agreement_distribution": {
+    "SINGLE_MODALITY": 1267,
+    "PARTIAL_AGREEMENT": 12,
+    "DISAGREEMENT": 8,
+    "FULL_AGREEMENT": 4
+  },
+  "total_safety_flags": 500,
+  "mean_integrated_score": 0.3077,
+  "mean_confidence": 0.6415,
+  "disclaimer": "Synthetic research integration only. This system is not clinically validated."
+}

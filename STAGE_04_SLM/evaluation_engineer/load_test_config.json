@@ -1,0 +1,13 @@
+{
+  "max_concurrency_workers": 4,
+  "batch_sizes": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "degradation_tolerance_ratio": 3.5,
+  "error_threshold_pct": 0.0
+}

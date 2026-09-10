@@ -1,0 +1,12 @@
+metric,value
+total_tokens,1583654.0
+total_entities,86636.0
+entities_per_document_mean,3.47
+gene_mutations_count,9080.0
+drug_count,26695.0
+dosage_count,26695.0
+adverse_event_count,24166.0
+o_tag_count,1374908.0
+o_tag_percentage,86.82
+entity_tag_count,208746.0
+entity_tag_percentage,13.18

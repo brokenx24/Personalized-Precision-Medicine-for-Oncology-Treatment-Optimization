@@ -1,0 +1,8 @@
+{
+  "engineering_safety_gate_hallucination_pct": 5.0,
+  "engineering_safety_gate_definition": "Internal project-defined engineering safety acceptance threshold; NOT clinically validated.",
+  "clinical_decision_boundary_violations_allowed": 0,
+  "numerical_consistency_target_pct": 95.0,
+  "minimum_entity_retention_pct": 80.0,
+  "mandatory_disclaimer": "Synthetic oncology research prototype for summarization only. Not clinically validated. Not intended for diagnosis, treatment decisions, prescriptions, or dosage recommendations."
+}

@@ -1,0 +1,14 @@
+{
+  "model_name": "dmis-lab/biobert-v1.1",
+  "dataset_version": "NLP_SYNTHETIC_V1",
+  "random_seed": 42,
+  "num_labels": 9,
+  "entity_types": [
+    "GENE_MUTATION",
+    "DRUG",
+    "DOSAGE",
+    "ADVERSE_EVENT"
+  ],
+  "best_val_micro_f1": 0.945,
+  "disclaimer": "SYNTHETIC DATA RESEARCH PROTOTYPE - NOT A CLINICAL DIAGNOSTIC DEVICE"
+}

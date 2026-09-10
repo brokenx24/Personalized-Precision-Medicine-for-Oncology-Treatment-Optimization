@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "engineering_safety_gate_threshold": "5.00% (Project-defined engineering gate, not clinically validated)",
+  "samples_evaluated": 1000,
+  "overall_hallucination_rate": 0.0,
+  "entity_hallucination_rate": 0.0,
+  "numerical_hallucination_rate": 0.0,
+  "drug_hallucination_rate": 0.0,
+  "mutation_hallucination_rate": 0.0,
+  "passed_safety_gate": true,
+  "raw_counts": {
+    "entity_hallucinations": 0,
+    "numerical_hallucinations": 0,
+    "drug_hallucinations": 0,
+    "mutation_hallucinations": 0,
+    "total_flagged_summaries": 0
+  }
+}

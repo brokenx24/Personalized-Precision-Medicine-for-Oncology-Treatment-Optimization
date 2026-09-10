@@ -1,0 +1,59 @@
+{
+  "module": "evaluation_engineer",
+  "role": "Evaluation Engineer",
+  "stage": "STAGE_03_NLP",
+  "seed": 42,
+  "input_paths": {
+    "test_csv": "STAGE_03_NLP/data_engineer/splits/test.csv",
+    "train_csv": "STAGE_03_NLP/data_engineer/splits/train.csv",
+    "validation_csv": "STAGE_03_NLP/data_engineer/splits/validation.csv",
+    "cleaned_ner_json": "STAGE_03_NLP/data_engineer/cleaned/cleaned_ner_dataset.json",
+    "urgency_model_dir": "STAGE_03_NLP/nlp_engineer/models/urgency/best_model",
+    "urgency_tokenizer_dir": "STAGE_03_NLP/nlp_engineer/models/urgency/tokenizer",
+    "ner_model_dir": "STAGE_03_NLP/nlp_engineer/models/ner/best_model",
+    "ner_tokenizer_dir": "STAGE_03_NLP/nlp_engineer/models/ner/tokenizer",
+    "nlp_predictions_csv": "STAGE_03_NLP/nlp_engineer/outputs/predictions/urgency_test_predictions.csv",
+    "nlp_class_metrics_json": "STAGE_03_NLP/nlp_engineer/outputs/metrics/classification_metrics.json",
+    "nlp_ner_metrics_json": "STAGE_03_NLP/nlp_engineer/outputs/metrics/ner_metrics.json"
+  },
+  "expected_counts": {
+    "total_test_records": 3740,
+    "total_test_patients": 374,
+    "classes": 3,
+    "entity_types": 4,
+    "bio_tags": 9
+  },
+  "labels": {
+    "urgency_classes": [
+      "LOW",
+      "MODERATE",
+      "HIGH"
+    ],
+    "entity_types": [
+      "GENE_MUTATION",
+      "DRUG",
+      "DOSAGE",
+      "ADVERSE_EVENT"
+    ],
+    "bio_tags": [
+      "O",
+      "B-GENE_MUTATION",
+      "I-GENE_MUTATION",
+      "B-DRUG",
+      "I-DRUG",
+      "B-DOSAGE",
+      "I-DOSAGE",
+      "B-ADVERSE_EVENT",
+      "I-ADVERSE_EVENT"
+    ]
+  },
+  "plot_config": {
+    "dpi": 300,
+    "palette": [
+      "#2ecc71",
+      "#f39c12",
+      "#e74c3c"
+    ]
+  },
+  "disclaimer": "Synthetic research evaluation only. These results do not constitute clinical validation and must not be interpreted as evidence of clinical efficacy or diagnostic performance."
+}

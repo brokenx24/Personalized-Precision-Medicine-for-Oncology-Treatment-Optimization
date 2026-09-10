@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-09-09T22:49:00Z",
+  "best_checkpoint_epoch": 2,
+  "fit_classification": "HEALTHY FIT",
+  "overfitting_analysis": {
+    "fit_status": "HEALTHY FIT",
+    "loss_divergence": -0.044,
+    "rouge_gap": 0.023,
+    "diagnosis": "Loss curves and ROUGE tracks are closely aligned with excellent generalization."
+  },
+  "underfitting_analysis": {
+    "is_underfit": false,
+    "status": "PASS",
+    "train_loss": 1.385,
+    "val_loss": 1.341,
+    "rouge_l": 0.682,
+    "entity_retention": 94.8,
+    "conclusion": "Model demonstrated sufficient capacity and healthy convergence."
+  },
+  "metrics": {
+    "validation_loss": 1.341,
+    "training_loss": 1.385,
+    "perplexity": 3.82,
+    "rouge_1": 0.725,
+    "rouge_2": 0.528,
+    "rouge_l": 0.682,
+    "bleu": 0.495,
+    "semantic_similarity": 0.916,
+    "medical_entity_retention": 94.8,
+    "hallucination_rate": 0.8,
+    "numerical_consistency": 99.4,
+    "composite_score": 0.887,
+    "average_summary_sentences": 2.04,
+    "average_summary_tokens": 36.8,
+    "compression_ratio": "3.8:1"
+  },
+  "epoch_progression": [
+    {
+      "epoch": 1,
+      "train_loss": 1.742,
+      "val_loss": 1.498,
+      "perplexity": 4.47,
+      "rouge_1": 0.672,
+      "rouge_2": 0.468,
+      "rouge_l": 0.624,
+      "bleu": 0.435,
+      "semantic_similarity": 0.875,
+      "entity_retention": 90.8,
+      "hallucination_rate": 1.4,
+      "numerical_consistency": 98.6,
+      "composite_score": 0.825,
+      "learning_rate": 0.0001,
+      "tokens_processed": 2110440
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.385,
+      "val_loss": 1.341,
+      "perplexity": 3.82,
+      "rouge_1": 0.725,
+      "rouge_2": 0.528,
+      "rouge_l": 0.682,
+      "bleu": 0.495,
+      "semantic_similarity": 0.916,
+      "entity_retention": 94.8,
+      "hallucination_rate": 0.8,
+      "numerical_consistency": 99.4,
+      "composite_score": 0.887,
+      "learning_rate": 6.8e-05,
+      "tokens_processed": 4220880
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.221,
+      "val_loss": 1.354,
+      "perplexity": 3.87,
+      "rouge_1": 0.728,
+      "rouge_2": 0.529,
+      "rouge_l": 0.684,
+      "bleu": 0.498,
+      "semantic_similarity": 0.918,
+      "entity_retention": 94.9,
+      "hallucination_rate": 0.9,
+      "numerical_consistency": 99.3,
+      "composite_score": 0.885,
+      "learning_rate": 1.2e-05,
+      "tokens_processed": 6331320
+    }
+  ]
+}

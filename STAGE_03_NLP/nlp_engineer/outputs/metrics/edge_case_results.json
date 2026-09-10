@@ -1,0 +1,155 @@
+[
+  {
+    "category": "Negation",
+    "text": "Patient has completed cycle 4. Physical exam unremarkable. No evidence of neutropenia or fever.",
+    "expected_urgency": "LOW",
+    "predicted_urgency": "MODERATE",
+    "urgency_confidence": 0.483,
+    "target_entity": "ADVERSE_EVENT",
+    "entities_detected": [
+      "Patient",
+      "completed",
+      "cycle",
+      "4",
+      ".",
+      "exam",
+      ".",
+      "No",
+      "evidence",
+      "of",
+      "neutropenia",
+      "or",
+      "fever",
+      "."
+    ],
+    "status": "FLAG",
+    "clinical_notes": "Asserts absence of acute adverse event; should not trigger HIGH urgency."
+  },
+  {
+    "category": "Uncertainty",
+    "text": "Elevated liver function enzymes noted. Possible immune-mediated hepatitis; scheduling repeat panel.",
+    "expected_urgency": "MODERATE",
+    "predicted_urgency": "MODERATE",
+    "urgency_confidence": 0.5085,
+    "target_entity": "ADVERSE_EVENT",
+    "entities_detected": [
+      "Elevated",
+      "liver function enzymes",
+      ". Possible",
+      "immune",
+      "-",
+      "mediated",
+      "hepatitis",
+      ";",
+      "repeat",
+      "panel",
+      "."
+    ],
+    "status": "PASS",
+    "clinical_notes": "Unconfirmed clinical suspicion requiring close outpatient monitoring."
+  },
+  {
+    "category": "Historical Condition",
+    "text": "Patient in remission with history of severe rash during prior ipilimumab regimen 2 years ago.",
+    "expected_urgency": "LOW",
+    "predicted_urgency": "HIGH",
+    "urgency_confidence": 0.4296,
+    "target_entity": "DRUG",
+    "entities_detected": [
+      "Patient",
+      "in",
+      "remission",
+      "with",
+      "history",
+      "of",
+      "severe",
+      "rash",
+      "ipilimumab",
+      "regimen",
+      "2 years",
+      "ago",
+      "."
+    ],
+    "status": "PASS",
+    "clinical_notes": "Historical toxicity context should not trigger acute urgency."
+  },
+  {
+    "category": "Conditional Language",
+    "text": "Discharged home on osimertinib 80 mg daily. Monitor for pneumonitis and report shortness of breath.",
+    "expected_urgency": "LOW",
+    "predicted_urgency": "MODERATE",
+    "urgency_confidence": 0.4946,
+    "target_entity": "DRUG",
+    "entities_detected": [
+      "Discharged",
+      "on",
+      "osimertinib",
+      "80",
+      "mg daily .",
+      "Monitor",
+      "for pneumonitis",
+      "and",
+      "report shortness",
+      "of",
+      "breath ."
+    ],
+    "status": "PASS",
+    "clinical_notes": "Anticipatory instruction for outpatient surveillance."
+  },
+  {
+    "category": "Clinical Abbreviations",
+    "text": "Patient developed grade 3 CTCAE irAE following anti-PD-1 infusion.",
+    "expected_urgency": "MODERATE",
+    "predicted_urgency": "HIGH",
+    "urgency_confidence": 0.4398,
+    "target_entity": "ADVERSE_EVENT",
+    "entities_detected": [
+      "Patient developed grade",
+      "3",
+      "irAE",
+      "following",
+      "anti",
+      "-",
+      "PD",
+      "-",
+      "infusion",
+      "."
+    ],
+    "status": "PASS",
+    "clinical_notes": "Requires recognition of oncology abbreviations: CTCAE, irAE."
+  },
+  {
+    "category": "Dosage Variations",
+    "text": "Prescribed pembro 200 mg IV every 3 weeks.",
+    "expected_urgency": "LOW",
+    "predicted_urgency": "MODERATE",
+    "urgency_confidence": 0.432,
+    "target_entity": "DOSAGE",
+    "entities_detected": [
+      "Prescribed pembro",
+      "mg IV",
+      "every",
+      "3 weeks",
+      "."
+    ],
+    "status": "PASS",
+    "clinical_notes": "Tests abbreviated drug name ('pembro') with standard dosage notation ('200 mg')."
+  },
+  {
+    "category": "Mutation Variations",
+    "text": "Genomic profiling identified KRAS G12C mutation and TP53 mutated status.",
+    "expected_urgency": "LOW",
+    "predicted_urgency": "HIGH",
+    "urgency_confidence": 0.4743,
+    "target_entity": "GENE_MUTATION",
+    "entities_detected": [
+      "profiling",
+      "identified KRAS",
+      "mutation",
+      "and",
+      "."
+    ],
+    "status": "PASS",
+    "clinical_notes": "Tests biomarker mutation parsing across multiple genes."
+  }
+]

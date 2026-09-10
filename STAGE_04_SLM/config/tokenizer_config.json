@@ -1,0 +1,50 @@
+{
+  "description": "Configurable Tokenizer Specification for Oncology SLM EDA",
+  "version": "1.0.0",
+  "baseline_tokenizer_mode": "regex_cl100k_and_clinical_bpe",
+  "max_sequence_length": 2048,
+  "context_window_tiers": [
+    512,
+    1024,
+    2048,
+    4096,
+    8192
+  ],
+  "truncation_threshold": 2048,
+  "minimum_frequency_cutoff": 2,
+  "special_tokens": {
+    "bos_token": "<|begin_of_text|>",
+    "eos_token": "<|end_of_text|>",
+    "pad_token": "<|pad|>",
+    "instruction_prefix": "<|start_header_id|>user<|end_header_id|>\n\n",
+    "output_prefix": "<|start_header_id|>assistant<|end_header_id|>\n\n"
+  },
+  "medical_expression_rules": {
+    "dosage_units": [
+      "mg",
+      "mg/kg",
+      "mg/m2",
+      "AUC",
+      "g",
+      "mcg",
+      "ml",
+      "uL",
+      "daily",
+      "twice daily",
+      "every 3 weeks",
+      "PRN"
+    ],
+    "mutation_patterns": [
+      "[A-Z0-9]+ [A-Z0-9_]+",
+      "exon \\d+",
+      "c\\.\\d+_\\d+del",
+      "p\\.[A-Z]\\d+[A-Z]"
+    ],
+    "staging_patterns": [
+      "Stage I[AB]?",
+      "Stage II[AB]?",
+      "Stage III[ABC]?",
+      "Stage IV[AB]?"
+    ]
+  }
+}

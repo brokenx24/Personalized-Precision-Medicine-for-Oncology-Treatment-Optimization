@@ -1,0 +1,18 @@
+{
+  "weights": {
+    "ml_weight": 0.35,
+    "dl_weight": 0.35,
+    "nlp_weight": 0.3
+  },
+  "thresholds": {
+    "low_max": 0.33,
+    "moderate_max": 0.66
+  },
+  "renormalization_strategy": "proportional_active_weights",
+  "missing_modality_penalties": {
+    "FULL_MULTIMODAL": 1.0,
+    "PARTIAL_MULTIMODAL": 0.85,
+    "SINGLE_MODALITY": 0.65
+  },
+  "disclaimer": "Synthetic research integration only. This system is not clinically validated."
+}

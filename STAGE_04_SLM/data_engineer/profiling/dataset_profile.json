@@ -1,0 +1,100 @@
+{
+  "dataset_name": "Stage 04 SLM Raw Oncology Summarization Corpus",
+  "total_rows": 25000,
+  "total_columns": 18,
+  "unique_patients_raw": 5081,
+  "unique_records_raw": 24506,
+  "unique_encounters_raw": 24506,
+  "columns": [
+    "patient_id",
+    "record_id",
+    "encounter_id",
+    "report_date",
+    "cancer_type",
+    "disease_stage",
+    "report_type",
+    "clinical_report",
+    "target_summary",
+    "source_stage",
+    "data_quality_status",
+    "treatment_context",
+    "mutation_context",
+    "biomarker_context",
+    "adverse_event_context",
+    "sequence_number",
+    "ner_entities",
+    "nlp_urgency_tier"
+  ],
+  "missing_summary": {
+    "total_missing_cells": 539,
+    "columns_with_missing": 2,
+    "clinical_report_missing": 273,
+    "target_summary_missing": 266
+  },
+  "duplicate_summary": {
+    "total_records": 25000,
+    "exact_duplicate_rows": 0,
+    "duplicate_clinical_reports": 860,
+    "reports_with_conflicting_summaries": 102,
+    "near_duplicate_candidates_estimated": 102
+  },
+  "text_statistics": {
+    "report_characters": {
+      "mean": 424.57,
+      "median": 409.0,
+      "min": 380,
+      "max": 548
+    },
+    "summary_characters": {
+      "mean": 221.62,
+      "median": 223.0,
+      "min": 13,
+      "max": 536
+    },
+    "summary_sentences": {
+      "mean": 2.29,
+      "median": 2.0,
+      "min": 1,
+      "max": 4
+    },
+    "report_to_summary_ratio": {
+      "mean": 2.12,
+      "median": 1.97,
+      "min": 0.76,
+      "max": 36.54
+    }
+  },
+  "cancer_type_distribution": {
+    "Prostate cancer": 4346,
+    "Breast cancer": 4244,
+    "Colorectal cancer": 4142,
+    "Lung cancer": 4141,
+    "Melanoma": 4112,
+    "Ovarian cancer": 4015
+  },
+  "disease_stage_distribution": {
+    "Stage IV": 7101,
+    "Stage IIB": 5310,
+    "Stage IIIB": 4166,
+    "Stage IIA": 2815,
+    "Stage IIIC": 2799,
+    "Stage IIIA": 1424,
+    "Stage IIC": 1385
+  },
+  "report_type_distribution": {
+    "Surgical pathology summary": 5004,
+    "Physician progress note": 5002,
+    "Oncology consultation note": 5001,
+    "Treatment follow-up note": 4999,
+    "Chemotherapy adverse-event note": 4994
+  },
+  "source_stage_distribution": {
+    "STAGE_03_NLP_INHERITED": 12768,
+    "STAGE_04_SLM_EXPANSION": 12232
+  },
+  "urgency_tier_distribution": {
+    "MODERATE": 13968,
+    "LOW": 10003,
+    "HIGH": 1029
+  }
+}

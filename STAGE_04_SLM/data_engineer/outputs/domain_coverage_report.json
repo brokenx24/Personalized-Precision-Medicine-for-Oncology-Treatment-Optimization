@@ -1,0 +1,54 @@
+{
+  "formula_definition": "Global Coverage = (Unique Configured Terms Detected in Corpus / Total Configured Domain Terms) * 100",
+  "total_configured_domain_terms": 68,
+  "unique_terms_detected_in_corpus": 51,
+  "measured_domain_coverage_percentage": 75.0,
+  "record_level_coverage_percentage": 100.0,
+  "category_breakdown": {
+    "CANCER_TYPE": {
+      "total_configured_terms": 10,
+      "terms_present_in_corpus": 6,
+      "coverage_percentage": 60.0
+    },
+    "STAGE": {
+      "total_configured_terms": 4,
+      "terms_present_in_corpus": 4,
+      "coverage_percentage": 100.0
+    },
+    "GENE_MUTATION": {
+      "total_configured_terms": 10,
+      "terms_present_in_corpus": 9,
+      "coverage_percentage": 90.0
+    },
+    "BIOMARKER": {
+      "total_configured_terms": 6,
+      "terms_present_in_corpus": 6,
+      "coverage_percentage": 100.0
+    },
+    "DRUG": {
+      "total_configured_terms": 14,
+      "terms_present_in_corpus": 9,
+      "coverage_percentage": 64.29
+    },
+    "DOSAGE": {
+      "total_configured_terms": 9,
+      "terms_present_in_corpus": 8,
+      "coverage_percentage": 88.89
+    },
+    "ADVERSE_EVENT": {
+      "total_configured_terms": 8,
+      "terms_present_in_corpus": 7,
+      "coverage_percentage": 87.5
+    },
+    "RESPONSE": {
+      "total_configured_terms": 4,
+      "terms_present_in_corpus": 2,
+      "coverage_percentage": 50.0
+    },
+    "GUIDELINE_REF": {
+      "total_configured_terms": 3,
+      "terms_present_in_corpus": 0,
+      "coverage_percentage": 0.0
+    }
+  }
+}

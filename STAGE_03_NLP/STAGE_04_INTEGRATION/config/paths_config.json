@@ -1,0 +1,25 @@
+{
+  "stage01": {
+    "model_path": "STAGE_01_ML/MODELS/best_ml_model.joblib",
+    "eval_results_path": "STAGE_01_ML/MODELS/test_eval_results.npz",
+    "processed_arrays_path": "STAGE_01_ML/FEATURES/completed_arrays.npz",
+    "test_split_path": "STAGE_01_ML/SPLITS/test.csv",
+    "cleaned_dataset_path": "STAGE_01_ML/CLEANED/cleaned_ml_dataset.csv"
+  },
+  "stage02": {
+    "models_dir": "STAGE_02_DL/MODELS",
+    "fusion_model_path": "STAGE_02_DL/MODELS/multimodal_fusion_model/best_fusion.pt",
+    "mlp_model_path": "STAGE_02_DL/MODELS/mlp_model/best_mlp.pt",
+    "patient_master_path": "STAGE_02_DL/METADATA/patient_master.csv",
+    "test_manifest_path": "STAGE_02_DL/SPLITS/test_manifest.csv",
+    "metrics_summary_path": "STAGE_02_DL/REPORTS/dl_metrics_summary.json"
+  },
+  "stage03": {
+    "predictions_path": "STAGE_03_NLP/nlp_engineer/outputs/predictions/urgency_test_predictions.csv",
+    "test_split_path": "STAGE_03_NLP/data_engineer/splits/test.csv",
+    "entities_path": "STAGE_03_NLP/nlp_engineer/outputs/extracted_entities/ner_test_entities.json",
+    "classification_metrics_path": "STAGE_03_NLP/evaluation_engineer/outputs/classification/classification_evaluation_metrics.json",
+    "ner_metrics_path": "STAGE_03_NLP/evaluation_engineer/outputs/ner/ner_evaluation_metrics.json"
+  },
+  "disclaimer": "Synthetic research integration only. This system is not clinically validated."
+}

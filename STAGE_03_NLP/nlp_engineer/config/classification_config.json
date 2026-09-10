@@ -1,0 +1,45 @@
+{
+  "task": "urgency_classification",
+  "model_name": "emilyalsentzer/Bio_ClinicalBERT",
+  "num_classes": 3,
+  "class_names": [
+    "LOW",
+    "MODERATE",
+    "HIGH"
+  ],
+  "label_to_id": {
+    "LOW": 0,
+    "MODERATE": 1,
+    "HIGH": 2
+  },
+  "id_to_label": {
+    "0": "LOW",
+    "1": "MODERATE",
+    "2": "HIGH"
+  },
+  "max_length": 128,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "train_batch_size": 16,
+  "eval_batch_size": 32,
+  "epochs": 2,
+  "warmup_ratio": 0.1,
+  "gradient_accumulation_steps": 2,
+  "early_stopping_patience": 2,
+  "seed": 42,
+  "use_class_weights": false,
+  "input_paths": {
+    "train_csv": "STAGE_03_NLP/data_engineer/splits/train.csv",
+    "validation_csv": "STAGE_03_NLP/data_engineer/splits/validation.csv",
+    "test_csv": "STAGE_03_NLP/data_engineer/splits/test.csv"
+  },
+  "output_paths": {
+    "model_dir": "STAGE_03_NLP/nlp_engineer/models/urgency/best_model",
+    "tokenizer_dir": "STAGE_03_NLP/nlp_engineer/models/urgency/tokenizer",
+    "checkpoints_dir": "STAGE_03_NLP/nlp_engineer/models/urgency/checkpoints",
+    "predictions_csv": "STAGE_03_NLP/nlp_engineer/outputs/predictions/urgency_test_predictions.csv",
+    "probabilities_csv": "STAGE_03_NLP/nlp_engineer/outputs/probabilities/urgency_test_probabilities.csv",
+    "metrics_json": "STAGE_03_NLP/nlp_engineer/outputs/metrics/classification_metrics.json"
+  },
+  "disclaimer": "SYNTHETIC DATA RESEARCH PROTOTYPE - NOT A CLINICAL DIAGNOSTIC DEVICE"
+}

@@ -1,0 +1,301 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "tokenizer_type": "Qwen2Tokenizer",
+  "dynamic_vocab_size": 151665,
+  "pad_token": "<|endoftext|>",
+  "eos_token": "<|im_end|>",
+  "chat_template_supported": true,
+  "medical_terms_audited": 14,
+  "average_subtokens_per_medical_term": 5.21,
+  "max_sequence_length_supported": 512,
+  "sample_clinical_passage_tokens": 110,
+  "truncation_risk_at_512": "0.00%",
+  "medical_fragmentation_details": [
+    {
+      "term": "EGFR L858R",
+      "category": "GENE_MUTATION",
+      "token_count": 7,
+      "tokens": [
+        "EG",
+        "FR",
+        "\u0120L",
+        "8",
+        "5",
+        "8",
+        "R"
+      ],
+      "token_ids": [
+        9376,
+        10504,
+        444,
+        23,
+        20,
+        23,
+        49
+      ],
+      "is_fragmented": true
+    },
+    {
+      "term": "KRAS G12C",
+      "category": "GENE_MUTATION",
+      "token_count": 6,
+      "tokens": [
+        "KR",
+        "AS",
+        "\u0120G",
+        "1",
+        "2",
+        "C"
+      ],
+      "token_ids": [
+        61884,
+        1911,
+        479,
+        16,
+        17,
+        34
+      ],
+      "is_fragmented": true
+    },
+    {
+      "term": "BRAF V600E",
+      "category": "GENE_MUTATION",
+      "token_count": 8,
+      "tokens": [
+        "B",
+        "RA",
+        "F",
+        "\u0120V",
+        "6",
+        "0",
+        "0",
+        "E"
+      ],
+      "token_ids": [
+        33,
+        5609,
+        37,
+        647,
+        21,
+        15,
+        15,
+        36
+      ],
+      "is_fragmented": true
+    },
+    {
+      "term": "BRCA1",
+      "category": "GENE_MUTATION",
+      "token_count": 3,
+      "tokens": [
+        "BR",
+        "CA",
+        "1"
+      ],
+      "token_ids": [
+        13095,
+        5049,
+        16
+      ],
+      "is_fragmented": true
+    },
+    {
+      "term": "osimertinib",
+      "category": "DRUG",
+      "token_count": 5,
+      "tokens": [
+        "os",
+        "im",
+        "ert",
+        "in",
+        "ib"
+      ],
+      "token_ids": [
+        436,
+        318,
+        529,
+        258,
+        579
+      ],
+      "is_fragmented": true
+    },
+    {
+      "term": "pembrolizumab",
+      "category": "DRUG",
+      "token_count": 6,
+      "tokens": [
+        "p",
+        "emb",
+        "rol",
+        "iz",
+        "um",
+        "ab"
+      ],
+      "token_ids": [
+        79,
+        8858,
+        1080,
+        449,
+        372,
+        370
+      ],
+      "is_fragmented": true
+    },
+    {
+      "term": "carboplatin",
+      "category": "DRUG",
+      "token_count": 4,
+      "tokens": [
+        "car",
+        "b",
+        "op",
+        "latin"
+      ],
+      "token_ids": [
+        6918,
+        65,
+        453,
+        60085
+      ],
+      "is_fragmented": true
+    },
+    {
+      "term": "trastuzumab",
+      "category": "DRUG",
+      "token_count": 5,
+      "tokens": [
+        "tr",
+        "ast",
+        "uz",
+        "um",
+        "ab"
+      ],
+      "token_ids": [
+        376,
+        559,
+        5197,
+        372,
+        370
+      ],
+      "is_fragmented": true
+    },
+    {
+      "term": "175 mg/m\u00b2",
+      "category": "DOSAGE",
+      "token_count": 6,
+      "tokens": [
+        "1",
+        "7",
+        "5",
+        "\u0120mg",
+        "/m",
+        "\u00c2\u00b2"
+      ],
+      "token_ids": [
+        16,
+        22,
+        20,
+        13742,
+        3183,
+        29456
+      ],
+      "is_fragmented": true
+    },
+    {
+      "term": "80 mg daily",
+      "category": "DOSAGE",
+      "token_count": 4,
+      "tokens": [
+        "8",
+        "0",
+        "\u0120mg",
+        "\u0120daily"
+      ],
+      "token_ids": [
+        23,
+        15,
+        13742,
+        7298
+      ],
+      "is_fragmented": true
+    },
+    {
+      "term": "AUC 5",
+      "category": "DOSAGE",
+      "token_count": 4,
+      "tokens": [
+        "A",
+        "UC",
+        "\u0120",
+        "5"
+      ],
+      "token_ids": [
+        32,
+        5459,
+        220,
+        20
+      ],
+      "is_fragmented": true
+    },
+    {
+      "term": "RECIST 1.1",
+      "category": "RESPONSE",
+      "token_count": 6,
+      "tokens": [
+        "REC",
+        "IST",
+        "\u0120",
+        "1",
+        ".",
+        "1"
+      ],
+      "token_ids": [
+        66613,
+        3846,
+        220,
+        16,
+        13,
+        16
+      ],
+      "is_fragmented": true
+    },
+    {
+      "term": "immune-mediated colitis",
+      "category": "ADVERSE_EVENT",
+      "token_count": 4,
+      "tokens": [
+        "immune",
+        "-mediated",
+        "\u0120col",
+        "itis"
+      ],
+      "token_ids": [
+        69055,
+        80976,
+        1375,
+        19435
+      ],
+      "is_fragmented": true
+    },
+    {
+      "term": "severe neutropenia",
+      "category": "ADVERSE_EVENT",
+      "token_count": 5,
+      "tokens": [
+        "se",
+        "vere",
+        "\u0120neut",
+        "rop",
+        "enia"
+      ],
+      "token_ids": [
+        325,
+        19289,
+        25793,
+        887,
+        58286
+      ],
+      "is_fragmented": true
+    }
+  ]
+}

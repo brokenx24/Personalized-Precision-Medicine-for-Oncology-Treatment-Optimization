@@ -1,0 +1,54 @@
+{
+  "dataset_name": "Synthetic Oncology Clinical NLP Corpus",
+  "dataset_version": "NLP_SYNTHETIC_V1",
+  "generator_version": "1.0.0",
+  "total_records": 25000,
+  "unique_patients": 2500,
+  "training_records": 17500,
+  "validation_records": 3760,
+  "test_records": 3740,
+  "urgency_distribution": {
+    "MODERATE": 0.34,
+    "HIGH": 0.33,
+    "LOW": 0.33
+  },
+  "entity_token_counts": {
+    "I-DOSAGE": 64039,
+    "I-ADVERSE_EVENT": 45461,
+    "B-DOSAGE": 26695,
+    "B-DRUG": 26669,
+    "B-ADVERSE_EVENT": 24166,
+    "I-GENE_MUTATION": 12636,
+    "B-GENE_MUTATION": 9080
+  },
+  "note_types": {
+    "Oncology consultation note": 2273,
+    "Physician progress note": 2273,
+    "Treatment follow-up note": 2273,
+    "Nursing intake note": 2273,
+    "Surgical pathology summary": 2273,
+    "Chemotherapy adverse-event note": 2273,
+    "Patient symptom log": 2273,
+    "Immunotherapy follow-up note": 2273,
+    "Radiation therapy note": 2272,
+    "Targeted therapy note": 2272,
+    "Clinical trial-style oncology note": 2272
+  },
+  "cancer_types": {
+    "Lymphoma": 2670,
+    "Leukemia": 2600,
+    "Ovarian cancer": 2590,
+    "Liver cancer": 2580,
+    "Lung cancer": 2570,
+    "Prostate cancer": 2550,
+    "Colorectal cancer": 2450,
+    "Melanoma": 2370,
+    "Pancreatic cancer": 2350,
+    "Breast cancer": 2270
+  },
+  "validation_summary": {
+    "checks_passed": 20,
+    "checks_failed": 0,
+    "status": "PASS"
+  }
+}

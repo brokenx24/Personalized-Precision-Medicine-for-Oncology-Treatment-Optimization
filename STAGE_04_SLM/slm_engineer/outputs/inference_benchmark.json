@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-09-09T22:51:00Z",
+  "execution_mode": "offline_local_cpu",
+  "cloud_calls": 0,
+  "sample_size": 15,
+  "mean_latency_ms": 323.9,
+  "min_latency_ms": 308.2,
+  "max_latency_ms": 342.1,
+  "p95_latency_ms": 339.5,
+  "tokens_per_second": 113.62,
+  "average_summary_tokens": 36.8,
+  "throughput_reports_per_min": 185.2,
+  "local_execution_guarantee": "100% OFFLINE (No external network requests)"
+}

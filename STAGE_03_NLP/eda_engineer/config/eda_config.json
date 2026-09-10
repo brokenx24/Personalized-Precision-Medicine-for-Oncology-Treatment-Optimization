@@ -1,0 +1,44 @@
+{
+  "module_name": "Stage 03 NLP - EDA Engineer",
+  "version": "1.0.0",
+  "random_seed": 42,
+  "input_paths": {
+    "cleaned_csv": "STAGE_03_NLP/data_engineer/cleaned/cleaned_clinical_text.csv",
+    "cleaned_json": "STAGE_03_NLP/data_engineer/cleaned/cleaned_ner_dataset.json",
+    "ner_csv": "STAGE_03_NLP/data_engineer/annotations/ner_annotations.csv",
+    "ner_json": "STAGE_03_NLP/data_engineer/annotations/ner_annotations.json",
+    "train_csv": "STAGE_03_NLP/data_engineer/splits/train.csv",
+    "validation_csv": "STAGE_03_NLP/data_engineer/splits/validation.csv",
+    "test_csv": "STAGE_03_NLP/data_engineer/splits/test.csv"
+  },
+  "output_dirs": {
+    "visualizations": "STAGE_03_NLP/eda_engineer/visualizations",
+    "outputs": "STAGE_03_NLP/eda_engineer/outputs",
+    "reports": "STAGE_03_NLP/eda_engineer/reports"
+  },
+  "plot_config": {
+    "dpi": 300,
+    "style": "seaborn-v0_8-whitegrid",
+    "palette": {
+      "LOW": "#2ecc71",
+      "MODERATE": "#f39c12",
+      "HIGH": "#e74c3c",
+      "primary": "#2c3e50",
+      "secondary": "#3498db",
+      "accent": "#9b59b6"
+    }
+  },
+  "analysis_parameters": {
+    "top_n_words": 50,
+    "top_n_medical_terms": 30,
+    "top_n_ngrams": 30,
+    "similarity_sample_size": 1000,
+    "tfidf_max_features": 500
+  },
+  "key_oncology_terms": [
+    "chemotherapy", "immunotherapy", "tumor", "metastasis", "progression",
+    "biopsy", "mutation", "toxicity", "adverse event", "response", "recurrence",
+    "neutropenia", "thrombocytopenia", "dyspnea", "colitis", "pneumonitis",
+    "pembrolizumab", "nivolumab", "cisplatin", "carboplatin", "osimertinib"
+  ]
+}

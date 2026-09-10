@@ -1,0 +1,15 @@
+{
+  "canonical_classes": [
+    "LOW",
+    "MODERATE",
+    "HIGH"
+  ],
+  "supported_modalities": [
+    "ML",
+    "DL",
+    "NLP"
+  ],
+  "version": "1.0.0",
+  "random_seed": 42,
+  "disclaimer": "Synthetic research integration only. This system is not clinically validated and must not be interpreted as evidence of clinical efficacy, diagnostic performance, or treatment recommendation."
+}

@@ -1,0 +1,12 @@
+{
+  "total_true_high_notes": 1263,
+  "correct_high_predictions": 1128,
+  "missed_high_notes": 135,
+  "high_to_moderate_undertriage": 117,
+  "high_to_low_critical_hazard": 18,
+  "high_recall_sensitivity": 0.8931,
+  "high_precision": 0.9253,
+  "high_f1": 0.9089,
+  "critical_false_negative_rate": 0.0143,
+  "disclaimer": "Synthetic research evaluation only. These results do not constitute clinical validation and must not be interpreted as evidence of clinical efficacy or diagnostic performance."
+}

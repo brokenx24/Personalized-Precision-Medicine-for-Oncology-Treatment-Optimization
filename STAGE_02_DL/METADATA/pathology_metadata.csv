@@ -1,0 +1,11 @@
+patient_id,slide_id,original_filename,project_id,format,file_size_bytes,label_source,source
+TCGA-05-4245,18081e12-b7d5-43b4-ab26-7574b94b98f0,TCGA-05-4245-01A-01-BS1.41d3cf23-4e36-4e42-9e08-adfea139f37e.svs,TCGA-LUAD,SVS,85438631,slide_level_diagnosis,NCI Genomic Data Commons (GDC)
+TCGA-44-6147,42f51799-6ea6-4441-8110-7b4739d6fb08,TCGA-44-6147-01A-01-TS1.3abeedc6-cb8c-45da-8054-c8cd7a4f4346.svs,TCGA-LUAD,SVS,77517073,slide_level_diagnosis,NCI Genomic Data Commons (GDC)
+TCGA-44-6147,3be427e3-096b-4199-b4c7-3ee1b5d73882,TCGA-44-6147-01B-05-BS5.B838E2DC-8869-4C72-9F1D-A066FF307579.svs,TCGA-LUAD,SVS,125862331,slide_level_diagnosis,NCI Genomic Data Commons (GDC)
+TCGA-38-4631,f28b9a47-68b8-4549-abfd-06e3038dad7b,TCGA-38-4631-01Z-00-DX1.5e0c873a-9c4c-4e0b-bf2e-e3cd8b760761.svs,TCGA-LUAD,SVS,230713723,slide_level_diagnosis,NCI Genomic Data Commons (GDC)
+TCGA-05-4384,1ad420dd-145d-4fdd-8e1c-ccf176711172,TCGA-05-4384-01A-01-BS1.dae26cb5-1554-4ff8-997d-2f1c70101051.svs,TCGA-LUAD,SVS,106968101,slide_level_diagnosis,NCI Genomic Data Commons (GDC)
+TCGA-73-4670,635a3d68-bea1-4259-afb8-e2edb274aa8b,TCGA-73-4670-11A-01-TS1.0866a46d-4d80-4b4c-9d53-885fa73e13db.svs,TCGA-LUAD,SVS,66703163,slide_level_diagnosis,NCI Genomic Data Commons (GDC)
+TCGA-73-4670,ee39440c-1edf-418a-96c0-ce638fb1d11d,TCGA-73-4670-01A-01-TS1.3a37c541-d9b6-4a33-9249-34bb1efec740.svs,TCGA-LUAD,SVS,37264347,slide_level_diagnosis,NCI Genomic Data Commons (GDC)
+TCGA-44-6147,0dea7bf0-721e-4fb9-beef-3024093ec1b1,TCGA-44-6147-11A-05-TS5.41088AE2-F335-4BA2-B096-F9135208100D.svs,TCGA-LUAD,SVS,51687798,slide_level_diagnosis,NCI Genomic Data Commons (GDC)
+TCGA-44-6147,f22c1871-b40b-4c9f-9388-b5bc5fbbad87,TCGA-44-6147-01A-01-BS1.cfa99719-2df2-4b32-be20-2c96483727cb.svs,TCGA-LUAD,SVS,121110813,slide_level_diagnosis,NCI Genomic Data Commons (GDC)
+TCGA-44-6147,57246c93-5967-4f70-a29e-85d0e325566c,TCGA-44-6147-01Z-00-DX1.a34a9f49-e86b-43ee-9e2d-7ef35da0aecf.svs,TCGA-LUAD,SVS,229097175,slide_level_diagnosis,NCI Genomic Data Commons (GDC)

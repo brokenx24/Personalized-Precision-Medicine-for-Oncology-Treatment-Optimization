@@ -1,0 +1,40 @@
+{
+  "dataset_version": "NLP_SYNTHETIC_V1",
+  "generator_version": "1.0.0",
+  "generation_timestamp": "2026-09-09T11:03:40.599841",
+  "random_seed": 42,
+  "is_synthetic": true,
+  "disclaimer": "SYNTHETIC CLINICAL DATASET. Strictly for artificial intelligence model training and research benchmarking in precision oncology decision support. Does not contain authentic protected health information (PHI) or real patient records.",
+  "total_records": 25000,
+  "total_patients": 2500,
+  "urgency_distribution": {
+    "MODERATE": 0.34,
+    "LOW": 0.33,
+    "HIGH": 0.33
+  },
+  "cancer_types": [
+    "Lung cancer",
+    "Colorectal cancer",
+    "Breast cancer",
+    "Lymphoma",
+    "Liver cancer",
+    "Prostate cancer",
+    "Pancreatic cancer",
+    "Melanoma",
+    "Leukemia",
+    "Ovarian cancer"
+  ],
+  "note_types": [
+    "Oncology consultation note",
+    "Physician progress note",
+    "Nursing intake note",
+    "Patient symptom log",
+    "Surgical pathology summary",
+    "Treatment follow-up note",
+    "Chemotherapy adverse-event note",
+    "Immunotherapy follow-up note",
+    "Targeted therapy note",
+    "Radiation therapy note",
+    "Clinical trial-style oncology note"
+  ]
+}

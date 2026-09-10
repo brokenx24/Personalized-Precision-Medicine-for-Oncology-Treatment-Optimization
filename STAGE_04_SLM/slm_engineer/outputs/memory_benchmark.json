@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-09-09T22:51:30Z",
+  "device": "CPU (AMD64)",
+  "base_model_memory_mb": 3087.4,
+  "lora_adapter_memory_mb": 70.4,
+  "kv_cache_memory_mb": 32.0,
+  "peak_inference_ram_mb": 3145.0,
+  "total_system_ram_mb": 15647.62,
+  "available_system_ram_mb": 3607.54,
+  "memory_efficiency_score": "EXCELLENT (< 3.2 GB peak footprint fits consumer laptops)",
+  "vram_mb": 0.0
+}

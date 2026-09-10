@@ -1,0 +1,15 @@
+{
+  "recommended_context_length": 512,
+  "p95_report_token_length": 85.0,
+  "p99_report_token_length": 87.0,
+  "p95_complete_sequence_length": 153.0,
+  "p99_complete_sequence_length": 156.0,
+  "percentage_exceeding_512": 0.0,
+  "percentage_exceeding_1024": 0.0,
+  "percentage_exceeding_2048": 0.0,
+  "percentage_exceeding_4096": 0.0,
+  "dosage_retention_percentage": 25.1,
+  "mutation_retention_percentage": 99.99,
+  "patient_leakage_status": "PASS",
+  "domain_coverage_percentage": 75.0
+}

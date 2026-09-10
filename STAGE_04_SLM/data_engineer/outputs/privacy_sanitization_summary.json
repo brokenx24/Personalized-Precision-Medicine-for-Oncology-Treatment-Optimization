@@ -1,0 +1,7 @@
+{
+  "total_pii_scanned_records": 25000,
+  "synthetic_pii_patterns_detected": 244,
+  "sanitization_action": "REDACTED_AND_NORMALIZED",
+  "residual_pii_in_cleaned_dataset": 0,
+  "status": "COMPLIANT"
+}

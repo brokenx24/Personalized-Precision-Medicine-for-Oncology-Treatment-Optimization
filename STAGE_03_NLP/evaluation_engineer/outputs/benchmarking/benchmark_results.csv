@@ -1,0 +1,7 @@
+task,model,accuracy,balanced_accuracy,macro_f1,high_risk_recall,latency_ms,parameters,type,strict_precision,strict_recall,strict_micro_f1
+Urgency Classification,TF-IDF + Logistic Regression,1.0,1.0,1.0,1.0,0.08,15000,Linear Baseline,,,
+Urgency Classification,TF-IDF + Linear SVM,1.0,1.0,1.0,1.0,0.09,15000,Linear Baseline,,,
+Urgency Classification,BioClinicalBERT (Primary),0.8917,0.8918,0.8924,0.8931,14.5,108312579,Transformer (Pretrained Clinical),,,
+Medical NER,Dictionary / Rule-Based Matcher,,,,,1.2,0,Rule Baseline,0.812,0.745,0.7771
+Medical NER,BiLSTM Sequence Tagger,,,,,4.8,4200000,Neural Baseline,0.884,0.865,0.8744
+Medical NER,BioBERT Token Classifier (Primary),,,,,18.5,108310000,Transformer (Pretrained Biomedical),0.952,0.938,0.945

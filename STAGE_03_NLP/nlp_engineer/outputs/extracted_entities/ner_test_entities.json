@@ -1,0 +1,1667 @@
+[
+  {
+    "note_id": "SYNTH_NOTE_00042",
+    "patient_id": "SYNTH_PAT_00042",
+    "extracted_entities": [
+      {
+        "text": "KRAS G12C",
+        "type": "GENE_MUTATION",
+        "start_char": 104,
+        "end_char": 113,
+        "confidence": 1.0
+      },
+      {
+        "text": "carboplatin",
+        "type": "DRUG",
+        "start_char": 128,
+        "end_char": 139,
+        "confidence": 1.0
+      },
+      {
+        "text": "1 g",
+        "type": "DOSAGE",
+        "start_char": 143,
+        "end_char": 146,
+        "confidence": 1.0
+      },
+      {
+        "text": "mild fatigue",
+        "type": "ADVERSE_EVENT",
+        "start_char": 178,
+        "end_char": 190,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00053",
+    "patient_id": "SYNTH_PAT_00053",
+    "extracted_entities": [
+      {
+        "text": "HER2 amplification",
+        "type": "GENE_MUTATION",
+        "start_char": 105,
+        "end_char": 123,
+        "confidence": 1.0
+      },
+      {
+        "text": "trastuzumab",
+        "type": "DRUG",
+        "start_char": 138,
+        "end_char": 149,
+        "confidence": 1.0
+      },
+      {
+        "text": "200 mg IV every 3 weeks",
+        "type": "DOSAGE",
+        "start_char": 153,
+        "end_char": 176,
+        "confidence": 1.0
+      },
+      {
+        "text": "low-grade arthralgia",
+        "type": "ADVERSE_EVENT",
+        "start_char": 208,
+        "end_char": 228,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00067",
+    "patient_id": "SYNTH_PAT_00067",
+    "extracted_entities": [
+      {
+        "text": "BRAF V600E",
+        "type": "GENE_MUTATION",
+        "start_char": 110,
+        "end_char": 120,
+        "confidence": 1.0
+      },
+      {
+        "text": "fluorouracil",
+        "type": "DRUG",
+        "start_char": 135,
+        "end_char": 147,
+        "confidence": 1.0
+      },
+      {
+        "text": "2 mg/kg",
+        "type": "DOSAGE",
+        "start_char": 151,
+        "end_char": 158,
+        "confidence": 1.0
+      },
+      {
+        "text": "mild dry mouth",
+        "type": "ADVERSE_EVENT",
+        "start_char": 190,
+        "end_char": 204,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00072",
+    "patient_id": "SYNTH_PAT_00072",
+    "extracted_entities": [
+      {
+        "text": "HER2 amplification",
+        "type": "GENE_MUTATION",
+        "start_char": 111,
+        "end_char": 129,
+        "confidence": 1.0
+      },
+      {
+        "text": "doxorubicin",
+        "type": "DRUG",
+        "start_char": 158,
+        "end_char": 169,
+        "confidence": 1.0
+      },
+      {
+        "text": "300 mg twice daily",
+        "type": "DOSAGE",
+        "start_char": 170,
+        "end_char": 188,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00075",
+    "patient_id": "SYNTH_PAT_00075",
+    "extracted_entities": [
+      {
+        "text": "osimertinib",
+        "type": "DRUG",
+        "start_char": 78,
+        "end_char": 89,
+        "confidence": 1.0
+      },
+      {
+        "text": "300 mg twice daily",
+        "type": "DOSAGE",
+        "start_char": 90,
+        "end_char": 108,
+        "confidence": 1.0
+      },
+      {
+        "text": "persistent vomiting",
+        "type": "ADVERSE_EVENT",
+        "start_char": 137,
+        "end_char": 156,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00119",
+    "patient_id": "SYNTH_PAT_00119",
+    "extracted_entities": [
+      {
+        "text": "MSI-high",
+        "type": "GENE_MUTATION",
+        "start_char": 111,
+        "end_char": 119,
+        "confidence": 1.0
+      },
+      {
+        "text": "letrozole",
+        "type": "DRUG",
+        "start_char": 134,
+        "end_char": 143,
+        "confidence": 1.0
+      },
+      {
+        "text": "150 mg PO daily",
+        "type": "DOSAGE",
+        "start_char": 147,
+        "end_char": 162,
+        "confidence": 1.0
+      },
+      {
+        "text": "grade 1 anorexia",
+        "type": "ADVERSE_EVENT",
+        "start_char": 194,
+        "end_char": 210,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00122",
+    "patient_id": "SYNTH_PAT_00122",
+    "extracted_entities": [
+      {
+        "text": "BRCA2 mutation",
+        "type": "GENE_MUTATION",
+        "start_char": 106,
+        "end_char": 120,
+        "confidence": 1.0
+      },
+      {
+        "text": "olaparib",
+        "type": "DRUG",
+        "start_char": 135,
+        "end_char": 143,
+        "confidence": 1.0
+      },
+      {
+        "text": "75 mg/m2",
+        "type": "DOSAGE",
+        "start_char": 147,
+        "end_char": 155,
+        "confidence": 1.0
+      },
+      {
+        "text": "low-grade arthralgia",
+        "type": "ADVERSE_EVENT",
+        "start_char": 187,
+        "end_char": 207,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00123",
+    "patient_id": "SYNTH_PAT_00123",
+    "extracted_entities": [
+      {
+        "text": "BRCA2 mutation",
+        "type": "GENE_MUTATION",
+        "start_char": 109,
+        "end_char": 123,
+        "confidence": 1.0
+      },
+      {
+        "text": "carboplatin",
+        "type": "DRUG",
+        "start_char": 138,
+        "end_char": 149,
+        "confidence": 1.0
+      },
+      {
+        "text": "10 mg/kg",
+        "type": "DOSAGE",
+        "start_char": 153,
+        "end_char": 161,
+        "confidence": 1.0
+      },
+      {
+        "text": "mild dry mouth",
+        "type": "ADVERSE_EVENT",
+        "start_char": 193,
+        "end_char": 207,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00127",
+    "patient_id": "SYNTH_PAT_00127",
+    "extracted_entities": [
+      {
+        "text": "BRAF V600E",
+        "type": "GENE_MUTATION",
+        "start_char": 107,
+        "end_char": 117,
+        "confidence": 1.0
+      },
+      {
+        "text": "atezolizumab",
+        "type": "DRUG",
+        "start_char": 132,
+        "end_char": 144,
+        "confidence": 1.0
+      },
+      {
+        "text": "100 mg",
+        "type": "DOSAGE",
+        "start_char": 148,
+        "end_char": 154,
+        "confidence": 1.0
+      },
+      {
+        "text": "mild taste alteration",
+        "type": "ADVERSE_EVENT",
+        "start_char": 186,
+        "end_char": 207,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00145",
+    "patient_id": "SYNTH_PAT_00145",
+    "extracted_entities": [
+      {
+        "text": "capecitabine",
+        "type": "DRUG",
+        "start_char": 85,
+        "end_char": 97,
+        "confidence": 1.0
+      },
+      {
+        "text": "175 mg/m2",
+        "type": "DOSAGE",
+        "start_char": 98,
+        "end_char": 107,
+        "confidence": 1.0
+      },
+      {
+        "text": "grade 2 thrombocytopenia",
+        "type": "ADVERSE_EVENT",
+        "start_char": 136,
+        "end_char": 160,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00186",
+    "patient_id": "SYNTH_PAT_00186",
+    "extracted_entities": [
+      {
+        "text": "paclitaxel",
+        "type": "DRUG",
+        "start_char": 79,
+        "end_char": 89,
+        "confidence": 1.0
+      },
+      {
+        "text": "1 g",
+        "type": "DOSAGE",
+        "start_char": 90,
+        "end_char": 93,
+        "confidence": 1.0
+      },
+      {
+        "text": "moderate neutropenia",
+        "type": "ADVERSE_EVENT",
+        "start_char": 122,
+        "end_char": 142,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00197",
+    "patient_id": "SYNTH_PAT_00197",
+    "extracted_entities": [
+      {
+        "text": "ALK rearrangement",
+        "type": "GENE_MUTATION",
+        "start_char": 44,
+        "end_char": 61,
+        "confidence": 1.0
+      },
+      {
+        "text": "durvalumab",
+        "type": "DRUG",
+        "start_char": 94,
+        "end_char": 104,
+        "confidence": 1.0
+      },
+      {
+        "text": "3 mg/kg",
+        "type": "DOSAGE",
+        "start_char": 105,
+        "end_char": 112,
+        "confidence": 1.0
+      },
+      {
+        "text": "severe immune-related colitis",
+        "type": "ADVERSE_EVENT",
+        "start_char": 149,
+        "end_char": 178,
+        "confidence": 1.0
+      },
+      {
+        "text": "dexamethasone",
+        "type": "DRUG",
+        "start_char": 263,
+        "end_char": 276,
+        "confidence": 1.0
+      },
+      {
+        "text": "1 mg/kg IV",
+        "type": "DOSAGE",
+        "start_char": 277,
+        "end_char": 287,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00199",
+    "patient_id": "SYNTH_PAT_00199",
+    "extracted_entities": [
+      {
+        "text": "BRCA1 mutation",
+        "type": "GENE_MUTATION",
+        "start_char": 109,
+        "end_char": 123,
+        "confidence": 1.0
+      },
+      {
+        "text": "olaparib",
+        "type": "DRUG",
+        "start_char": 138,
+        "end_char": 146,
+        "confidence": 1.0
+      },
+      {
+        "text": "50 mg",
+        "type": "DOSAGE",
+        "start_char": 150,
+        "end_char": 155,
+        "confidence": 1.0
+      },
+      {
+        "text": "grade 1 nausea",
+        "type": "ADVERSE_EVENT",
+        "start_char": 187,
+        "end_char": 201,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00226",
+    "patient_id": "SYNTH_PAT_00226",
+    "extracted_entities": [
+      {
+        "text": "PIK3CA mutation",
+        "type": "GENE_MUTATION",
+        "start_char": 44,
+        "end_char": 59,
+        "confidence": 1.0
+      },
+      {
+        "text": "pembrolizumab",
+        "type": "DRUG",
+        "start_char": 97,
+        "end_char": 110,
+        "confidence": 1.0
+      },
+      {
+        "text": "500 mg/m2",
+        "type": "DOSAGE",
+        "start_char": 111,
+        "end_char": 120,
+        "confidence": 1.0
+      },
+      {
+        "text": "suspected sepsis",
+        "type": "ADVERSE_EVENT",
+        "start_char": 157,
+        "end_char": 173,
+        "confidence": 1.0
+      },
+      {
+        "text": "dexamethasone",
+        "type": "DRUG",
+        "start_char": 261,
+        "end_char": 274,
+        "confidence": 1.0
+      },
+      {
+        "text": "10 mg IV stat",
+        "type": "DOSAGE",
+        "start_char": 275,
+        "end_char": 288,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00259",
+    "patient_id": "SYNTH_PAT_00259",
+    "extracted_entities": [
+      {
+        "text": "nivolumab",
+        "type": "DRUG",
+        "start_char": 59,
+        "end_char": 68,
+        "confidence": 1.0
+      },
+      {
+        "text": "150 mg PO daily",
+        "type": "DOSAGE",
+        "start_char": 69,
+        "end_char": 84,
+        "confidence": 1.0
+      },
+      {
+        "text": "febrile neutropenia",
+        "type": "ADVERSE_EVENT",
+        "start_char": 139,
+        "end_char": 158,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00270",
+    "patient_id": "SYNTH_PAT_00270",
+    "extracted_entities": [
+      {
+        "text": "trastuzumab",
+        "type": "DRUG",
+        "start_char": 81,
+        "end_char": 92,
+        "confidence": 1.0
+      },
+      {
+        "text": "5 mg/kg",
+        "type": "DOSAGE",
+        "start_char": 93,
+        "end_char": 100,
+        "confidence": 1.0
+      },
+      {
+        "text": "grade 2 mucositis",
+        "type": "ADVERSE_EVENT",
+        "start_char": 129,
+        "end_char": 146,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00273",
+    "patient_id": "SYNTH_PAT_00273",
+    "extracted_entities": [
+      {
+        "text": "alectinib",
+        "type": "DRUG",
+        "start_char": 83,
+        "end_char": 92,
+        "confidence": 1.0
+      },
+      {
+        "text": "80 mg daily",
+        "type": "DOSAGE",
+        "start_char": 93,
+        "end_char": 104,
+        "confidence": 1.0
+      },
+      {
+        "text": "moderate abdominal cramping",
+        "type": "ADVERSE_EVENT",
+        "start_char": 133,
+        "end_char": 160,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00277",
+    "patient_id": "SYNTH_PAT_00277",
+    "extracted_entities": [
+      {
+        "text": "ALK rearrangement",
+        "type": "GENE_MUTATION",
+        "start_char": 102,
+        "end_char": 119,
+        "confidence": 1.0
+      },
+      {
+        "text": "tamoxifen",
+        "type": "DRUG",
+        "start_char": 134,
+        "end_char": 143,
+        "confidence": 1.0
+      },
+      {
+        "text": "500 mg/m2",
+        "type": "DOSAGE",
+        "start_char": 147,
+        "end_char": 156,
+        "confidence": 1.0
+      },
+      {
+        "text": "localized alopecia",
+        "type": "ADVERSE_EVENT",
+        "start_char": 188,
+        "end_char": 206,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00299",
+    "patient_id": "SYNTH_PAT_00299",
+    "extracted_entities": [
+      {
+        "text": "ondansetron",
+        "type": "DRUG",
+        "start_char": 59,
+        "end_char": 70,
+        "confidence": 1.0
+      },
+      {
+        "text": "80 mg daily",
+        "type": "DOSAGE",
+        "start_char": 71,
+        "end_char": 82,
+        "confidence": 1.0
+      },
+      {
+        "text": "acute renal failure",
+        "type": "ADVERSE_EVENT",
+        "start_char": 141,
+        "end_char": 160,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00303",
+    "patient_id": "SYNTH_PAT_00303",
+    "extracted_entities": [
+      {
+        "text": "osimertinib",
+        "type": "DRUG",
+        "start_char": 79,
+        "end_char": 90,
+        "confidence": 1.0
+      },
+      {
+        "text": "80 mg/m2",
+        "type": "DOSAGE",
+        "start_char": 91,
+        "end_char": 99,
+        "confidence": 1.0
+      },
+      {
+        "text": "moderate diarrhea",
+        "type": "ADVERSE_EVENT",
+        "start_char": 128,
+        "end_char": 145,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00306",
+    "patient_id": "SYNTH_PAT_00306",
+    "extracted_entities": [
+      {
+        "text": "MET amplification",
+        "type": "GENE_MUTATION",
+        "start_char": 109,
+        "end_char": 126,
+        "confidence": 1.0
+      },
+      {
+        "text": "osimertinib",
+        "type": "DRUG",
+        "start_char": 141,
+        "end_char": 152,
+        "confidence": 1.0
+      },
+      {
+        "text": "10 mg/kg",
+        "type": "DOSAGE",
+        "start_char": 156,
+        "end_char": 164,
+        "confidence": 1.0
+      },
+      {
+        "text": "grade 1 myalgia",
+        "type": "ADVERSE_EVENT",
+        "start_char": 196,
+        "end_char": 211,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00314",
+    "patient_id": "SYNTH_PAT_00314",
+    "extracted_entities": [
+      {
+        "text": "persistent vomiting",
+        "type": "ADVERSE_EVENT",
+        "start_char": 92,
+        "end_char": 111,
+        "confidence": 1.0
+      },
+      {
+        "text": "nivolumab",
+        "type": "DRUG",
+        "start_char": 122,
+        "end_char": 131,
+        "confidence": 1.0
+      },
+      {
+        "text": "75 mg/m2",
+        "type": "DOSAGE",
+        "start_char": 132,
+        "end_char": 140,
+        "confidence": 1.0
+      },
+      {
+        "text": "EGFR mutation",
+        "type": "GENE_MUTATION",
+        "start_char": 169,
+        "end_char": 182,
+        "confidence": 1.0
+      },
+      {
+        "text": "dexamethasone",
+        "type": "DRUG",
+        "start_char": 227,
+        "end_char": 240,
+        "confidence": 1.0
+      },
+      {
+        "text": "8 mg twice daily",
+        "type": "DOSAGE",
+        "start_char": 241,
+        "end_char": 257,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00318",
+    "patient_id": "SYNTH_PAT_00318",
+    "extracted_entities": [
+      {
+        "text": "BRCA1 mutation",
+        "type": "GENE_MUTATION",
+        "start_char": 109,
+        "end_char": 123,
+        "confidence": 1.0
+      },
+      {
+        "text": "carboplatin",
+        "type": "DRUG",
+        "start_char": 138,
+        "end_char": 149,
+        "confidence": 1.0
+      },
+      {
+        "text": "80 mg",
+        "type": "DOSAGE",
+        "start_char": 153,
+        "end_char": 158,
+        "confidence": 1.0
+      },
+      {
+        "text": "transient headache",
+        "type": "ADVERSE_EVENT",
+        "start_char": 190,
+        "end_char": 208,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00325",
+    "patient_id": "SYNTH_PAT_00325",
+    "extracted_entities": [
+      {
+        "text": "RET fusion",
+        "type": "GENE_MUTATION",
+        "start_char": 44,
+        "end_char": 54,
+        "confidence": 1.0
+      },
+      {
+        "text": "durvalumab",
+        "type": "DRUG",
+        "start_char": 83,
+        "end_char": 93,
+        "confidence": 1.0
+      },
+      {
+        "text": "200 mg IV every 3 weeks",
+        "type": "DOSAGE",
+        "start_char": 94,
+        "end_char": 117,
+        "confidence": 1.0
+      },
+      {
+        "text": "intractable vomiting with severe dehydration",
+        "type": "ADVERSE_EVENT",
+        "start_char": 154,
+        "end_char": 198,
+        "confidence": 1.0
+      },
+      {
+        "text": "methylprednisolone",
+        "type": "DRUG",
+        "start_char": 283,
+        "end_char": 301,
+        "confidence": 1.0
+      },
+      {
+        "text": "10 mg IV stat",
+        "type": "DOSAGE",
+        "start_char": 302,
+        "end_char": 315,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00339",
+    "patient_id": "SYNTH_PAT_00339",
+    "extracted_entities": [
+      {
+        "text": "EGFR mutation",
+        "type": "GENE_MUTATION",
+        "start_char": 103,
+        "end_char": 116,
+        "confidence": 1.0
+      },
+      {
+        "text": "osimertinib",
+        "type": "DRUG",
+        "start_char": 131,
+        "end_char": 142,
+        "confidence": 1.0
+      },
+      {
+        "text": "150 mg PO daily",
+        "type": "DOSAGE",
+        "start_char": 146,
+        "end_char": 161,
+        "confidence": 1.0
+      },
+      {
+        "text": "low-grade arthralgia",
+        "type": "ADVERSE_EVENT",
+        "start_char": 193,
+        "end_char": 213,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00364",
+    "patient_id": "SYNTH_PAT_00364",
+    "extracted_entities": [
+      {
+        "text": "EGFR T790M",
+        "type": "GENE_MUTATION",
+        "start_char": 106,
+        "end_char": 116,
+        "confidence": 1.0
+      },
+      {
+        "text": "pembrolizumab",
+        "type": "DRUG",
+        "start_char": 131,
+        "end_char": 144,
+        "confidence": 1.0
+      },
+      {
+        "text": "10 mg/kg",
+        "type": "DOSAGE",
+        "start_char": 148,
+        "end_char": 156,
+        "confidence": 1.0
+      },
+      {
+        "text": "mild dry mouth",
+        "type": "ADVERSE_EVENT",
+        "start_char": 188,
+        "end_char": 202,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00373",
+    "patient_id": "SYNTH_PAT_00373",
+    "extracted_entities": [
+      {
+        "text": "osimertinib",
+        "type": "DRUG",
+        "start_char": 79,
+        "end_char": 90,
+        "confidence": 1.0
+      },
+      {
+        "text": "75 mg/m2",
+        "type": "DOSAGE",
+        "start_char": 91,
+        "end_char": 99,
+        "confidence": 1.0
+      },
+      {
+        "text": "grade 2 elevated LFTs",
+        "type": "ADVERSE_EVENT",
+        "start_char": 128,
+        "end_char": 149,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00383",
+    "patient_id": "SYNTH_PAT_00383",
+    "extracted_entities": [
+      {
+        "text": "olaparib",
+        "type": "DRUG",
+        "start_char": 59,
+        "end_char": 67,
+        "confidence": 1.0
+      },
+      {
+        "text": "200 mg",
+        "type": "DOSAGE",
+        "start_char": 68,
+        "end_char": 74,
+        "confidence": 1.0
+      },
+      {
+        "text": "acute renal failure",
+        "type": "ADVERSE_EVENT",
+        "start_char": 136,
+        "end_char": 155,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00386",
+    "patient_id": "SYNTH_PAT_00386",
+    "extracted_entities": [
+      {
+        "text": "grade 2 neuropathy",
+        "type": "ADVERSE_EVENT",
+        "start_char": 95,
+        "end_char": 113,
+        "confidence": 1.0
+      },
+      {
+        "text": "atezolizumab",
+        "type": "DRUG",
+        "start_char": 124,
+        "end_char": 136,
+        "confidence": 1.0
+      },
+      {
+        "text": "175 mg/m2",
+        "type": "DOSAGE",
+        "start_char": 137,
+        "end_char": 146,
+        "confidence": 1.0
+      },
+      {
+        "text": "PR-positive",
+        "type": "GENE_MUTATION",
+        "start_char": 175,
+        "end_char": 186,
+        "confidence": 1.0
+      },
+      {
+        "text": "loperamide",
+        "type": "DRUG",
+        "start_char": 231,
+        "end_char": 241,
+        "confidence": 1.0
+      },
+      {
+        "text": "2 mg PRN",
+        "type": "DOSAGE",
+        "start_char": 242,
+        "end_char": 250,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00402",
+    "patient_id": "SYNTH_PAT_00402",
+    "extracted_entities": [
+      {
+        "text": "PD-L1 expression",
+        "type": "GENE_MUTATION",
+        "start_char": 100,
+        "end_char": 116,
+        "confidence": 1.0
+      },
+      {
+        "text": "pembrolizumab",
+        "type": "DRUG",
+        "start_char": 131,
+        "end_char": 144,
+        "confidence": 1.0
+      },
+      {
+        "text": "75 mg/m2",
+        "type": "DOSAGE",
+        "start_char": 148,
+        "end_char": 156,
+        "confidence": 1.0
+      },
+      {
+        "text": "mild constipation",
+        "type": "ADVERSE_EVENT",
+        "start_char": 188,
+        "end_char": 205,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00413",
+    "patient_id": "SYNTH_PAT_00413",
+    "extracted_entities": [
+      {
+        "text": "doxorubicin",
+        "type": "DRUG",
+        "start_char": 59,
+        "end_char": 70,
+        "confidence": 1.0
+      },
+      {
+        "text": "400 mg",
+        "type": "DOSAGE",
+        "start_char": 71,
+        "end_char": 77,
+        "confidence": 1.0
+      },
+      {
+        "text": "intractable vomiting with severe dehydration",
+        "type": "ADVERSE_EVENT",
+        "start_char": 137,
+        "end_char": 181,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00450",
+    "patient_id": "SYNTH_PAT_00450",
+    "extracted_entities": [
+      {
+        "text": "letrozole",
+        "type": "DRUG",
+        "start_char": 59,
+        "end_char": 68,
+        "confidence": 1.0
+      },
+      {
+        "text": "50 mg",
+        "type": "DOSAGE",
+        "start_char": 69,
+        "end_char": 74,
+        "confidence": 1.0
+      },
+      {
+        "text": "severe dyspnea",
+        "type": "ADVERSE_EVENT",
+        "start_char": 136,
+        "end_char": 150,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00468",
+    "patient_id": "SYNTH_PAT_00468",
+    "extracted_entities": [
+      {
+        "text": "EGFR mutation",
+        "type": "GENE_MUTATION",
+        "start_char": 44,
+        "end_char": 57,
+        "confidence": 1.0
+      },
+      {
+        "text": "ipilimumab",
+        "type": "DRUG",
+        "start_char": 93,
+        "end_char": 103,
+        "confidence": 1.0
+      },
+      {
+        "text": "2 mg/kg",
+        "type": "DOSAGE",
+        "start_char": 104,
+        "end_char": 111,
+        "confidence": 1.0
+      },
+      {
+        "text": "severe dyspnea",
+        "type": "ADVERSE_EVENT",
+        "start_char": 148,
+        "end_char": 162,
+        "confidence": 1.0
+      },
+      {
+        "text": "dexamethasone",
+        "type": "DRUG",
+        "start_char": 247,
+        "end_char": 260,
+        "confidence": 1.0
+      },
+      {
+        "text": "1 mg/kg IV",
+        "type": "DOSAGE",
+        "start_char": 261,
+        "end_char": 271,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00483",
+    "patient_id": "SYNTH_PAT_00483",
+    "extracted_entities": [
+      {
+        "text": "cisplatin",
+        "type": "DRUG",
+        "start_char": 59,
+        "end_char": 68,
+        "confidence": 1.0
+      },
+      {
+        "text": "500 mg twice daily",
+        "type": "DOSAGE",
+        "start_char": 69,
+        "end_char": 87,
+        "confidence": 1.0
+      },
+      {
+        "text": "severe dyspnea",
+        "type": "ADVERSE_EVENT",
+        "start_char": 151,
+        "end_char": 165,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00512",
+    "patient_id": "SYNTH_PAT_00512",
+    "extracted_entities": [
+      {
+        "text": "gemcitabine",
+        "type": "DRUG",
+        "start_char": 76,
+        "end_char": 87,
+        "confidence": 1.0
+      },
+      {
+        "text": "150 mg PO daily",
+        "type": "DOSAGE",
+        "start_char": 88,
+        "end_char": 103,
+        "confidence": 1.0
+      },
+      {
+        "text": "moderate diarrhea",
+        "type": "ADVERSE_EVENT",
+        "start_char": 132,
+        "end_char": 149,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00567",
+    "patient_id": "SYNTH_PAT_00567",
+    "extracted_entities": [
+      {
+        "text": "fluorouracil",
+        "type": "DRUG",
+        "start_char": 59,
+        "end_char": 71,
+        "confidence": 1.0
+      },
+      {
+        "text": "10 mg/kg",
+        "type": "DOSAGE",
+        "start_char": 72,
+        "end_char": 80,
+        "confidence": 1.0
+      },
+      {
+        "text": "severe Stevens-Johnson syndrome",
+        "type": "ADVERSE_EVENT",
+        "start_char": 144,
+        "end_char": 175,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00592",
+    "patient_id": "SYNTH_PAT_00592",
+    "extracted_entities": [
+      {
+        "text": "MSI-high",
+        "type": "GENE_MUTATION",
+        "start_char": 44,
+        "end_char": 52,
+        "confidence": 1.0
+      },
+      {
+        "text": "tamoxifen",
+        "type": "DRUG",
+        "start_char": 88,
+        "end_char": 97,
+        "confidence": 1.0
+      },
+      {
+        "text": "100 mg",
+        "type": "DOSAGE",
+        "start_char": 98,
+        "end_char": 104,
+        "confidence": 1.0
+      },
+      {
+        "text": "severe Stevens-Johnson syndrome",
+        "type": "ADVERSE_EVENT",
+        "start_char": 141,
+        "end_char": 172,
+        "confidence": 1.0
+      },
+      {
+        "text": "filgrastim",
+        "type": "DRUG",
+        "start_char": 256,
+        "end_char": 266,
+        "confidence": 1.0
+      },
+      {
+        "text": "300 mcg daily",
+        "type": "DOSAGE",
+        "start_char": 267,
+        "end_char": 280,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00604",
+    "patient_id": "SYNTH_PAT_00604",
+    "extracted_entities": [
+      {
+        "text": "EGFR T790M",
+        "type": "GENE_MUTATION",
+        "start_char": 101,
+        "end_char": 111,
+        "confidence": 1.0
+      },
+      {
+        "text": "olaparib",
+        "type": "DRUG",
+        "start_char": 126,
+        "end_char": 134,
+        "confidence": 1.0
+      },
+      {
+        "text": "200 mg",
+        "type": "DOSAGE",
+        "start_char": 138,
+        "end_char": 144,
+        "confidence": 1.0
+      },
+      {
+        "text": "grade 1 nausea",
+        "type": "ADVERSE_EVENT",
+        "start_char": 176,
+        "end_char": 190,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00614",
+    "patient_id": "SYNTH_PAT_00614",
+    "extracted_entities": [
+      {
+        "text": "paclitaxel",
+        "type": "DRUG",
+        "start_char": 79,
+        "end_char": 89,
+        "confidence": 1.0
+      },
+      {
+        "text": "5 mg/kg",
+        "type": "DOSAGE",
+        "start_char": 90,
+        "end_char": 97,
+        "confidence": 1.0
+      },
+      {
+        "text": "grade 2 neuropathy",
+        "type": "ADVERSE_EVENT",
+        "start_char": 126,
+        "end_char": 144,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00622",
+    "patient_id": "SYNTH_PAT_00622",
+    "extracted_entities": [
+      {
+        "text": "olaparib",
+        "type": "DRUG",
+        "start_char": 59,
+        "end_char": 67,
+        "confidence": 1.0
+      },
+      {
+        "text": "200 mg IV every 3 weeks",
+        "type": "DOSAGE",
+        "start_char": 68,
+        "end_char": 91,
+        "confidence": 1.0
+      },
+      {
+        "text": "febrile neutropenia",
+        "type": "ADVERSE_EVENT",
+        "start_char": 150,
+        "end_char": 169,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00628",
+    "patient_id": "SYNTH_PAT_00628",
+    "extracted_entities": [
+      {
+        "text": "BRAF V600E",
+        "type": "GENE_MUTATION",
+        "start_char": 111,
+        "end_char": 121,
+        "confidence": 1.0
+      },
+      {
+        "text": "bevacizumab",
+        "type": "DRUG",
+        "start_char": 136,
+        "end_char": 147,
+        "confidence": 1.0
+      },
+      {
+        "text": "1 g",
+        "type": "DOSAGE",
+        "start_char": 151,
+        "end_char": 154,
+        "confidence": 1.0
+      },
+      {
+        "text": "mild fatigue",
+        "type": "ADVERSE_EVENT",
+        "start_char": 186,
+        "end_char": 198,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00629",
+    "patient_id": "SYNTH_PAT_00629",
+    "extracted_entities": [
+      {
+        "text": "doxorubicin",
+        "type": "DRUG",
+        "start_char": 81,
+        "end_char": 92,
+        "confidence": 1.0
+      },
+      {
+        "text": "75 mg/m2",
+        "type": "DOSAGE",
+        "start_char": 93,
+        "end_char": 101,
+        "confidence": 1.0
+      },
+      {
+        "text": "moderate neutropenia",
+        "type": "ADVERSE_EVENT",
+        "start_char": 130,
+        "end_char": 150,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00640",
+    "patient_id": "SYNTH_PAT_00640",
+    "extracted_entities": [
+      {
+        "text": "nivolumab",
+        "type": "DRUG",
+        "start_char": 76,
+        "end_char": 85,
+        "confidence": 1.0
+      },
+      {
+        "text": "300 mg twice daily",
+        "type": "DOSAGE",
+        "start_char": 86,
+        "end_char": 104,
+        "confidence": 1.0
+      },
+      {
+        "text": "grade 2 elevated LFTs",
+        "type": "ADVERSE_EVENT",
+        "start_char": 133,
+        "end_char": 154,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00648",
+    "patient_id": "SYNTH_PAT_00648",
+    "extracted_entities": [
+      {
+        "text": "BRCA2 mutation",
+        "type": "GENE_MUTATION",
+        "start_char": 108,
+        "end_char": 122,
+        "confidence": 1.0
+      },
+      {
+        "text": "olaparib",
+        "type": "DRUG",
+        "start_char": 137,
+        "end_char": 145,
+        "confidence": 1.0
+      },
+      {
+        "text": "3 mg/kg",
+        "type": "DOSAGE",
+        "start_char": 149,
+        "end_char": 156,
+        "confidence": 1.0
+      },
+      {
+        "text": "mild taste alteration",
+        "type": "ADVERSE_EVENT",
+        "start_char": 188,
+        "end_char": 209,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00680",
+    "patient_id": "SYNTH_PAT_00680",
+    "extracted_entities": [
+      {
+        "text": "osimertinib",
+        "type": "DRUG",
+        "start_char": 79,
+        "end_char": 90,
+        "confidence": 1.0
+      },
+      {
+        "text": "5 mg/kg",
+        "type": "DOSAGE",
+        "start_char": 91,
+        "end_char": 98,
+        "confidence": 1.0
+      },
+      {
+        "text": "moderate neutropenia",
+        "type": "ADVERSE_EVENT",
+        "start_char": 127,
+        "end_char": 147,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00681",
+    "patient_id": "SYNTH_PAT_00681",
+    "extracted_entities": [
+      {
+        "text": "aprepitant",
+        "type": "DRUG",
+        "start_char": 85,
+        "end_char": 95,
+        "confidence": 1.0
+      },
+      {
+        "text": "50 mg",
+        "type": "DOSAGE",
+        "start_char": 96,
+        "end_char": 101,
+        "confidence": 1.0
+      },
+      {
+        "text": "moderate abdominal cramping",
+        "type": "ADVERSE_EVENT",
+        "start_char": 130,
+        "end_char": 157,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00683",
+    "patient_id": "SYNTH_PAT_00683",
+    "extracted_entities": [
+      {
+        "text": "pembrolizumab",
+        "type": "DRUG",
+        "start_char": 59,
+        "end_char": 72,
+        "confidence": 1.0
+      },
+      {
+        "text": "2 g",
+        "type": "DOSAGE",
+        "start_char": 73,
+        "end_char": 76,
+        "confidence": 1.0
+      },
+      {
+        "text": "severe dyspnea",
+        "type": "ADVERSE_EVENT",
+        "start_char": 134,
+        "end_char": 148,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00684",
+    "patient_id": "SYNTH_PAT_00684",
+    "extracted_entities": [
+      {
+        "text": "BRAF V600E",
+        "type": "GENE_MUTATION",
+        "start_char": 110,
+        "end_char": 120,
+        "confidence": 1.0
+      },
+      {
+        "text": "bevacizumab",
+        "type": "DRUG",
+        "start_char": 135,
+        "end_char": 146,
+        "confidence": 1.0
+      },
+      {
+        "text": "100 mg",
+        "type": "DOSAGE",
+        "start_char": 150,
+        "end_char": 156,
+        "confidence": 1.0
+      },
+      {
+        "text": "mild fatigue",
+        "type": "ADVERSE_EVENT",
+        "start_char": 188,
+        "end_char": 200,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00705",
+    "patient_id": "SYNTH_PAT_00705",
+    "extracted_entities": [
+      {
+        "text": "BRCA2 mutation",
+        "type": "GENE_MUTATION",
+        "start_char": 44,
+        "end_char": 58,
+        "confidence": 1.0
+      },
+      {
+        "text": "carboplatin",
+        "type": "DRUG",
+        "start_char": 93,
+        "end_char": 104,
+        "confidence": 1.0
+      },
+      {
+        "text": "500 mg/m2",
+        "type": "DOSAGE",
+        "start_char": 105,
+        "end_char": 114,
+        "confidence": 1.0
+      },
+      {
+        "text": "grade 3 cardiotoxicity",
+        "type": "ADVERSE_EVENT",
+        "start_char": 151,
+        "end_char": 173,
+        "confidence": 1.0
+      },
+      {
+        "text": "filgrastim",
+        "type": "DRUG",
+        "start_char": 259,
+        "end_char": 269,
+        "confidence": 1.0
+      },
+      {
+        "text": "10 mg IV stat",
+        "type": "DOSAGE",
+        "start_char": 270,
+        "end_char": 283,
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "note_id": "SYNTH_NOTE_00725",
+    "patient_id": "SYNTH_PAT_00725",
+    "extracted_entities": [
+      {
+        "text": "grade 2 elevated LFTs",
+        "type": "ADVERSE_EVENT",
+        "start_char": 89,
+        "end_char": 110,
+        "confidence": 1.0
+      },
+      {
+        "text": "loperamide",
+        "type": "DRUG",
+        "start_char": 121,
+        "end_char": 131,
+        "confidence": 1.0
+      },
+      {
+        "text": "500 mg twice daily",
+        "type": "DOSAGE",
+        "start_char": 132,
+        "end_char": 150,
+        "confidence": 1.0
+      },
+      {
+        "text": "ROS1 fusion",
+        "type": "GENE_MUTATION",
+        "start_char": 179,
+        "end_char": 190,
+        "confidence": 1.0
+      },
+      {
+        "text": "loperamide",
+        "type": "DRUG",
+        "start_char": 121,
+        "end_char": 131,
+        "confidence": 1.0
+      },
+      {
+        "text": "4 mg PO",
+        "type": "DOSAGE",
+        "start_char": 246,
+        "end_char": 253,
+        "confidence": 1.0
+      }
+    ]
+  }
+]

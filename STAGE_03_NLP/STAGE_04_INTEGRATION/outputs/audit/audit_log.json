@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-09-09T10:29:19.583430+00:00",
+  "subsystem": "STAGE_04_INTEGRATION",
+  "software_version": "1.0.0",
+  "python_version": "3.11.9",
+  "os": "Windows-10-10.0.26200-SP0",
+  "execution_mode": "STRICT_READ_ONLY_MULTIMODAL_INTEGRATION",
+  "upstream_input_hashes": {
+    "STAGE_01_ML/MODELS/test_eval_results.npz": "f8f2e707bb660c1c4b5817711f62f81a57d327c8694050e233183178d4595779",
+    "STAGE_01_ML/SPLITS/test.csv": "b30a3913cfd1829381541b1edb70608651defea3b8d0d1b8d50c273dd89e251b",
+    "STAGE_02_DL/METADATA/patient_master.csv": "c6f5b007c5d71c82b684299599d03743cd28ce01de0b66e5656b5a3038d86c9e",
+    "STAGE_02_DL/SPLITS/test_manifest.csv": "620ec9ce6f7a637e11497f5319eaec2a184135099798428252a54435c2628234",
+    "STAGE_03_NLP/nlp_engineer/outputs/predictions/urgency_test_predictions.csv": "aae4c9a717aaef22b3002ef0ac76cfe5cc7288bbf125c0836ec55addf8fcfd77",
+    "STAGE_03_NLP/data_engineer/splits/test.csv": "5fa687c3ee387ad0446b75829e8804e85303c6c78271bc976784fe97bf5201fd"
+  },
+  "disclaimer": "Synthetic research integration only. This system is not clinically validated.",
+  "status": "VALIDATED"
+}

@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-09-09T23:16:30Z",
+  "evaluated_models_count": 3,
+  "models": [
+    {
+      "model_id": "model_a_base_qwen",
+      "name": "Qwen/Qwen2.5-1.5B-Instruct",
+      "role": "Base Zero-Shot SLM",
+      "architecture": "Qwen2ForCausalLM",
+      "total_parameters": 1543714816,
+      "trainable_parameters": 0,
+      "has_adapter": false,
+      "device": "CPU (AMD64)",
+      "precision": "float32/bfloat16"
+    },
+    {
+      "model_id": "model_b_finetuned_qwen",
+      "name": "Qwen/Qwen2.5-1.5B-Instruct + LoRA",
+      "role": "Primary Fine-Tuned SLM Candidate",
+      "architecture": "Qwen2ForCausalLM + PEFT LoRA",
+      "total_parameters": 1543714816,
+      "trainable_parameters": 18464768,
+      "has_adapter": true,
+      "adapter_rank": 16,
+      "adapter_alpha": 32,
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ],
+      "adapter_file_size_bytes": 11024912,
+      "device": "CPU (AMD64)",
+      "precision": "float32/bfloat16",
+      "adapter_verified_active": true
+    },
+    {
+      "model_id": "model_c_smollm_baseline",
+      "name": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+      "role": "External Compact Baseline SLM",
+      "architecture": "LlamaForCausalLM",
+      "total_parameters": 1711296512,
+      "trainable_parameters": 0,
+      "has_adapter": false,
+      "device": "CPU (AMD64)",
+      "precision": "float32/bfloat16"
+    }
+  ],
+  "tokenizer_verification": {
+    "path": "C:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\slm_engineer\\models\\qwen2.5_1.5b_lora\\tokenizer",
+    "vocab_size": 151665,
+    "tokenizer_type": "Qwen2Tokenizer"
+  },
+  "adapter_verification": {
+    "adapter_exists": true,
+    "safetensors_valid": true,
+    "active_in_model_b": true
+  }
+}

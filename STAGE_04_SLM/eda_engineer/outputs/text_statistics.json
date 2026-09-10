@@ -1,0 +1,80 @@
+{
+  "total_records": 23353,
+  "report_characters": {
+    "mean": 424.05,
+    "median": 409.0,
+    "std": 30.62,
+    "min": 380,
+    "max": 515,
+    "p50": 409.0,
+    "p75": 455.0,
+    "p90": 470.0,
+    "p95": 471.0,
+    "p99": 474.0
+  },
+  "summary_characters": {
+    "mean": 222.5,
+    "median": 223.0,
+    "std": 16.23,
+    "min": 62,
+    "max": 258,
+    "p50": 223.0,
+    "p75": 231.0,
+    "p90": 249.0,
+    "p95": 252.0,
+    "p99": 256.0
+  },
+  "report_words": {
+    "mean": 57.14,
+    "median": 57.0,
+    "std": 4.11,
+    "min": 48,
+    "max": 65,
+    "p50": 57.0,
+    "p75": 59.0,
+    "p90": 63.0,
+    "p95": 63.0,
+    "p99": 63.0
+  },
+  "summary_words": {
+    "mean": 29.77,
+    "median": 28.0,
+    "std": 4.35,
+    "min": 7,
+    "max": 36,
+    "p50": 28.0,
+    "p75": 35.0,
+    "p90": 36.0,
+    "p95": 36.0,
+    "p99": 36.0
+  },
+  "report_sentences": {
+    "mean": 5.51,
+    "median": 6.0,
+    "std": 0.93,
+    "min": 4,
+    "max": 8,
+    "p50": 6.0,
+    "p75": 6.0,
+    "p90": 7.0,
+    "p95": 7.0,
+    "p99": 7.0
+  },
+  "summary_sentences": {
+    "mean": 2.3,
+    "median": 2.0,
+    "std": 0.46,
+    "min": 1,
+    "max": 3,
+    "p50": 2.0,
+    "p75": 3.0,
+    "p90": 3.0,
+    "p95": 3.0,
+    "p99": 3.0
+  },
+  "summary_readability": {
+    "flesch_reading_ease_mean": -6.1,
+    "flesch_kincaid_grade_mean": 17.16,
+    "flesch_kincaid_grade_median": 18.02
+  }
+}

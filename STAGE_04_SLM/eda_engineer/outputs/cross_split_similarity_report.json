@@ -1,0 +1,9 @@
+{
+  "sample_size_evaluated": 500,
+  "mean_maximum_jaccard_similarity": {
+    "train_vs_validation": 0.843,
+    "train_vs_test": 0.85,
+    "validation_vs_test": 0.844
+  },
+  "interpretation": "Cross-split lexical similarity reflects shared oncology vocabulary without verbatim sequence leakage."
+}

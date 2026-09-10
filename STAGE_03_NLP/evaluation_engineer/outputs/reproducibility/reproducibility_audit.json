@@ -1,0 +1,25 @@
+{
+  "evaluation_seed": 42,
+  "python_version": "3.11.9",
+  "torch_available": true,
+  "total_test_samples": 3740,
+  "statistical_confidence": {
+    "macro_f1_mean": 0.8919,
+    "macro_f1_95_ci": [
+      0.8828,
+      0.9008
+    ],
+    "high_recall_mean": 0.8922,
+    "high_recall_95_ci": [
+      0.875,
+      0.9067
+    ]
+  },
+  "artifacts_verified": {
+    "urgency_model": true,
+    "urgency_tokenizer": true,
+    "ner_model": true,
+    "ner_tokenizer": true
+  },
+  "disclaimer": "Synthetic research evaluation only."
+}

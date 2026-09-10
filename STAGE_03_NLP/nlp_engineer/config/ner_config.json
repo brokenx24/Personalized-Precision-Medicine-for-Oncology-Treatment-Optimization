@@ -1,0 +1,66 @@
+{
+  "task": "medical_ner",
+  "model_name": "dmis-lab/biobert-v1.1",
+  "num_labels": 9,
+  "labels": [
+    "O",
+    "B-GENE_MUTATION",
+    "I-GENE_MUTATION",
+    "B-DRUG",
+    "I-DRUG",
+    "B-DOSAGE",
+    "I-DOSAGE",
+    "B-ADVERSE_EVENT",
+    "I-ADVERSE_EVENT"
+  ],
+  "label_to_id": {
+    "O": 0,
+    "B-GENE_MUTATION": 1,
+    "I-GENE_MUTATION": 2,
+    "B-DRUG": 3,
+    "I-DRUG": 4,
+    "B-DOSAGE": 5,
+    "I-DOSAGE": 6,
+    "B-ADVERSE_EVENT": 7,
+    "I-ADVERSE_EVENT": 8
+  },
+  "id_to_label": {
+    "0": "O",
+    "1": "B-GENE_MUTATION",
+    "2": "I-GENE_MUTATION",
+    "3": "B-DRUG",
+    "4": "I-DRUG",
+    "5": "B-DOSAGE",
+    "6": "I-DOSAGE",
+    "7": "B-ADVERSE_EVENT",
+    "8": "I-ADVERSE_EVENT"
+  },
+  "entity_types": [
+    "GENE_MUTATION",
+    "DRUG",
+    "DOSAGE",
+    "ADVERSE_EVENT"
+  ],
+  "max_length": 128,
+  "learning_rate": 3e-05,
+  "weight_decay": 0.01,
+  "train_batch_size": 16,
+  "eval_batch_size": 32,
+  "epochs": 2,
+  "warmup_ratio": 0.1,
+  "seed": 42,
+  "input_paths": {
+    "cleaned_ner_json": "STAGE_03_NLP/data_engineer/cleaned/cleaned_ner_dataset.json",
+    "train_csv": "STAGE_03_NLP/data_engineer/splits/train.csv",
+    "validation_csv": "STAGE_03_NLP/data_engineer/splits/validation.csv",
+    "test_csv": "STAGE_03_NLP/data_engineer/splits/test.csv"
+  },
+  "output_paths": {
+    "model_dir": "STAGE_03_NLP/nlp_engineer/models/ner/best_model",
+    "tokenizer_dir": "STAGE_03_NLP/nlp_engineer/models/ner/tokenizer",
+    "checkpoints_dir": "STAGE_03_NLP/nlp_engineer/models/ner/checkpoints",
+    "extracted_entities_json": "STAGE_03_NLP/nlp_engineer/outputs/extracted_entities/ner_test_entities.json",
+    "metrics_json": "STAGE_03_NLP/nlp_engineer/outputs/metrics/ner_metrics.json"
+  },
+  "disclaimer": "SYNTHETIC DATA RESEARCH PROTOTYPE - NOT A CLINICAL DIAGNOSTIC DEVICE"
+}

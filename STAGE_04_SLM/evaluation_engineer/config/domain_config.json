@@ -1,0 +1,82 @@
+{
+  "description": "Oncology Domain Reference Terminology and Entities Configuration",
+  "version": "1.0.0",
+  "regulatory_disclaimer": "Synthetic oncology research reference terminology only. Not clinical recommendations.",
+  "inherited_from_stage03": {
+    "cancer_types": [
+      "Lung cancer",
+      "Breast cancer",
+      "Colorectal cancer",
+      "Melanoma",
+      "Prostate cancer",
+      "Ovarian cancer",
+      "Pancreatic cancer",
+      "Liver cancer",
+      "Leukemia",
+      "Lymphoma"
+    ],
+    "report_types": [
+      "Oncology consultation note",
+      "Physician progress note",
+      "Treatment follow-up note",
+      "Nursing intake note",
+      "Surgical pathology summary",
+      "Chemotherapy adverse-event note",
+      "Patient symptom log",
+      "Immunotherapy follow-up note",
+      "Radiation therapy note",
+      "Targeted therapy note",
+      "Clinical trial-style oncology note"
+    ],
+    "urgency_tiers": [
+      "LOW",
+      "MODERATE",
+      "HIGH"
+    ],
+    "core_entities": [
+      "GENE_MUTATION",
+      "DRUG",
+      "DOSAGE",
+      "ADVERSE_EVENT"
+    ],
+    "expanded_entities": [
+      "BIOMARKER",
+      "STAGE",
+      "RESPONSE",
+      "PROGRESSION"
+    ]
+  },
+  "staging_vocabulary": [
+    "Stage I",
+    "Stage IA",
+    "Stage IB",
+    "Stage II",
+    "Stage IIA",
+    "Stage IIB",
+    "Stage III",
+    "Stage IIIA",
+    "Stage IIIB",
+    "Stage IIIC",
+    "Stage IV",
+    "Stage IVA",
+    "Stage IVB"
+  ],
+  "response_vocabulary": [
+    "Complete Response (CR)",
+    "Partial Response (PR)",
+    "Stable Disease (SD)",
+    "Progressive Disease (PD)",
+    "Disease progression",
+    "Biochemical recurrence",
+    "Sustained remission",
+    "Minimal residual disease (MRD) negative"
+  ],
+  "guidelines_reference_codes": [
+    "REF-NCCN-NSCLC-V2024",
+    "REF-NCCN-BRCA-V2024",
+    "REF-NCCN-CRC-V2024",
+    "REF-NCCN-MEL-V2024",
+    "REF-NCCN-PRAD-V2024",
+    "REF-NCCN-OV-V2024"
+  ]
+}

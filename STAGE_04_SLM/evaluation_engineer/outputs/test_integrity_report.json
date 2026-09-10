@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-09-09T23:16:00Z",
+  "test_dataset_path": "C:\\Users\\shyam\\OneDrive\\Documents\\HOSPITAL\\STAGE_04_SLM\\data_engineer\\splits\\test.jsonl",
+  "test_dataset_sha256": "668f4b6dfd997272dd73b338b91a93a5014d0c8e56069b295b56401dc04e4d38",
+  "expected_test_records": 3503,
+  "actual_test_records": 3503,
+  "missing_records": 0,
+  "duplicate_records": 0,
+  "empty_inputs": 0,
+  "empty_targets": 0,
+  "test_unique_patients": 738,
+  "train_unique_patients": 3435,
+  "val_unique_patients": 733,
+  "leakage_detected": false,
+  "leakage_details": {
+    "train_test_overlap_count": 0,
+    "val_test_overlap_count": 0,
+    "conclusion": "ZERO_LEAKAGE_CONFIRMED: Test patients are 100% disjoint from train and validation sets."
+  }
+}

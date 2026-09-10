@@ -1,0 +1,37 @@
+{
+  "context_512": {
+    "threshold": 512,
+    "records_fitting_completely": 23353,
+    "records_exceeding": 0,
+    "exceedance_percentage": 0.0,
+    "truncation_risk_level": "ZERO"
+  },
+  "context_1024": {
+    "threshold": 1024,
+    "records_fitting_completely": 23353,
+    "records_exceeding": 0,
+    "exceedance_percentage": 0.0,
+    "truncation_risk_level": "ZERO"
+  },
+  "context_2048": {
+    "threshold": 2048,
+    "records_fitting_completely": 23353,
+    "records_exceeding": 0,
+    "exceedance_percentage": 0.0,
+    "truncation_risk_level": "ZERO"
+  },
+  "context_4096": {
+    "threshold": 4096,
+    "records_fitting_completely": 23353,
+    "records_exceeding": 0,
+    "exceedance_percentage": 0.0,
+    "truncation_risk_level": "ZERO"
+  },
+  "context_8192": {
+    "threshold": 8192,
+    "records_fitting_completely": 23353,
+    "records_exceeding": 0,
+    "exceedance_percentage": 0.0,
+    "truncation_risk_level": "ZERO"
+  }
+}

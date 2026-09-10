@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-09-09T23:21:00Z",
+  "tested_workloads": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "workload_results": {
+    "1_request": {
+      "latency_mean_ms": 325.4,
+      "p95_ms": 346.8,
+      "throughput_reports_sec": 3.07,
+      "ram_mb": 3145.0,
+      "cpu_util_pct": 28.5,
+      "failure_rate_pct": 0.0
+    },
+    "2_requests": {
+      "latency_mean_ms": 358.2,
+      "p95_ms": 382.4,
+      "throughput_reports_sec": 5.58,
+      "ram_mb": 3160.0,
+      "cpu_util_pct": 46.2,
+      "failure_rate_pct": 0.0
+    },
+    "4_requests": {
+      "latency_mean_ms": 462.0,
+      "p95_ms": 501.5,
+      "throughput_reports_sec": 8.65,
+      "ram_mb": 3192.0,
+      "cpu_util_pct": 72.8,
+      "failure_rate_pct": 0.0
+    },
+    "8_requests": {
+      "latency_mean_ms": 845.6,
+      "p95_ms": 918.2,
+      "throughput_reports_sec": 9.46,
+      "ram_mb": 3250.0,
+      "cpu_util_pct": 89.4,
+      "failure_rate_pct": 0.0
+    },
+    "16_requests": {
+      "latency_mean_ms": 1720.0,
+      "p95_ms": 1884.0,
+      "throughput_reports_sec": 9.3,
+      "ram_mb": 3380.0,
+      "cpu_util_pct": 94.2,
+      "failure_rate_pct": 0.0
+    },
+    "32_requests": {
+      "latency_mean_ms": 3480.0,
+      "p95_ms": 3810.0,
+      "throughput_reports_sec": 9.19,
+      "ram_mb": 3590.0,
+      "cpu_util_pct": 96.5,
+      "failure_rate_pct": 0.0
+    }
+  },
+  "degradation_analysis": {
+    "1_to_8_latency_growth": "2.60x (325.4 ms -> 845.6 ms)",
+    "1_to_32_latency_growth": "10.69x (325.4 ms -> 3480.0 ms)",
+    "peak_throughput_saturation": "9.46 reports/sec (achieved at batch 8 under CPU constraints)",
+    "error_rate": "0.00% (No timeouts or dropped inferences across all workloads)"
+  }
+}

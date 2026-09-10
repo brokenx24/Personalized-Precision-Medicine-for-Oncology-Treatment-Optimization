@@ -1,0 +1,66 @@
+{
+  "total_split_records": 23353,
+  "train_split": {
+    "split_name": "TRAIN",
+    "record_count": 16360,
+    "record_percentage": 70.06,
+    "unique_patients": 3435,
+    "cancer_type_distribution": {
+      "Prostate cancer": 2800,
+      "Breast cancer": 2773,
+      "Melanoma": 2745,
+      "Lung cancer": 2721,
+      "Colorectal cancer": 2670,
+      "Ovarian cancer": 2651
+    },
+    "urgency_tier_distribution": {
+      "MODERATE": 9166,
+      "LOW": 6539,
+      "HIGH": 655
+    },
+    "mean_report_chars": 424.03,
+    "mean_summary_chars": 222.47
+  },
+  "validation_split": {
+    "split_name": "VALIDATION",
+    "record_count": 3490,
+    "record_percentage": 14.94,
+    "unique_patients": 733,
+    "cancer_type_distribution": {
+      "Breast cancer": 635,
+      "Prostate cancer": 616,
+      "Lung cancer": 595,
+      "Colorectal cancer": 577,
+      "Melanoma": 535,
+      "Ovarian cancer": 532
+    },
+    "urgency_tier_distribution": {
+      "MODERATE": 1950,
+      "LOW": 1396,
+      "HIGH": 144
+    },
+    "mean_report_chars": 424.13,
+    "mean_summary_chars": 222.59
+  },
+  "test_split": {
+    "split_name": "TEST",
+    "record_count": 3503,
+    "record_percentage": 15.0,
+    "unique_patients": 738,
+    "cancer_type_distribution": {
+      "Prostate cancer": 650,
+      "Colorectal cancer": 644,
+      "Lung cancer": 564,
+      "Melanoma": 551,
+      "Breast cancer": 549,
+      "Ovarian cancer": 545
+    },
+    "urgency_tier_distribution": {
+      "MODERATE": 1948,
+      "LOW": 1404,
+      "HIGH": 151
+    },
+    "mean_report_chars": 424.04,
+    "mean_summary_chars": 222.55
+  }
+}

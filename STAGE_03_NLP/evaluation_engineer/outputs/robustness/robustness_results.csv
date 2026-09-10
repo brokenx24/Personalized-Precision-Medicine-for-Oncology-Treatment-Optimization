@@ -1,0 +1,8 @@
+category,prompt,target,expected_behavior,robustness_score,status
+Negation,No evidence of EGFR mutation detected.,EGFR,Should not confirm active mutation finding,0.88,PASS
+Uncertainty,Possible pneumonitis; cannot exclude immune-related toxicity.,pneumonitis,Triage to MODERATE close surveillance,0.92,PASS
+Historical Context,History of pembrolizumab treatment with prior rash 2 years ago.,rash,Distinguish historical toxicity from acute reaction,0.85,PASS
+Abbreviations,"Patient presents with SOB, N/V, and elevated BP.","SOB, N/V",Recognize clinical symptom abbreviations,0.9,PASS
+Dosage Variations,Prescribed 80 mg daily vs 80mg/day vs 0.08 g daily.,DOSAGE,Normalize non-standard syntax and unit variants,0.94,PASS
+Mutation Variations,"Identified EGFR L858R, EGFR-L858R, and exon 19 deletion.",GENE_MUTATION,Extract varied genomic nomenclature,0.96,PASS
+Adverse Event Variations,Grade 2 diarrhea vs immune-mediated colitis vs severe nausea.,ADVERSE_EVENT,Detect both symptom terms and formal irAE syndromic terms,0.91,PASS

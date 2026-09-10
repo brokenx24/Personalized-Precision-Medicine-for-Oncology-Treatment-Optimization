@@ -1,0 +1,187 @@
+{
+  "total_checks": 30,
+  "passed": 30,
+  "status": "PASS",
+  "checks": [
+    {
+      "check_id": 1,
+      "description": "Raw dataset exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 2,
+      "description": "Raw dataset loadable",
+      "passed": true,
+      "detail": "(25,000 rows)"
+    },
+    {
+      "check_id": 3,
+      "description": "Raw dataset has expected columns",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 4,
+      "description": "Cleaned patient IDs match pattern",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 5,
+      "description": "Cleaned record IDs match pattern",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 6,
+      "description": "Cleaned encounter IDs match pattern",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 7,
+      "description": "Clinical reports exist in raw",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 8,
+      "description": "Target summaries exist in raw",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 9,
+      "description": "Missing values audited before cleaning",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 10,
+      "description": "Null values audited before cleaning",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 11,
+      "description": "Empty values audited before cleaning",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 12,
+      "description": "Duplicate records detected in profiling",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 13,
+      "description": "Duplicate removal completed and logged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 14,
+      "description": "Near-duplicate audit completed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 15,
+      "description": "Invalid records isolated and logged",
+      "passed": true,
+      "detail": "(1,647 rejected)"
+    },
+    {
+      "check_id": 16,
+      "description": "PII scan completed with 0 leaks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 17,
+      "description": "Domain dictionary loaded and complete",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 18,
+      "description": "Domain coverage formally calculated",
+      "passed": true,
+      "detail": "(75.0%)"
+    },
+    {
+      "check_id": 19,
+      "description": "NER consistency checked (>90% grounded)",
+      "passed": true,
+      "detail": "(100.0%)"
+    },
+    {
+      "check_id": 20,
+      "description": "Cleaned report length within [80, 2000]",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 21,
+      "description": "Cleaned summary length within [50, 450]",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 22,
+      "description": "Summary sentence count within [1, 3]",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 23,
+      "description": "Train split JSONL generated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 24,
+      "description": "Validation split JSONL generated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 25,
+      "description": "Test split JSONL generated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 26,
+      "description": "Patient leakage mathematically zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 27,
+      "description": "No empty final model inputs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 28,
+      "description": "No empty final model targets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 29,
+      "description": "No duplicate final input-output pairs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 30,
+      "description": "Final dataset quality gate passed",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

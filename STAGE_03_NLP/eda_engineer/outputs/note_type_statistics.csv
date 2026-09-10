@@ -1,0 +1,12 @@
+note_type,record_count,percentage,patient_count,mean_char_length,mean_token_count,low_urgency_pct,moderate_urgency_pct,high_urgency_pct
+Oncology consultation note,2273,9.09,2273,345.6,45.2,32.56,34.54,32.91
+Physician progress note,2273,9.09,2273,345.8,45.2,33.35,33.83,32.82
+Treatment follow-up note,2273,9.09,2273,345.7,45.1,32.51,33.96,33.52
+Nursing intake note,2273,9.09,2273,437.7,58.7,32.6,35.72,31.68
+Surgical pathology summary,2273,9.09,2273,522.6,68.0,33.13,34.1,32.78
+Chemotherapy adverse-event note,2273,9.09,2273,346.1,45.2,33.08,34.67,32.25
+Patient symptom log,2273,9.09,2273,391.7,54.4,33.92,34.23,31.85
+Immunotherapy follow-up note,2273,9.09,2273,346.2,45.2,31.63,34.62,33.74
+Radiation therapy note,2272,9.09,2272,344.5,45.0,33.85,32.0,34.15
+Targeted therapy note,2272,9.09,2272,345.0,45.1,33.01,33.76,33.23
+Clinical trial-style oncology note,2272,9.09,2272,345.4,45.1,33.36,32.57,34.07

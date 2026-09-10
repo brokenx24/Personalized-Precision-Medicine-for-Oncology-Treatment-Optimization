@@ -1,0 +1,26 @@
+{
+  "total_integrated_patients": 1291,
+  "raw_counts": {
+    "stage01_patients": 939,
+    "stage02_patients": 26,
+    "stage03_patients": 374,
+    "total_unique_raw_ids": 1315
+  },
+  "raw_exact_string_overlap": {
+    "stage01_and_stage02": 24,
+    "stage01_and_stage03": 0,
+    "stage02_and_stage03": 0,
+    "raw_all_three_overlap": 0
+  },
+  "alignment_categories": {
+    "fully_multimodal_patients": 24,
+    "partially_multimodal_patients": 0,
+    "single_modality_patients": 1267
+  },
+  "missing_modality_percentages": {
+    "missing_ml_percent": 27.27,
+    "missing_dl_percent": 97.99,
+    "missing_nlp_percent": 71.03
+  },
+  "disclaimer": "Synthetic research integration only. This system is not clinically validated."
+}

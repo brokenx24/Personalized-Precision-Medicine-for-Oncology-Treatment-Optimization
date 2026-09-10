@@ -1,0 +1,6 @@
+patient_id,slice_id,processed_path,original_dcm,width,height,modality,slice_thickness,pixel_spacing,slice_position,rescale_slope,rescale_intercept,window_width,window_center,split
+TCGA-17-Z048,CT_000,STAGE_02_DL/PROCESSED/ct_images/TCGA-17-Z048_ct_slice_000.png,STAGE_02_DL/RAW/ct/TCGA-17-Z048/00000001.dcm,224,224,CT,10.0,"[006.875000e-01, 006.875000e-01]",-31.0,1.0,-1024.0,400.0,40.0,train
+TCGA-17-Z053,CT_001,STAGE_02_DL/PROCESSED/ct_images/TCGA-17-Z053_ct_slice_001.png,STAGE_02_DL/RAW/ct/TCGA-17-Z053/00000001.dcm,224,224,CT,1.0,"[2, 2]",-21.0,1.0,-1024.0,400.0,40.0,train
+TCGA-17-Z054,CT_002,STAGE_02_DL/PROCESSED/ct_images/TCGA-17-Z054_ct_slice_002.png,STAGE_02_DL/RAW/ct/TCGA-17-Z054/00000001.dcm,224,224,CT,3.0,"[1, 1]",-258.5,1.0,-1024.0,400.0,40.0,test
+TCGA-17-Z058,CT_003,STAGE_02_DL/PROCESSED/ct_images/TCGA-17-Z058_ct_slice_003.png,STAGE_02_DL/RAW/ct/TCGA-17-Z058/00000001.dcm,224,224,CT,1.0,"[2, 2]",-144.5,1.0,-1024.0,400.0,40.0,train
+TCGA-17-Z060,CT_004,STAGE_02_DL/PROCESSED/ct_images/TCGA-17-Z060_ct_slice_004.png,STAGE_02_DL/RAW/ct/TCGA-17-Z060/00000001.dcm,224,224,CT,3.0,"[1, 1]",-1.0,1.0,-1024.0,400.0,40.0,train

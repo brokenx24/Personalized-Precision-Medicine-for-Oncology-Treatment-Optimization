@@ -1,0 +1,217 @@
+{
+  "total_checks": 35,
+  "passed": 35,
+  "status": "PASS",
+  "checks": [
+    {
+      "check_id": 1,
+      "description": "Cleaned dataset exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 2,
+      "description": "Train dataset exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 3,
+      "description": "Validation dataset exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 4,
+      "description": "Test dataset exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 5,
+      "description": "Cleaned CSV loadable",
+      "passed": true,
+      "detail": "(23,353 rows)"
+    },
+    {
+      "check_id": 6,
+      "description": "JSONL split loadable and valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 7,
+      "description": "Required columns exist in dataset",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 8,
+      "description": "Instruction field valid in JSONL",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 9,
+      "description": "Input field valid in JSONL",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 10,
+      "description": "Output field valid in JSONL",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 11,
+      "description": "No empty inputs in cleaned dataset",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 12,
+      "description": "No empty outputs in cleaned dataset",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 13,
+      "description": "Token analysis completed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 14,
+      "description": "Vocabulary analysis completed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 15,
+      "description": "Domain dictionary loaded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 16,
+      "description": "Domain coverage calculated",
+      "passed": true,
+      "detail": "(75.0%)"
+    },
+    {
+      "check_id": 17,
+      "description": "NER distribution calculated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 18,
+      "description": "NER retention calculated",
+      "passed": true,
+      "detail": "(Drug 100.0%)"
+    },
+    {
+      "check_id": 19,
+      "description": "Dosage analysis completed",
+      "passed": true,
+      "detail": "(25.1% retention - WARNING/AUDITED)"
+    },
+    {
+      "check_id": 20,
+      "description": "Mutation analysis completed",
+      "passed": true,
+      "detail": "(99.99%)"
+    },
+    {
+      "check_id": 21,
+      "description": "Summary sentence analysis completed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 22,
+      "description": "Compression analysis completed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 23,
+      "description": "Sequence length analysis completed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 24,
+      "description": "Context-window analysis completed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 25,
+      "description": "Truncation risk calculated",
+      "passed": true,
+      "detail": "(0% at 512 context)"
+    },
+    {
+      "check_id": 26,
+      "description": "Patient distribution analyzed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 27,
+      "description": "Train/Val/Test distribution analyzed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 28,
+      "description": "Patient leakage independently verified",
+      "passed": true,
+      "detail": "(0 overlap)"
+    },
+    {
+      "check_id": 29,
+      "description": "Cross-split similarity analyzed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 30,
+      "description": "Outlier analysis completed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 31,
+      "description": "Required visualizations generated",
+      "passed": true,
+      "detail": "(25/25 PNGs @ 300 DPI)"
+    },
+    {
+      "check_id": 32,
+      "description": "Required reports generated",
+      "passed": true,
+      "detail": "(13/13 reports)"
+    },
+    {
+      "check_id": 33,
+      "description": "EDA manifest generated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 34,
+      "description": "EDA scorecard generated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check_id": 35,
+      "description": "SLM handoff information generated",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

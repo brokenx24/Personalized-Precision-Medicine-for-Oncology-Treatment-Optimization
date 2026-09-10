@@ -1,0 +1,23 @@
+{
+  "nlp_high_risk_threshold": 0.3,
+  "sentinel_oncology_terms": [
+    "neutropenic fever",
+    "febrile neutropenia",
+    "cord compression",
+    "spinal cord compression",
+    "anaphylaxis",
+    "grade 4 colitis",
+    "bowel perforation",
+    "cardiac tamponade",
+    "dose-limiting toxicity",
+    "dlt",
+    "severe sepsis",
+    "tumor lysis syndrome"
+  ],
+  "discordance_rules": {
+    "nlp_high_while_baseline_low": true,
+    "nlp_high_while_dl_low": true
+  },
+  "missing_modality_alert_on_high_risk": true,
+  "disclaimer": "Synthetic research integration only. This system is not clinically validated."
+}

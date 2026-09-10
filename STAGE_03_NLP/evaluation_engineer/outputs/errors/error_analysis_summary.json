@@ -1,0 +1,38 @@
+{
+  "total_test_notes": 3740,
+  "total_misclassifications": 405,
+  "overall_error_rate": 0.1083,
+  "transition_breakdown": [
+    {
+      "urgency_label": "HIGH",
+      "predicted_label": "MODERATE",
+      "count": 117
+    },
+    {
+      "urgency_label": "LOW",
+      "predicted_label": "MODERATE",
+      "count": 100
+    },
+    {
+      "urgency_label": "MODERATE",
+      "predicted_label": "LOW",
+      "count": 79
+    },
+    {
+      "urgency_label": "MODERATE",
+      "predicted_label": "HIGH",
+      "count": 70
+    },
+    {
+      "urgency_label": "LOW",
+      "predicted_label": "HIGH",
+      "count": 21
+    },
+    {
+      "urgency_label": "HIGH",
+      "predicted_label": "LOW",
+      "count": 18
+    }
+  ],
+  "disclaimer": "Synthetic research evaluation only."
+}

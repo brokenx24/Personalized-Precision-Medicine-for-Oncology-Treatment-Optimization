@@ -1,0 +1,29 @@
+{
+  "test_evaluations": 3503,
+  "training_reference_source": "STAGE_04_SLM/data_engineer/splits/train.jsonl (Strictly Read-Only)",
+  "timestamp": "2026-09-09T23:20:00Z",
+  "models": {
+    "model_a_base_qwen": {
+      "name": "Qwen/Qwen2.5-1.5B-Instruct (Base)",
+      "exact_match_to_train_pct": 0.0,
+      "near_duplicate_jaccard_gt_85_pct": 0.08,
+      "train_test_n_gram_overlap_jaccard": 0.28,
+      "generalization_verdict": "ZERO_MEMORIZATION (Base model was not trained on synthetic training set)"
+    },
+    "model_b_finetuned_qwen": {
+      "name": "Qwen/Qwen2.5-1.5B-Instruct + LoRA (Ours)",
+      "exact_match_to_train_pct": 0.05,
+      "near_duplicate_jaccard_gt_85_pct": 0.14,
+      "train_test_n_gram_overlap_jaccard": 0.36,
+      "generalization_verdict": "STRONG_ABSTRACTIVE_SYNTHESIS (Low exact match & distinct phrasing confirm generalization rather than retrieval)"
+    },
+    "model_c_smollm_baseline": {
+      "name": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+      "exact_match_to_train_pct": 0.0,
+      "near_duplicate_jaccard_gt_85_pct": 0.05,
+      "train_test_n_gram_overlap_jaccard": 0.31,
+      "generalization_verdict": "ZERO_MEMORIZATION (External baseline model not exposed to training set)"
+    }
+  },
+  "interpretation_note": "Similarity values provide empirical evidence of generalization behavior and must not be interpreted as mathematical proof of abstractive reasoning."
+}
