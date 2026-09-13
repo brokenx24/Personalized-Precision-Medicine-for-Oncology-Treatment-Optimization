@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SyntheticOncologyScenarioPayload",
+  "type": "object",
+  "required": [
+    "scenario_id",
+    "generation_id",
+    "timestamp",
+    "synthetic_flag",
+    "challenge_type",
+    "difficulty_level",
+    "patient_profile",
+    "genomic_profile",
+    "trajectory",
+    "clinical_notes"
+  ],
+  "properties": {
+    "scenario_id": { "type": "string" },
+    "generation_id": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "synthetic_flag": { "type": "boolean", "const": true },
+    "challenge_type": { "type": "string" },
+    "difficulty_level": { "type": "string" },
+    "patient_profile": { "$ref": "patient_schema.json" },
+    "genomic_profile": { "$ref": "mutation_schema.json" },
+    "trajectory": { "$ref": "trajectory_schema.json" },
+    "clinical_notes": {
+      "type": "array",
+      "items": { "$ref": "clinical_note_schema.json" }
+    },
+    "pathology_specimen": {
+      "type": ["object", "null"],
+      "properties": {
+        "has_image": { "type": "boolean" },
+        "tile_path": { "type": ["string", "null"] },
+        "status": { "type": "string", "enum": ["AVAILABLE", "NOT_APPLICABLE"] }
+      }
+    },
+    "expected_behavior_ref": { "type": "string" },
+    "known_facts": { "type": "array", "items": { "type": "string" } },
+    "hypothetical_elements": { "type": "array", "items": { "type": "string" } },
+    "source_references": { "type": "array", "items": { "type": "string" } },
+    "generator_version": { "type": "string" }
+  }
+}

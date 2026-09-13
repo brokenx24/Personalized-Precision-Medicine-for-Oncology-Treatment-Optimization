@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BiomarkerDistribution",
+  "type": "object",
+  "required": [
+    "metadata",
+    "laboratory_distributions"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object"
+    },
+    "laboratory_distributions": {
+      "type": "object"
+    }
+  }
+}

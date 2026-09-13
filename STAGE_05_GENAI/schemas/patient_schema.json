@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SyntheticOncologyPatientProfile",
+  "type": "object",
+  "required": [
+    "patient_id",
+    "synthetic_flag",
+    "age",
+    "sex",
+    "cancer_type",
+    "cancer_stage",
+    "ecog_performance_status",
+    "baseline_biomarkers",
+    "baseline_labs"
+  ],
+  "properties": {
+    "patient_id": {
+      "type": "string",
+      "pattern": "^SYN-PAT-[0-9]{4,6}$"
+    },
+    "synthetic_flag": {
+      "type": "boolean",
+      "const": true
+    },
+    "is_hypothetical": {
+      "type": "boolean"
+    },
+    "age": {
+      "type": "integer",
+      "minimum": 18,
+      "maximum": 95
+    },
+    "sex": {
+      "type": "string",
+      "enum": ["Male", "Female"]
+    },
+    "cancer_type": {
+      "type": "string",
+      "enum": [
+        "Lung Adenocarcinoma",
+        "Lung Squamous Cell Carcinoma",
+        "Colorectal Adenocarcinoma",
+        "Breast Invasive Carcinoma",
+        "Prostate Adenocarcinoma",
+        "Cutaneous Melanoma",
+        "Skin Cutaneous Melanoma",
+        "Head and Neck Squamous Cell Carcinoma",
+        "Bladder Urothelial Carcinoma",
+        "Ovarian Serous Cystadenocarcinoma",
+        "Pancreatic Adenocarcinoma",
+        "Liver Hepatocellular Carcinoma"
+      ]
+    },
+    "cancer_stage": {
+      "type": "string",
+      "enum": ["Stage I", "Stage II", "Stage III", "Stage IV", "Unknown"]
+    },
+    "tumor_grade": {
+      "type": "string",
+      "enum": ["G1", "G2", "G3", "G4", "Unknown"]
+    },
+    "ecog_performance_status": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4
+    },
+    "weight_kg": {
+      "type": "number",
+      "minimum": 35.0,
+      "maximum": 160.0
+    },
+    "height_cm": {
+      "type": "number",
+      "minimum": 130.0,
+      "maximum": 210.0
+    },
+    "bmi": {
+      "type": "number",
+      "minimum": 14.0,
+      "maximum": 50.0
+    },
+    "baseline_biomarkers": {
+      "type": "object",
+      "required": ["cea_ng_ml", "ca125_u_ml", "psa_ng_ml", "ctdna_maf_pct"],
+      "properties": {
+        "cea_ng_ml": { "type": "number", "minimum": 0.0 },
+        "ca125_u_ml": { "type": "number", "minimum": 0.0 },
+        "psa_ng_ml": { "type": "number", "minimum": 0.0 },
+        "ctdna_maf_pct": { "type": "number", "minimum": 0.0, "maximum": 100.0 }
+      }
+    },
+    "baseline_labs": {
+      "type": "object",
+      "required": ["creatinine_mg_dl", "alt_u_l", "ast_u_l", "albumin_g_dl", "wbc_10_3_ul", "platelets_10_3_ul", "hemoglobin_g_dl"],
+      "properties": {
+        "creatinine_mg_dl": { "type": "number", "minimum": 0.2, "maximum": 15.0 },
+        "alt_u_l": { "type": "number", "minimum": 5.0, "maximum": 1000.0 },
+        "ast_u_l": { "type": "number", "minimum": 5.0, "maximum": 1000.0 },
+        "albumin_g_dl": { "type": "number", "minimum": 1.0, "maximum": 6.0 },
+        "wbc_10_3_ul": { "type": "number", "minimum": 0.5, "maximum": 50.0 },
+        "platelets_10_3_ul": { "type": "number", "minimum": 10.0, "maximum": 1000.0 },
+        "hemoglobin_g_dl": { "type": "number", "minimum": 4.0, "maximum": 20.0 }
+      }
+    }
+  },
+  "additionalProperties": false
+}

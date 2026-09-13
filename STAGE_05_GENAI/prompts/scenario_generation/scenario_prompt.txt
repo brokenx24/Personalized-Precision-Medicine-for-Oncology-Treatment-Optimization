@@ -1,0 +1,24 @@
+Generate a complete, synthetic precision oncology patient scenario with challenge category: {challenge_type}.
+Difficulty level: {difficulty_level}.
+Cancer domain: {cancer_type}.
+
+Reference Prior Context:
+- Empirical Age distribution: {age_prior}
+- Available Stage proportions: {stage_prior}
+- Mutation pool: {mutation_pool}
+
+Required JSON Output Structure:
+{{
+  "scenario_id": "{scenario_id}",
+  "generation_id": "{generation_id}",
+  "timestamp": "{timestamp}",
+  "synthetic_flag": true,
+  "challenge_type": "{challenge_type}",
+  "difficulty_level": "{difficulty_level}",
+  "patient_profile": {{ ... }},
+  "genomic_profile": {{ ... }},
+  "trajectory": {{ ... }},
+  "clinical_notes": [ ... ],
+  "expected_behavior_ref": "{expected_behavior_ref}"
+}}
+Ensure all longitudinal timepoints (T0-T4) are strictly chronological and clinical progress notes do not contradict structured values.

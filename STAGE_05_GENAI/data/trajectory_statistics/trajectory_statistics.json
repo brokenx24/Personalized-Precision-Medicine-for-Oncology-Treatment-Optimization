@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generated_at": "2026-09-14T00:00:00Z",
+    "source_type": "EXTERNAL_CLINICAL_TRIAL_PROTOCOL_REFERENCE",
+    "patient_cohort_derived": false,
+    "protocol": "Standard 5-Point Oncology Treatment Trajectory Protocol (RECIST 1.1)",
+    "timepoints_defined": [
+      "T0 (Baseline)",
+      "T1 (Day 30)",
+      "T2 (Day 60)",
+      "T3 (Day 90)",
+      "T4 (Day 120)"
+    ],
+    "derivation_rationale": "Stage 01 tabular cohort contains single cross-sectional encounters per patient (CROSS_SECTIONAL_REFERENCE_ONLY). Progression drift parameters (RECIST 1.1 thresholds: PR >= 30% decrease, PD >= 20% increase) are sourced from published clinical trial protocols and ctDNA kinetics literature, NOT empirically calculated from patient time series.",
+    "data_engineer_role": "Calculates reference prior bounds; does NOT fabricate synthetic cases"
+  },
+  "longitudinal_data_status": "CROSS_SECTIONAL_REFERENCE_ONLY",
+  "longitudinal_reference_audit": {
+    "status": "CROSS_SECTIONAL_REFERENCE_ONLY",
+    "total_records": 6254,
+    "unique_patients": 6254,
+    "repeated_visits_present": false,
+    "notes": "Reference cohort contains single cross-sectional encounters per patient. Longitudinal kinetics parameters are documented as published clinical trial protocol reference distributions (RECIST 1.1)."
+  },
+  "recist_transition_probabilities": {
+    "RESPONDER": {
+      "T0": "Baseline",
+      "T1": "Stable Disease (SD)",
+      "T2": "Partial Response (PR)",
+      "T3": "Partial Response (PR)",
+      "T4": "Complete Response (CR)"
+    },
+    "NON_RESPONDER": {
+      "T0": "Baseline",
+      "T1": "Stable Disease (SD)",
+      "T2": "Progressive Disease (PD)",
+      "T3": "Progressive Disease (PD)",
+      "T4": "Progressive Disease (PD)"
+    },
+    "ACQUIRED_RESISTANCE": {
+      "T0": "Baseline",
+      "T1": "Stable Disease (SD)",
+      "T2": "Partial Response (PR)",
+      "T3": "Stable Disease (SD)",
+      "T4": "Progressive Disease (PD)"
+    }
+  },
+  "biomarker_drift_parameters": {
+    "ctdna_maf_pct": {
+      "baseline_range": [
+        0.5,
+        15.0
+      ],
+      "response_multiplier": 0.25,
+      "progression_multiplier": 3.5,
+      "unit": "%"
+    },
+    "tumor_burden_diameter_mm": {
+      "baseline_range": [
+        25.0,
+        95.0
+      ],
+      "pr_reduction_threshold": -0.3,
+      "pd_increase_threshold": 0.2,
+      "unit": "mm"
+    },
+    "cea_ng_ml": {
+      "baseline_range": [
+        2.5,
+        35.0
+      ],
+      "response_decay_rate": 0.65,
+      "progression_spike_rate": 2.8,
+      "unit": "ng/mL"
+    }
+  },
+  "toxicity_grade_proportions": {
+    "Grade_0": 0.45,
+    "Grade_1": 0.3,
+    "Grade_2": 0.15,
+    "Grade_3": 0.08,
+    "Grade_4": 0.02
+  }
+}

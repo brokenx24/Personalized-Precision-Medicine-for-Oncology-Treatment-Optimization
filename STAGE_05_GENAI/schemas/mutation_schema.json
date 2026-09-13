@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SyntheticOncologyGenomicProfile",
+  "type": "object",
+  "required": [
+    "profile_id",
+    "patient_id",
+    "difficulty_level",
+    "mutations"
+  ],
+  "properties": {
+    "profile_id": { "type": "string" },
+    "patient_id": { "type": "string", "pattern": "^SYN-PAT-[0-9]{4,6}$" },
+    "difficulty_level": {
+      "type": "string",
+      "enum": ["LEVEL_1", "LEVEL_2", "LEVEL_3", "LEVEL_4", "LEVEL_5"]
+    },
+    "mutations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "mutation_id",
+          "gene",
+          "variant",
+          "variant_type",
+          "allele_frequency_pct",
+          "classification",
+          "evidence_status",
+          "scenario_role",
+          "confidence",
+          "is_hypothetical"
+        ],
+        "properties": {
+          "mutation_id": { "type": "string" },
+          "gene": { "type": "string" },
+          "variant": { "type": "string" },
+          "variant_type": {
+            "type": "string",
+            "enum": ["SNV", "Insertion", "Deletion", "Frameshift", "Fusion", "Amplification", "Complex"]
+          },
+          "allele_frequency_pct": { "type": "number", "minimum": 0.0, "maximum": 100.0 },
+          "classification": {
+            "type": "string",
+            "enum": ["KNOWN_REFERENCE", "SYNTHETIC_VARIATION", "HYPOTHETICAL"]
+          },
+          "evidence_status": {
+            "type": "string",
+            "enum": ["FDA_APPROVED_BIOMARKER", "NCCN_CATEGORY_1", "CLINICAL_TRIAL_EVIDENCE", "PRECLINICAL_HYPOTHESIS", "CONTRADICTORY_EVIDENCE"]
+          },
+          "scenario_role": {
+            "type": "string",
+            "enum": ["PRIMARY_DRIVER", "ACQUIRED_RESISTANCE", "SECONDARY_PASSENGER", "CO_MUTATION_CHALLENGE", "BORDERLINE_MODIFIER"]
+          },
+          "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+          "is_hypothetical": { "type": "boolean" },
+          "associated_therapies": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "resistance_mechanism": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

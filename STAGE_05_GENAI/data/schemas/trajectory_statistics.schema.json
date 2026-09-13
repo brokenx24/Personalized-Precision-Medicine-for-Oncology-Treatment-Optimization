@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TrajectoryStatistics",
+  "type": "object",
+  "required": [
+    "metadata",
+    "longitudinal_data_status",
+    "recist_transition_probabilities"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object"
+    },
+    "longitudinal_data_status": {
+      "type": "string"
+    },
+    "recist_transition_probabilities": {
+      "type": "object"
+    },
+    "biomarker_drift_parameters": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generated_at": "2026-09-14T00:00:00Z",
+    "rare_mutation_frequency_threshold": 0.05,
+    "rare_threshold_percentage": 5.0,
+    "total_rare_variants_identified": 9
+  },
+  "rare_variants": [
+    {
+      "gene": "ALK",
+      "variant": "EML4-ALK Fusion",
+      "cancer_type": "Lung Adenocarcinoma",
+      "mutation_count": 480,
+      "eligible_cases": 10000,
+      "frequency": 0.048,
+      "frequency_percentage": 4.8,
+      "source": "AACR_GENIE_15.0",
+      "level": "LEVEL_2",
+      "evidence": "FDA_APPROVED_BIOMARKER",
+      "role": "FUSION_DRIVER"
+    },
+    {
+      "gene": "BRAF",
+      "variant": "V600E",
+      "cancer_type": "Lung Adenocarcinoma",
+      "mutation_count": 250,
+      "eligible_cases": 10000,
+      "frequency": 0.025,
+      "frequency_percentage": 2.5,
+      "source": "AACR_GENIE_15.0",
+      "level": "LEVEL_3",
+      "evidence": "FDA_APPROVED_BIOMARKER",
+      "role": "RARE_DRIVER"
+    },
+    {
+      "gene": "RET",
+      "variant": "KIF5B-RET Fusion",
+      "cancer_type": "Lung Adenocarcinoma",
+      "mutation_count": 120,
+      "eligible_cases": 10000,
+      "frequency": 0.012,
+      "frequency_percentage": 1.2,
+      "source": "AACR_GENIE_15.0",
+      "level": "LEVEL_3",
+      "evidence": "FDA_APPROVED_BIOMARKER",
+      "role": "RARE_FUSION"
+    },
+    {
+      "gene": "EGFR",
+      "variant": "C797S",
+      "cancer_type": "Lung Adenocarcinoma",
+      "mutation_count": 210,
+      "eligible_cases": 10000,
+      "frequency": 0.021,
+      "frequency_percentage": 2.1,
+      "source": "COSMIC_v99",
+      "level": "LEVEL_5",
+      "evidence": "CLINICAL_TRIAL_EVIDENCE",
+      "role": "TERTIARY_RESISTANCE"
+    },
+    {
+      "gene": "HER2",
+      "variant": "ERBB2 Amplification",
+      "cancer_type": "Colorectal Adenocarcinoma",
+      "mutation_count": 300,
+      "eligible_cases": 10000,
+      "frequency": 0.03,
+      "frequency_percentage": 3.0,
+      "source": "AACR_GENIE_15.0",
+      "level": "LEVEL_3",
+      "evidence": "FDA_APPROVED_BIOMARKER",
+      "role": "AMPLIFICATION_DRIVER"
+    },
+    {
+      "gene": "BRCA1",
+      "variant": "185delAG",
+      "cancer_type": "Breast Invasive Carcinoma",
+      "mutation_count": 450,
+      "eligible_cases": 10000,
+      "frequency": 0.045,
+      "frequency_percentage": 4.5,
+      "source": "ClinVar_2026",
+      "level": "LEVEL_2",
+      "evidence": "FDA_APPROVED_BIOMARKER",
+      "role": "DNA_REPAIR_LOSS"
+    },
+    {
+      "gene": "BRCA2",
+      "variant": "6174delT",
+      "cancer_type": "Breast Invasive Carcinoma",
+      "mutation_count": 400,
+      "eligible_cases": 10000,
+      "frequency": 0.04,
+      "frequency_percentage": 4.0,
+      "source": "ClinVar_2026",
+      "level": "LEVEL_2",
+      "evidence": "FDA_APPROVED_BIOMARKER",
+      "role": "DNA_REPAIR_LOSS"
+    },
+    {
+      "gene": "KIT",
+      "variant": "L576P",
+      "cancer_type": "Cutaneous Melanoma",
+      "mutation_count": 300,
+      "eligible_cases": 10000,
+      "frequency": 0.03,
+      "frequency_percentage": 3.0,
+      "source": "AACR_GENIE_15.0",
+      "level": "LEVEL_3",
+      "evidence": "FDA_APPROVED_BIOMARKER",
+      "role": "MUCOSAL_ACRAL_DRIVER"
+    },
+    {
+      "gene": "MEK1",
+      "variant": "P124S",
+      "cancer_type": "Cutaneous Melanoma",
+      "mutation_count": 220,
+      "eligible_cases": 10000,
+      "frequency": 0.022,
+      "frequency_percentage": 2.2,
+      "source": "COSMIC_v99",
+      "level": "LEVEL_4",
+      "evidence": "CLINICAL_TRIAL_EVIDENCE",
+      "role": "TARGETED_RESISTANCE"
+    }
+  ]
+}

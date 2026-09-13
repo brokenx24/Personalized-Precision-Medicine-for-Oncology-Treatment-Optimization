@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SyntheticOncologyClinicalProgressNote",
+  "type": "object",
+  "required": [
+    "note_id",
+    "patient_id",
+    "timepoint_id",
+    "note_type",
+    "clinical_text",
+    "grounded_entities"
+  ],
+  "properties": {
+    "note_id": { "type": "string" },
+    "patient_id": { "type": "string", "pattern": "^SYN-PAT-[0-9]{4,6}$" },
+    "timepoint_id": { "type": "string", "enum": ["T0", "T1", "T2", "T3", "T4"] },
+    "note_type": { "type": "string" },
+    "clinical_text": { "type": "string", "minLength": 50 },
+    "grounded_entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["entity_text", "category", "verified_in_structured_data"],
+        "properties": {
+          "entity_text": { "type": "string" },
+          "category": { "type": "string", "enum": ["GENE_MUTATION", "DRUG", "DOSAGE", "ADVERSE_EVENT", "BIOMARKER"] },
+          "verified_in_structured_data": { "type": "boolean" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "disclaimer": { "type": "string" }
+  },
+  "additionalProperties": false
+}

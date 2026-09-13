@@ -1,0 +1,13 @@
+Synthesize a 5-point longitudinal trajectory (T0, T1, T2, T3, T4) for patient {patient_id}.
+Treatment class: {treatment_class}.
+Trajectory pattern: {trajectory_pattern}.
+
+Timepoint offsets:
+- T0: Baseline (Day 0)
+- T1: Cycle 1 Assessment (Day 30)
+- T2: Cycle 2 Interim Evaluation (Day 60)
+- T3: Treatment Modification or Resistance (Day 90)
+- T4: Progression or Definitive Outcome (Day 120)
+
+Enforce strict RECIST 1.1 continuity, ctDNA dynamics, and biomarker kinetics.
+Output strictly adhering to trajectory_schema.json.

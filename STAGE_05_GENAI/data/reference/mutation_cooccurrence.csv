@@ -1,0 +1,8 @@
+mutation_A,mutation_B,cooccurrence_count,population_count,cooccurrence_rate,cancer_type,relationship,log_odds_ratio,p_value,biological_rule,source
+EGFR,KRAS,12,8500,0.0014,Lung Adenocarcinoma,MUTUALLY_EXCLUSIVE,-3.42,0.0001,Simultaneous untreated de-novo EGFR and KRAS driver alterations are extremely rare (<0.2%).,AACR_GENIE_15.0
+EGFR,ALK,15,8500,0.0018,Lung Adenocarcinoma,MUTUALLY_EXCLUSIVE,-2.85,0.001,Concomitant EGFR and ALK driver rearrangements occur in <0.5% of cases.,AACR_GENIE_15.0
+EGFR,TP53,1820,8500,0.2141,Lung Adenocarcinoma,CO_OCCURRING,1.25,0.005,Frequent co-alteration; correlated with shorter duration of response to EGFR TKIs.,AACR_GENIE_15.0
+KRAS,STK11,680,8500,0.08,Lung Adenocarcinoma,CO_OCCURRING,2.14,0.0002,Predictor of primary resistance to single-agent immune checkpoint blockade.,AACR_GENIE_15.0
+BRAF_V600E,NRAS,8,3200,0.0025,Cutaneous Melanoma,MUTUALLY_EXCLUSIVE,-3.1,0.0001,Mutually exclusive MAPK pathway activation in melanoma baseline.,AACR_GENIE_15.0
+EGFR_Sensitizing,EGFR_T790M,550,1200,0.4583,Lung Adenocarcinoma,DEPENDENT_ACQUIRED,4.5,1e-05,T790M emerges predominantly in cis with sensitizing Exon 19 del or L858R.,COSMIC_v99
+EGFR_T790M,EGFR_C797S,140,450,0.3111,Lung Adenocarcinoma,TERTIARY_ACQUIRED,3.8,5e-05,C797S emerges under osimertinib pressure in T790M-positive tumors.,COSMIC_v99

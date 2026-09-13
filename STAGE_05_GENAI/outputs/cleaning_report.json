@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-09-14T00:00:00Z",
+  "initial_rows": 6254,
+  "final_clean_rows": 6254,
+  "exact_duplicates_removed": 0,
+  "total_rows_dropped": 0,
+  "total_missing_values_imputed": 4169,
+  "total_outliers_clipped": 1,
+  "imputed_columns": {
+    "age": 196,
+    "mutation_count": 277,
+    "fraction_genome_altered": 132,
+    "aneuploidy_score": 269,
+    "tmb_nonsynonymous": 277,
+    "msi_sensor_score": 497,
+    "buffa_hypoxia_score": 767,
+    "ragnum_hypoxia_score": 767,
+    "winter_hypoxia_score": 767,
+    "standardized_date": 220
+  },
+  "clipped_outliers": {
+    "weight_kg": 1
+  },
+  "transformations": [
+    {
+      "step": "exact_deduplication",
+      "original_count": 6254,
+      "removed_count": 0,
+      "modified_count": 0,
+      "imputed_count": 0,
+      "reason": "Remove identical cross-sectional patient encounters across all biological features"
+    },
+    {
+      "step": "de_identification",
+      "original_count": 6254,
+      "removed_count": 0,
+      "modified_count": 6254,
+      "imputed_count": 0,
+      "reason": "Assign standardized non-PII reference identifier (REF-SEED-XXXXX) and label data_type as REFERENCE"
+    },
+    {
+      "step": "missing_value_imputation",
+      "original_count": 6254,
+      "removed_count": 0,
+      "modified_count": 4169,
+      "imputed_count": 4169,
+      "reason": "Impute missing numeric values via median and categorical via mode to ensure statistical completeness"
+    },
+    {
+      "step": "biological_outlier_clipping",
+      "original_count": 6254,
+      "removed_count": 0,
+      "modified_count": 1,
+      "imputed_count": 0,
+      "reason": "Clip extreme values to physiological oncology boundaries to prevent unrealistic distortion"
+    }
+  ]
+}

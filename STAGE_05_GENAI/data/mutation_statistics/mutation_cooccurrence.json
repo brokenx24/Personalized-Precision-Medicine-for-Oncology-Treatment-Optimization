@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generated_at": "2026-09-14T00:00:00Z",
+    "source_type": "EXTERNAL_PUBLISHED_LITERATURE_LOG_ODDS",
+    "patient_cohort_derived": false,
+    "ruleset": "AACR GENIE / cBioPortal Mutual Exclusivity & Co-occurrence Log-Odds",
+    "derivation_rationale": "Derived from published pan-cancer sequencing cohorts (GENIE / cBioPortal) because Stage 01 tabular data does not contain individual patient-level variant co-alteration matrix entries.",
+    "total_pairs_modeled": 7
+  },
+  "pairwise_relationships": {
+    "EGFR___KRAS": {
+      "relationship": "MUTUALLY_EXCLUSIVE",
+      "log_odds_ratio": -3.42,
+      "p_value": 0.0001,
+      "cooccurrence_rate": 0.0014,
+      "biological_rule": "Simultaneous untreated de-novo EGFR and KRAS driver alterations are extremely rare (<0.2%).",
+      "source": "AACR_GENIE_15.0"
+    },
+    "EGFR___ALK": {
+      "relationship": "MUTUALLY_EXCLUSIVE",
+      "log_odds_ratio": -2.85,
+      "p_value": 0.001,
+      "cooccurrence_rate": 0.0018,
+      "biological_rule": "Concomitant EGFR and ALK driver rearrangements occur in <0.5% of cases.",
+      "source": "AACR_GENIE_15.0"
+    },
+    "EGFR___TP53": {
+      "relationship": "CO_OCCURRING",
+      "log_odds_ratio": 1.25,
+      "p_value": 0.005,
+      "cooccurrence_rate": 0.2141,
+      "biological_rule": "Frequent co-alteration; correlated with shorter duration of response to EGFR TKIs.",
+      "source": "AACR_GENIE_15.0"
+    },
+    "KRAS___STK11": {
+      "relationship": "CO_OCCURRING",
+      "log_odds_ratio": 2.14,
+      "p_value": 0.0002,
+      "cooccurrence_rate": 0.08,
+      "biological_rule": "Predictor of primary resistance to single-agent immune checkpoint blockade.",
+      "source": "AACR_GENIE_15.0"
+    },
+    "BRAF_V600E___NRAS": {
+      "relationship": "MUTUALLY_EXCLUSIVE",
+      "log_odds_ratio": -3.1,
+      "p_value": 0.0001,
+      "cooccurrence_rate": 0.0025,
+      "biological_rule": "Mutually exclusive MAPK pathway activation in melanoma baseline.",
+      "source": "AACR_GENIE_15.0"
+    },
+    "EGFR_Sensitizing___EGFR_T790M": {
+      "relationship": "DEPENDENT_ACQUIRED",
+      "log_odds_ratio": 4.5,
+      "p_value": 1e-05,
+      "cooccurrence_rate": 0.4583,
+      "biological_rule": "T790M emerges predominantly in cis with sensitizing Exon 19 del or L858R.",
+      "source": "COSMIC_v99"
+    },
+    "EGFR_T790M___EGFR_C797S": {
+      "relationship": "TERTIARY_ACQUIRED",
+      "log_odds_ratio": 3.8,
+      "p_value": 5e-05,
+      "cooccurrence_rate": 0.3111,
+      "biological_rule": "C797S emerges under osimertinib pressure in T790M-positive tumors.",
+      "source": "COSMIC_v99"
+    }
+  },
+  "summary": {
+    "mutually_exclusive_count": 3,
+    "co_occurring_count": 2,
+    "acquired_resistance_count": 2
+  }
+}

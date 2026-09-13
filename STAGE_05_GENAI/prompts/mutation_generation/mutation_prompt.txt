@@ -1,0 +1,12 @@
+Synthesize a genomic mutation profile for patient {patient_id} in {cancer_type}.
+Difficulty level: {difficulty_level}.
+
+Constraints:
+1. Level 1: Common primary drivers (e.g. canonical EGFR exon 19 del, KRAS G12C, BRAF V600E).
+2. Level 2: Uncommon actionable alterations (e.g. ALK fusion, HER2 amp).
+3. Level 3: Rare variants with limited guideline coverage.
+4. Level 4: Rare compound co-mutations challenging treatment choice (e.g. EGFR + KRAS conflict or TP53 + STK11).
+5. Level 5: Tertiary acquired resistance alterations (e.g. EGFR T790M + C797S).
+
+Classification tag must be one of: [KNOWN_REFERENCE, SYNTHETIC_VARIATION, HYPOTHETICAL].
+Output valid JSON adhering to mutation_schema.json.

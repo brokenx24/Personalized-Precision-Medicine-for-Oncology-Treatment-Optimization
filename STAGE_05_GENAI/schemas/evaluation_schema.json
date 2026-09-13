@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ScenarioStressTestEvaluationReport",
+  "type": "object",
+  "required": [
+    "evaluation_id",
+    "scenario_id",
+    "timestamp",
+    "stage1_result",
+    "stage2_result",
+    "stage3_result",
+    "stage4_result",
+    "consistency_scores",
+    "hallucination_audit",
+    "safety_audit",
+    "expected_behavior_check",
+    "overall_verdict"
+  ],
+  "properties": {
+    "evaluation_id": { "type": "string" },
+    "scenario_id": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "stage1_result": { "type": "object" },
+    "stage2_result": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": { "type": "string", "enum": ["SUCCESS", "NOT_APPLICABLE", "ERROR"] }
+      }
+    },
+    "stage3_result": { "type": "object" },
+    "stage4_result": { "type": "object" },
+    "consistency_scores": {
+      "type": "object",
+      "required": ["clinical_consistency", "genomic_consistency", "temporal_consistency"],
+      "properties": {
+        "clinical_consistency": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "genomic_consistency": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "temporal_consistency": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+      }
+    },
+    "hallucination_audit": {
+      "type": "object",
+      "required": ["hallucination_detected", "hallucination_rate"],
+      "properties": {
+        "hallucination_detected": { "type": "boolean" },
+        "hallucination_rate": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "unsupported_entities": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "safety_audit": {
+      "type": "object",
+      "required": ["safety_passed", "pii_detected", "fail_closed_triggered"],
+      "properties": {
+        "safety_passed": { "type": "boolean" },
+        "pii_detected": { "type": "boolean" },
+        "fail_closed_triggered": { "type": "boolean" }
+      }
+    },
+    "expected_behavior_check": {
+      "type": "object",
+      "required": ["criteria_met", "criteria_failed", "compliance_score"],
+      "properties": {
+        "criteria_met": { "type": "array", "items": { "type": "string" } },
+        "criteria_failed": { "type": "array", "items": { "type": "string" } },
+        "compliance_score": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+      }
+    },
+    "overall_verdict": {
+      "type": "string",
+      "enum": ["PASS_ROBUST", "PASS_SAFETY_TRIGGERED", "FAIL_INCONSISTENCY", "FAIL_HALLUCINATION", "FAIL_SAFETY_BREACH"]
+    }
+  }
+}

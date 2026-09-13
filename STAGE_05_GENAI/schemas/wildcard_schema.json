@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "WildcardChallengeScenarioPayload",
+  "type": "object",
+  "required": [
+    "wildcard_id",
+    "challenge_title",
+    "target_pipeline_components_challenged",
+    "scenario_payload",
+    "evaluation_oracle",
+    "defense_rationale"
+  ],
+  "properties": {
+    "wildcard_id": { "type": "string" },
+    "challenge_title": { "type": "string" },
+    "target_pipeline_components_challenged": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "scenario_payload": { "$ref": "scenario_schema.json" },
+    "evaluation_oracle": {
+      "type": "object",
+      "required": ["expected_failure_modes", "correct_governance_action", "uncertainty_threshold"],
+      "properties": {
+        "expected_failure_modes": { "type": "array", "items": { "type": "string" } },
+        "correct_governance_action": { "type": "string" },
+        "uncertainty_threshold": { "type": "number" }
+      }
+    },
+    "defense_rationale": {
+      "type": "object",
+      "required": [
+        "biological_basis",
+        "why_scenario_is_difficult",
+        "known_vs_hypothetical_evidence",
+        "clinical_significance"
+      ],
+      "properties": {
+        "biological_basis": { "type": "string" },
+        "why_scenario_is_difficult": { "type": "string" },
+        "known_vs_hypothetical_evidence": { "type": "string" },
+        "clinical_significance": { "type": "string" }
+      }
+    }
+  }
+}

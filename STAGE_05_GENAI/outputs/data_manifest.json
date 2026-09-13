@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-09-14T00:00:00Z",
+  "total_files": 14,
+  "environment": {
+    "python_version": "3.11.9",
+    "random_seed": 42
+  },
+  "files": [
+    {
+      "file": "data/raw/raw_seed_cohort.csv",
+      "type": "RAW_DATA",
+      "size_bytes": 1801803,
+      "sha256": "a1f2a3db1e46b1af492d4d07483b4d7dda6e2257a5a4988d4801400dfabcbd83",
+      "status": "VALIDATED"
+    },
+    {
+      "file": "data/cleaned/cleaned_seed_cohort.csv",
+      "type": "CLEANED_DATA",
+      "size_bytes": 1911313,
+      "sha256": "c871373835e879f6be2ec22bb419ee67c07f438ff7d6ea79f3f370a5f4fe355b",
+      "status": "VALIDATED"
+    },
+    {
+      "file": "data/reference/clinical_distributions.json",
+      "type": "REFERENCE_STATISTICS",
+      "size_bytes": 11833,
+      "sha256": "3d8071973e2600daac3d64bb546092e9b6e3cae7237973a67831678dddb6dd8f",
+      "status": "VALIDATED"
+    },
+    {
+      "file": "data/reference/biomarker_distributions.json",
+      "type": "REFERENCE_STATISTICS",
+      "size_bytes": 8620,
+      "sha256": "ae46d258a082a3c83aa7e9b4e9285358254e79e8bed83357e9a5d88a9a77f2f6",
+      "status": "VALIDATED"
+    },
+    {
+      "file": "data/reference/mutation_frequencies.csv",
+      "type": "REFERENCE_TABLE",
+      "size_bytes": 3000,
+      "sha256": "d6d4a94e3240dfe96e3f069ae7f155544dc34c5870372ea3ba524805b6c9d076",
+      "status": "VALIDATED"
+    },
+    {
+      "file": "data/reference/mutation_cooccurrence.csv",
+      "type": "REFERENCE_TABLE",
+      "size_bytes": 1337,
+      "sha256": "ec856229924101866b27be6b3c07b4906994480c7adbe05b73b7521b2f47af3d",
+      "status": "VALIDATED"
+    },
+    {
+      "file": "data/reference/mutation_cooccurrence.json",
+      "type": "REFERENCE_MATRIX",
+      "size_bytes": 2849,
+      "sha256": "5f09100246f0ad195160a778bc03dc8544a730864e93b1d0fb34822dbe79d3e7",
+      "status": "VALIDATED"
+    },
+    {
+      "file": "data/reference/rare_mutations.json",
+      "type": "REFERENCE_BENCHMARK",
+      "size_bytes": 3682,
+      "sha256": "d0305051923db0f1ccfa8f054cadea26f417f50fb596413e48b7fc15f4b4ea02",
+      "status": "VALIDATED"
+    },
+    {
+      "file": "data/reference/trajectory_statistics.json",
+      "type": "REFERENCE_KINETICS",
+      "size_bytes": 2827,
+      "sha256": "5e27eba484661bfacc1963963006a128a3dc84fac1a7050e2baad3ce2db6c6e2",
+      "status": "VALIDATED"
+    },
+    {
+      "file": "data/reference/data_provenance.json",
+      "type": "PROVENANCE_REGISTRY",
+      "size_bytes": 6983,
+      "sha256": "a10c7af7a25a3650460a1c3714b4794ad8599b3c35d8e9bd32c0d1a5f5b633f9",
+      "status": "VALIDATED"
+    },
+    {
+      "file": "outputs/source_verification.json",
+      "type": "AUDIT_REPORT",
+      "size_bytes": 3317,
+      "sha256": "e1751bfce9f7be74ea31568096e236c922f8278aa1d8588ebb40d302fe8f6b74",
+      "status": "VALIDATED"
+    },
+    {
+      "file": "outputs/cleaning_report.json",
+      "type": "AUDIT_REPORT",
+      "size_bytes": 1780,
+      "sha256": "452965a55121cb045723dcf7199f5c95805ad87f6add6690006ccc9721ccacdc",
+      "status": "VALIDATED"
+    },
+    {
+      "file": "outputs/validation_report.json",
+      "type": "AUDIT_REPORT",
+      "size_bytes": 233,
+      "sha256": "6982049331aa5c7d88393446b76c4e7dce8afcec5afb28aada20376bafb7168d",
+      "status": "VALIDATED"
+    },
+    {
+      "file": "outputs/privacy_report.json",
+      "type": "AUDIT_REPORT",
+      "size_bytes": 590,
+      "sha256": "ec21524f80aa7dba6e24ac88d1270b8a44d8d45f62011178d6a41586a3216984",
+      "status": "VALIDATED"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MutationCooccurrence",
+  "type": "object",
+  "required": [
+    "metadata",
+    "pairwise_relationships"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object"
+    },
+    "pairwise_relationships": {
+      "type": "object"
+    }
+  }
+}

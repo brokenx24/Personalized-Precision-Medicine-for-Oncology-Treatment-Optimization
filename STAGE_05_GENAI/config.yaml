@@ -1,0 +1,70 @@
+# STAGE 05 — GENERATIVE AI CONFIGURATION
+project_name: "Personalized Precision Medicine for Oncology Treatment Optimization"
+stage: "STAGE_05_GENAI"
+version: "1.0.0"
+
+# Paths (All paths are project-relative to HOSPITAL root)
+paths:
+  hospital_root: "."
+  stage01_root: "STAGE_01_ML"
+  stage01_alt_root: "stage1_ml"
+  stage02_root: "STAGE_02_DL"
+  stage03_root: "STAGE_03_NLP"
+  stage04_root: "STAGE_04_SLM"
+  stage06_root: "STAGE_04_SLM/STAGE_06_INTEGRATION"
+  data_raw: "STAGE_05_GENAI/data/raw"
+  data_cleaned: "STAGE_05_GENAI/data/cleaned"
+  data_reference: "STAGE_05_GENAI/data/reference"
+  data_schemas: "STAGE_05_GENAI/data/schemas"
+  reference_distributions: "STAGE_05_GENAI/data/reference_distributions"
+  mutation_statistics: "STAGE_05_GENAI/data/mutation_statistics"
+  trajectory_statistics: "STAGE_05_GENAI/data/trajectory_statistics"
+  synthetic_data: "STAGE_05_GENAI/data/synthetic"
+  schemas_dir: "STAGE_05_GENAI/schemas"
+  prompts_dir: "STAGE_05_GENAI/prompts"
+  expected_behavior_dir: "STAGE_05_GENAI/expected_behavior"
+  generated_cases: "STAGE_05_GENAI/generated_cases"
+  edge_cases_dir: "STAGE_05_GENAI/evaluation_engineer/edge_cases"
+  outputs_dir: "STAGE_05_GENAI/outputs"
+  audit_dir: "STAGE_05_GENAI/outputs/audit"
+  reports_dir: "STAGE_05_GENAI/outputs/reports"
+
+# Reference Data & Rarity Thresholds
+reference_data:
+  rare_mutation_frequency_threshold: 0.05  # Variants with frequency <= 5% are classified as RARE
+  random_seed: 42
+
+
+# GenAI Model Execution
+genai:
+  provider: "grounded_rule_engine"  # Options: "grounded_rule_engine", "local_slm", "openai", "anthropic", "huggingface"
+  model_name: "qwen2.5_1.5b_lora_oncology"
+  temperature: 0.2
+  max_tokens: 1024
+  timeout_seconds: 30
+  retry_count: 3
+  random_seed: 42
+  deterministic_mode: true
+
+# Scenario Generation Parameters
+generation:
+  num_baseline_cases: 20
+  num_edge_cases: 20
+  include_wildcard: true
+  enforce_synthetic_flag: true
+  trajectory_timepoints: 5  # T0, T1, T2, T3, T4
+
+# Safety & Consistency Thresholds
+safety:
+  fail_closed: true
+  max_hallucination_rate: 0.05
+  min_evidence_grounding_score: 0.85
+  min_clinical_consistency_score: 0.90
+  min_temporal_consistency_score: 0.95
+  prohibit_real_pii: true
+
+# API Settings
+api:
+  host: "127.0.0.1"
+  port: 8005
+  log_level: "info"

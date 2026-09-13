@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PrivacyReport",
+  "type": "object",
+  "required": [
+    "timestamp",
+    "records_audited",
+    "record_type",
+    "direct_identifiers_found",
+    "direct_identifiers_removed",
+    "de_identification_verified",
+    "full_anonymization_guarantee",
+    "privacy_status"
+  ],
+  "properties": {
+    "timestamp": {
+      "type": "string"
+    },
+    "records_audited": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "record_type": {
+      "type": "string",
+      "enum": [
+        "REFERENCE",
+        "HISTORICAL",
+        "SYNTHETIC"
+      ]
+    },
+    "direct_identifiers_found": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "direct_identifiers_removed": {
+      "type": "boolean"
+    },
+    "privacy_violations": {
+      "type": "array"
+    },
+    "de_identification_verified": {
+      "type": "boolean"
+    },
+    "full_anonymization_guarantee": {
+      "type": "string"
+    },
+    "anonymization_notes": {
+      "type": "string"
+    },
+    "privacy_status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "FAIL"
+      ]
+    }
+  }
+}

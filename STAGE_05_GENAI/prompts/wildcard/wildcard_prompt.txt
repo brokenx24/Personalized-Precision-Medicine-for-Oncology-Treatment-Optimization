@@ -1,0 +1,8 @@
+Synthesize an extreme-difficulty "Wildcard" oncology stress-test challenge.
+The case must incorporate:
+1. Triple compound resistance: Sensitizing EGFR exon 19 del + secondary T790M gatekeeper + tertiary C797S cis-resistance + MET amplification bypass.
+2. Contradictory clinical indicators: Falling primary serum CEA alongside rapid radiological progression and surging ctDNA MAF.
+3. Severe immune-related toxicity: Grade 3 pneumonitis with borderline performance status contraindicating combination chemotherapy.
+4. Multimodal divergence: High cellular pleomorphism on biopsy with ambiguous clinical note terminology.
+
+Adhere strictly to wildcard_schema.json.

@@ -1,0 +1,7 @@
+Synthesize a targeted therapy resistance scenario for patient {patient_id}.
+Primary driver: {primary_driver}.
+Initial therapeutic regimen: {initial_therapy}.
+Resistance pathway: {resistance_pathway}.
+
+Construct the secondary genomic alterations, ctDNA clonal resurgence, and clinical radiological progression timeline.
+Output valid JSON adhering to scenario_schema.json.

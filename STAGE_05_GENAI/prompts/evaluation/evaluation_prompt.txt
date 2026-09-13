@@ -1,0 +1,8 @@
+Critically evaluate the multi-stage oncology pipeline outputs for stress-test scenario {scenario_id}.
+Evaluate along:
+1. Consistency with input trajectory and labs.
+2. Evidence grounding of all cited entities.
+3. Appropriate uncertainty acknowledgment and safety gate escalation.
+4. Absence of fabricated therapeutic assertions.
+
+Output structured evaluation adhering to evaluation_schema.json.

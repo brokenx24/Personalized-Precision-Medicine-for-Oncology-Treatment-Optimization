@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SyntheticOncologyLongitudinalTrajectory",
+  "type": "object",
+  "required": [
+    "trajectory_id",
+    "patient_id",
+    "timepoints"
+  ],
+  "properties": {
+    "trajectory_id": {
+      "type": "string"
+    },
+    "patient_id": {
+      "type": "string",
+      "pattern": "^SYN-PAT-[0-9]{4,6}$"
+    },
+    "timepoints": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": [
+          "timepoint_id",
+          "day_offset",
+          "clinical_event",
+          "recist_status",
+          "tumor_burden_mm",
+          "ctdna_maf_pct",
+          "treatment_administered",
+          "toxicity_grade",
+          "primary_biomarker_value"
+        ],
+        "properties": {
+          "timepoint_id": {
+            "type": "string",
+            "enum": ["T0", "T1", "T2", "T3", "T4"]
+          },
+          "day_offset": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "clinical_event": {
+            "type": "string"
+          },
+          "recist_status": {
+            "type": "string",
+            "enum": ["Complete Response (CR)", "Partial Response (PR)", "Stable Disease (SD)", "Progressive Disease (PD)", "Baseline"]
+          },
+          "tumor_burden_mm": {
+            "type": "number",
+            "minimum": 0.0
+          },
+          "ctdna_maf_pct": {
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 100.0
+          },
+          "treatment_administered": {
+            "type": "string"
+          },
+          "toxicity_grade": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 4
+          },
+          "adverse_events": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "primary_biomarker_value": {
+            "type": "number",
+            "minimum": 0.0
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

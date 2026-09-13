@@ -1,0 +1,14 @@
+Generate an oncology clinical progress note for patient {patient_id} at timepoint {timepoint_id}.
+Clinical context:
+- Primary cancer: {cancer_type}
+- Current RECIST status: {recist_status}
+- Current tumor burden: {tumor_burden_mm} mm
+- Laboratory findings: {lab_summary}
+- Administered therapy: {treatment_administered}
+- Adverse events reported: {adverse_events}
+
+Rules:
+1. Do not invent contradictory laboratory or biomarker values.
+2. Ground all extracted clinical entities in the structured patient trajectory.
+3. Include standard research disclaimers.
+Output valid JSON adhering to clinical_note_schema.json.
